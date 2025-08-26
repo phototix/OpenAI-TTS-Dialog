@@ -56,22 +56,22 @@
   },
   {
     "voice_name": "onyx",
-    "input_text": "生产力！而且绝对救命。凌晨两点调试的时候，有 AI 在旁边低语‘嘿，你忘了分号’的时候，孤独感少好多。",
+    "input_text": "生产力！而且绝对救命。凌晨两点调试的时候，有 AI 在旁边低语‘嘿，你忘了semicolon’的时候，孤独感少好多。",
     "dialog_prompt": "随意，幽默"
   },
   {
     "voice_name": "coral",
-    "input_text": "太懂了！我让它教我递归，它居然用猫咪梗图写在注释里。史上最棒的课程！",
+    "input_text": "太懂了！我让它教我递归 recursion，它居然用猫咪梗图写在注释里。史上最棒的课程！",
     "dialog_prompt": "兴奋，搞怪"
   },
   {
     "voice_name": "fable",
-    "input_text": "我有次让 AI 帮我写个邮箱验证的正则。结果它给的东西比我前任的短信还恐怖。",
+    "input_text": "我有次让 AI 帮我写个邮箱验证的regex。结果它给的东西比我前任的短信还恐怖。",
     "dialog_prompt": "玩笑"
   },
   {
     "voice_name": "echo",
-    "input_text": "正则本来就是诅咒，AI 也救不了咱们。",
+    "input_text": "Regex 本来就是诅咒，AI 也救不了咱们。",
     "dialog_prompt": "讽刺又搞笑"
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "voice_name": "echo",
-    "input_text": "如果 AI 当我经理，至少不会发那种模糊邮件：‘回头聊一下’。",
+    "input_text": "如果 AI 当我经理，至少不会发那种模糊邮件：‘Let’s circle back’。",
     "dialog_prompt": "抱怨式开玩笑"
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "voice_name": "echo",
-    "input_text": "我只想少开会。AI，求你取消所有会议。",
+    "input_text": "我只想少开会。AI，求你 cancel所有会议。",
     "dialog_prompt": "搞笑愿望"
   },
   {
