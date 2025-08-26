@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="mb-1">${entry.input_text}</p>
                     <small class="text-muted">${entry.voice_name}</small>
                 </div>
-                <div class="d-flex align-items-center gap-2 items-group-btn">
+                <div class="d-flex align-items-center gap-2 btnWebUIItems">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
                     <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
                 </div>
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rightColumn.style.width = '100%';
         clearDialogBtn.style.display = 'none';
         showBtn.style.display = '';
-        document.querySelectorAll('.items-group-btn').forEach(el => {
+        document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.display = 'none';
         });
     }
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rightColumn.style.width = '50%';
         clearDialogBtn.style.display = '';
         showBtn.style.display = 'none';
-        document.querySelectorAll('.items-group-btn').forEach(el => {
+        document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.display = '';
         });
     }
