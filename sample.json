@@ -1,92 +1,62 @@
 [
-    {
-      "voice_name": "nova",
-      "input_text": "欢迎来到可持续性座谈会，我们将一起探讨可持续发展的重要性及其在社会和企业中的应用。",
-      "dialog_prompt": "cheerful, welcoming, engaging tone for an opening introduction"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "什么是“可持续性”？",
-      "dialog_prompt": "curious, thoughtful tone as if genuinely seeking knowledge"
-    },
-    {
-      "voice_name": "nova",
-      "input_text": "可持续性是指在满足当代人类需求的同时，不损害子孙后代满足其需求的能力。它涵盖环境保护、经济增长和社会公正与平衡度。",
-      "dialog_prompt": "calm, explanatory, confident tone for defining an important concept"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "为什么可持续性对企业或社会如此重要？",
-      "dialog_prompt": "serious and concerned tone, emphasizing the importance of the question"
-    },
-    {
-      "voice_name": "nova",
-      "input_text": "因为资源有限，环境支持有限。企业和社会只有实现长期利益，才能避免生态破坏，社会不稳定，资源将更为稀缺。",
-      "dialog_prompt": "informative, slightly urgent tone to stress the consequences of inaction"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "如何在企业中推广环境保护？",
-      "dialog_prompt": "practical, solution-seeking tone"
-    },
-    {
-      "voice_name": "echo",
-      "input_text": "通过持续的环保培训，激励企业采取绿色技术，减少污染，提升能源效率。",
-      "dialog_prompt": "helpful, optimistic, encouraging tone for actionable advice"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "企业如何衡量和减少碳排放？",
-      "dialog_prompt": "serious, technical tone showing a focus on implementation"
-    },
-    {
-      "voice_name": "sage",
-      "input_text": "企业可采用碳足迹协议（如 GHG Protocol），设定减少排放目标，并通过优化流程实现。",
-      "dialog_prompt": "professional, confident tone for providing a clear method"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "可持续性与社会和谐有什么关系？",
-      "dialog_prompt": "curious tone, inviting an insightful answer"
-    },
-    {
-      "voice_name": "echo",
-      "input_text": "可持续性促进社会公平与平等，保障员工权益，促进多元化，能帮助社区开创未来发展。",
-      "dialog_prompt": "warm, reassuring tone, emphasizing positive social impact"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "企业如何在现实中落实社会责任？",
-      "dialog_prompt": "inquiring tone, with a hint of responsibility and urgency"
-    },
-    {
-      "voice_name": "nova",
-      "input_text": "通过支持教育，提升员工福利，举办社会活动，以及实施绿色中和的环境保护措施。",
-      "dialog_prompt": "supportive and confident tone, highlighting proactive actions"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "可持续性会不会增加成本？",
-      "dialog_prompt": "slightly skeptical tone, as if questioning a common concern"
-    },
-    {
-      "voice_name": "echo",
-      "input_text": "短期可能增加投入，长期提升效率，降低成本，赢得消费者信任，最终带来未来竞争力和经济增长。",
-      "dialog_prompt": "optimistic and convincing tone to reassure the audience"
-    },
-    {
-      "voice_name": "onyx",
-      "input_text": "ESG 与可持续性有什么关系？",
-      "dialog_prompt": "professional tone, aiming to clarify a key concept"
-    },
-    {
-      "voice_name": "sage",
-      "input_text": "ESG（环境、社会、治理）是衡量企业可持续性表现的重要框架，帮助投资者和社会评估企业的长期价值和责任感。",
-      "dialog_prompt": "authoritative and clear tone to explain the concept confidently"
-    },
-    {
-      "voice_name": "nova",
-      "input_text": "感谢大家参与这场讨论，希望我们每个人都能在生活和工作中推动可持续发展，建设更美好的未来。",
-      "dialog_prompt": "warm, hopeful, and inspiring tone for a positive closing statement"
-    }
-  ]
+  {
+    "voice_name": "nova",
+    "input_text": "欢迎来到我们的播客节目，今天的主题非常贴近我们的生活——人工智能如何正在改变内容创作的方式。",
+    "dialog_prompt": "cheerful, welcoming, engaging tone for an opening introduction"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "在过去，创作内容需要大量时间和精力。但如今，AI 工具似乎让一切都加快了脚步。我很好奇，它真的能帮助创作者吗？",
+    "dialog_prompt": "curious, thoughtful tone, raising a genuine question"
+  },
+  {
+    "voice_name": "sage",
+    "input_text": "是的。AI 在写作、视频剪辑、平面设计甚至音乐制作上，都可以提供初稿或灵感。比如，作家可以用 AI 生成大纲，再根据自己的风格修改。",
+    "dialog_prompt": "calm, knowledgeable, explanatory tone"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "不过，很多人担心这样会让作品缺乏个人特色。你们觉得 AI 在创作中最大的风险是什么？",
+    "dialog_prompt": "thoughtful, reflective question"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "我认为风险在于过度依赖。如果所有人都只用 AI 输出，而没有加入自己的独特视角，那么内容可能会出现同质化，这就是挑战。",
+    "dialog_prompt": "cautionary, reflective tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "这让我想到，AI 能否带来更多创造力？还是它只是帮我们把想法更快落地？",
+    "dialog_prompt": "curious, exploratory tone"
+  },
+  {
+    "voice_name": "sage",
+    "input_text": "其实 AI 擅长的是扩展思路，它能在短时间生成几十个不同的选项。创作者只需选择并加工，这样反而会激发更多灵感，而非取代。",
+    "dialog_prompt": "reassuring, analytical tone"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那在企业或营销方面呢？很多品牌现在用 AI 生成社交媒体内容，你们觉得这样会影响用户的信任感吗？",
+    "dialog_prompt": "thoughtful, business-oriented tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "很好的问题。透明度很重要。企业若完全隐藏 AI 的参与，可能会让观众觉得缺乏真实感。但如果坦诚说明，这其实能展示创新和效率。",
+    "dialog_prompt": "balanced, explanatory tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "听起来，AI 在创作中既是助手也是考验。那未来十年，它会把我们带向怎样的创作趋势呢？",
+    "dialog_prompt": "imaginative, thought-provoking tone"
+  },
+  {
+    "voice_name": "sage",
+    "input_text": "未来趋势可能是‘人类创意 + AI 工具’的深度融合。创作者用 AI 减轻繁琐任务，从而更专注于策略、艺术表达和情感传递。",
+    "dialog_prompt": "optimistic, visionary tone"
+  },
+  {
+    "voice_name": "nova",
+    "input_text": "没错，AI 的价值不在于替代，而是在于赋能。它帮助我们跨越瓶颈，为创作者留出更多时间去打磨真正独特的作品。这才是未来创新的关键。",
+    "dialog_prompt": "encouraging, conclusive tone"
+  }
+]
