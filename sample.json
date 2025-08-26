@@ -1,6 +1,6 @@
 [
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "What does sustainability mean in society?",
     "dialog_prompt": "Question about sustainability definition."
   },
@@ -10,7 +10,7 @@
     "dialog_prompt": "Answer explaining sustainability."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "How does sustainability contribute to a harmonious society?",
     "dialog_prompt": "Question about sustainability and harmony."
   },
@@ -20,17 +20,17 @@
     "dialog_prompt": "Answer explaining sustainability's role in harmony."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "What are some examples of sustainable practices in daily life?",
     "dialog_prompt": "Question about practical sustainability examples."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "Reducing single-use plastics; Conserving energy and water; Recycling and composting; Using public transport or cycling; Supporting local and eco-friendly businesses.",
     "dialog_prompt": "Answer listing sustainable practices."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "Why is social harmony important in sustainability?",
     "dialog_prompt": "Question about social harmony in sustainability."
   },
@@ -40,7 +40,7 @@
     "dialog_prompt": "Answer explaining why social harmony matters."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "What role does education play in building a sustainable and harmonious society?",
     "dialog_prompt": "Question about education's role in sustainability."
   },
@@ -50,7 +50,7 @@
     "dialog_prompt": "Answer explaining education's role."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "How can technology support sustainability and harmony?",
     "dialog_prompt": "Question about technology's role."
   },
@@ -60,7 +60,7 @@
     "dialog_prompt": "Answer explaining technology's impact."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "What is the link between climate change and social harmony?",
     "dialog_prompt": "Question about climate change and harmony."
   },
@@ -70,7 +70,7 @@
     "dialog_prompt": "Answer explaining climate change link."
   },
   {
-    "voice_name": "onxy",
+    "voice_name": "onyx",
     "input_text": "How can individuals contribute to a harmonious society?",
     "dialog_prompt": "Question about individual contributions."
   },
