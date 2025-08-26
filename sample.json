@@ -1,5 +1,4 @@
-{
-  "dialog": [
+[
     {
       "voice_name": "nova",
       "input_text": "欢迎来到可持续性座谈会，我们将一起探讨可持续发展的重要性及其在社会和企业中的应用。",
@@ -91,4 +90,3 @@
       "dialog_prompt": "warm, hopeful, and inspiring tone for a positive closing statement"
     }
   ]
-}
