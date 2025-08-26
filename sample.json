@@ -21,16 +21,6 @@
   },
   {
     "voice_name": "onyx",
-    "input_text": "What are some examples of sustainable practices in daily life?",
-    "dialog_prompt": "Question about practical sustainability examples."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "Reducing single-use plastics; Conserving energy and water; Recycling and composting; Using public transport or cycling; Supporting local and eco-friendly businesses.",
-    "dialog_prompt": "Answer listing sustainable practices."
-  },
-  {
-    "voice_name": "onyx",
     "input_text": "Why is social harmony important in sustainability?",
     "dialog_prompt": "Question about social harmony in sustainability."
   },
