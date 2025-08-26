@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogPrompt.value = '';
     }
     
+    // Modify the addDialogToContainer function to include delete button event listener
     function addDialogToContainer(entry, index) {
         const dialogElement = document.createElement('div');
         dialogElement.className = `dialog-bubble ${index % 2 === 0 ? 'user' : 'ai'}`;
@@ -96,7 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="mb-1">${entry.input_text}</p>
                     <small class="text-muted">Voice: ${entry.voice_name}</small>
                 </div>
-                <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
+                    <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
+                </div>
             </div>
         `;
         
@@ -106,9 +110,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         dialogContainer.appendChild(dialogElement);
         
-        // Add event listener to the play button
+        // Add event listeners
         dialogElement.querySelector('.play-btn').addEventListener('click', function() {
             playDialogItem(index);
+        });
+        
+        // Add delete button event listener
+        dialogElement.querySelector('.delete-btn').addEventListener('click', function() {
+            deleteDialogItem(index);
         });
     }
     
@@ -117,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
             dialogData = [];
             dialogContainer.innerHTML = '<p class="text-center text-muted mt-4">Your dialog will appear here</p>';
             stopPlayback();
+            audioElements = [];
+            playAllBtn.disabled = true;
         }
     }
     
@@ -234,6 +245,36 @@ document.addEventListener('DOMContentLoaded', function() {
         const speed = playbackSpeed.value;
         // In a real implementation, this would update the playback rate of audio elements
         console.log(`Playback speed set to: ${speed}x`);
+    }
+
+    // Add this function to handle dialog deletion
+    function deleteDialogItem(index) {
+        if (confirm('Are you sure you want to delete this dialog entry?')) {
+            // Remove from dialogData array
+            dialogData.splice(index, 1);
+            
+            // Rebuild the dialog container
+            rebuildDialogContainer();
+            
+            // Reset audio elements if they exist
+            if (audioElements.length > 0) {
+                audioElements = [];
+                playAllBtn.disabled = true;
+            }
+        }
+    }
+
+    // Add this function to rebuild the dialog container
+    function rebuildDialogContainer() {
+        dialogContainer.innerHTML = '';
+        if (dialogData.length === 0) {
+            dialogContainer.innerHTML = '<p class="text-center text-muted mt-4">Your dialog will appear here</p>';
+            return;
+        }
+        
+        dialogData.forEach((entry, index) => {
+            addDialogToContainer(entry, index);
+        });
     }
 
     addDialogModalBtn.addEventListener('click', function() {

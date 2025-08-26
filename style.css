@@ -77,6 +77,14 @@ body {
     color: #8e44ad;
     transform: scale(1.1);
 }
+.delete-btn {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.delete-btn:hover {
+    color: #dc3545 !important;
+    transform: scale(1.1);
+}
 .highlight {
     background-color: rgba(108, 92, 231, 0.1);
     transition: background-color 0.3s;
