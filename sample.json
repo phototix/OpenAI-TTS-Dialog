@@ -1,62 +1,297 @@
 [
   {
     "voice_name": "onyx",
-    "input_text": "Hey everyone, welcome to our casual chat! Today, we're diving into how I've been using AI to boost my programming skills. It's been quite the game-changer!",
-    "dialog_prompt": "curious, thoughtful, and welcoming tone as a host introducing the topic"
+    "input_text": "Hey friends, welcome back! Today I wanted to spill some tea: I’ve been using AI to level up my programming skills.",
+    "dialog_prompt": "host opening, curious, playful tone"
   },
   {
     "voice_name": "alloy",
-    "input_text": "That sounds interesting, Onyx. How exactly are you using AI? I've been curious but a bit hesitant to dive in.",
-    "dialog_prompt": "steady, gentle, and supportive tone as a friend"
+    "input_text": "Spill some tea? Onyx, you sound like my niece. But okay, tell us, how’s it going?",
+    "dialog_prompt": "gentle, teasing"
   },
   {
     "voice_name": "fable",
-    "input_text": "Oh, I've been using AI code assistants for months now. They're fantastic for generating boilerplate code and catching bugs early!",
-    "dialog_prompt": "tech-savvy, enthusiastic, and knowledgeable tone"
+    "input_text": "AI for programming? Man, I swear by it. It’s like having a co-worker who doesn’t complain about deadlines.",
+    "dialog_prompt": "confident, amused"
   },
   {
     "voice_name": "echo",
-    "input_text": "Really? I'm a bit skeptical. Doesn't relying on AI make you lazy or less skilled in the long run?",
-    "dialog_prompt": "skeptical but genuinely interested and questioning tone"
+    "input_text": "Wait, really? I don’t trust it yet. Half the time AI sounds like my cousin bragging and then giving nonsense advice.",
+    "dialog_prompt": "skeptical, witty"
   },
   {
     "voice_name": "coral",
-    "input_text": "I'm new to this too. I tried an AI tool last week, and it helped me understand a complex algorithm I was struggling with!",
-    "dialog_prompt": "excited, novice tone with a hint of enthusiasm"
+    "input_text": "Haha, Echo, true, but at least AI doesn’t ghost you after lunch. Ahem… unlike some real coworkers.",
+    "dialog_prompt": "playful jab"
   },
   {
     "voice_name": "onyx",
-    "input_text": "That's great, Coral! For me, it's like having a mentor that's available 24/7. It suggests improvements I wouldn't have thought of.",
-    "dialog_prompt": "thoughtful and reflective, sharing personal experience"
+    "input_text": "Ooooh, gossip alert! Who’s disappearing after lunch, Coral?",
+    "dialog_prompt": "teasing, cheerful"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Not naming names, but someone mysteriously takes ‘coffee breaks’ that last an hour…",
+    "dialog_prompt": "cheeky, half-joking"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Haha, busted. Not me though—my coffee machine broke, so I’ve been in caffeine rehab.",
+    "dialog_prompt": "lighthearted"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Imagine Fable without caffeine… like an IDE without syntax highlighting.",
+    "dialog_prompt": "sarcastic joke"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Speaking of IDEs, that’s where AI’s been most helpful for me—it fills in boilerplate code before I even blink.",
+    "dialog_prompt": "informative, enthusiastic"
   },
   {
     "voice_name": "alloy",
-    "input_text": "I can see how that would be helpful. Do you think it adapts to your coding style over time?",
-    "dialog_prompt": "gentle, curious, and engaged tone"
+    "input_text": "Doesn’t that feel like… cheating? Or maybe just productivity boosted?",
+    "dialog_prompt": "steady, thoughtful"
   },
   {
-    "voice_name": "fable",
-    "input_text": "Absolutely! The more you use it, the better it gets at understanding your preferences. It's almost like pair programming.",
-    "dialog_prompt": "confident and informative, as a seasoned user"
-  },
-  {
-    "voice_name": "echo",
-    "input_text": "Hmm, I might have to give it a try then. Any tools you'd recommend for a beginner like me?",
-    "dialog_prompt": "skeptical but open-minded, showing interest"
+    "voice_name": "onyx",
+    "input_text": "Productivity! And definitely sanity-saving. Debugging at 2am feels less lonely when AI is whispering, ‘Hey, you forgot a semicolon.’",
+    "dialog_prompt": "casual, humorous"
   },
   {
     "voice_name": "coral",
-    "input_text": "I started with GitHub Copilot. It's user-friendly and integrates well with my IDE. It even explains code snippets!",
-    "dialog_prompt": "friendly, encouraging, and sharing personal success"
+    "input_text": "Totally! I asked it to teach me recursion, and it explained it with cat memes in comments. Best. Lesson. Ever.",
+    "dialog_prompt": "excited, silly"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Oh man, I once asked AI to write a regex for email validation. It gave me something scarier than my ex’s text messages.",
+    "dialog_prompt": "playful joke"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Regex is a curse anyway. AI can’t save us from that dark dimension.",
+    "dialog_prompt": "sarcastic but funny"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "Speaking of curses… anyone else notice how AI sometimes acts overconfident? Like that one friend who gives directions but gets you lost?",
+    "dialog_prompt": "gentle humor"
   },
   {
     "voice_name": "onyx",
-    "input_text": "I agree with Coral. It's a good starting point. Just remember, it's a tool to enhance, not replace, your skills.",
-    "dialog_prompt": "thoughtful, balanced, and mentoring tone"
+    "input_text": "Haha, story of my life last week. I trusted an AI suggestion and my program ran slower than me on a Monday morning.",
+    "dialog_prompt": "funny, relatable"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Hey, Monday mornings are sacred nap time!",
+    "dialog_prompt": "teasing tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Nah, nap time is Friday meetings. Nobody listens anyway.",
+    "dialog_prompt": "cheeky joke"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Facts. I survived last Friday’s meeting by doodling flowcharts of imaginary apps.",
+    "dialog_prompt": "casual, witty"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "At least you didn’t doodle your boss. Last time someone did, it was… awkward.",
+    "dialog_prompt": "gentle, amused storytelling"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Well, that's all the time we have for today! Thanks for joining this chat about AI and programming. Keep exploring, and I'll catch you next time!",
-    "dialog_prompt": "warm, reflective, and closing tone as a host wrapping up"
+    "input_text": "Haha, okay, but back to AI—Echo, would you ever try it, or are you waiting until it becomes your manager?",
+    "dialog_prompt": "teasing host tone"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "If AI becomes my manager, at least it won’t send me vague emails like: ‘Let’s circle back’.",
+    "dialog_prompt": "joking complaint"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "True, AI’s emails are short and brutal. Like, ‘syntax wrong.’ Period.",
+    "dialog_prompt": "playful"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Okay but real talk—AI has actually taught me shortcuts I never knew. Like, I didn’t know half those Python libraries existed.",
+    "dialog_prompt": "reflective, informative"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "That’s encouraging. It sounds less like cheating, more like mentorship.",
+    "dialog_prompt": "gentle, thoughtful"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Exactly! It’s like having a patient senior dev… who also happens to know *every* Stack Overflow answer.",
+    "dialog_prompt": "warm, humorous"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Wait, patient senior devs exist? That’s rare.",
+    "dialog_prompt": "sarcastic"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Don’t expose us like that, Echo!",
+    "dialog_prompt": "laughing, playful"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Okay but sometimes AI gives messy code and then gaslights you like: ‘This is optimal.’",
+    "dialog_prompt": "half-joking, sarcastic"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "True, it gave me a solution once and my laptop cried louder than Coral after losing her bug fix unsaved.",
+    "dialog_prompt": "teasing humor"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Excuse me! That was a single tear—okay fine, it was dramatic.",
+    "dialog_prompt": "mock-defensive"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "We’ve all had that one bug that made us emotional. AI or no AI.",
+    "dialog_prompt": "calming, steady"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Yup. My emotional support snack during debugging is instant noodles.",
+    "dialog_prompt": "casual"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Bro, same! Except I sprinkle chili until I forget my program exists.",
+    "dialog_prompt": "funny exaggeration"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Meanwhile I just whisper to my AI buddy: ‘Explain this bug like I’m five.’ And it does.",
+    "dialog_prompt": "playful"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Jealous. Mine explains like I’m doing a PhD. So condescending!",
+    "dialog_prompt": "complaining humor"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "Maybe you need to phrase it like a child. Ask it with, like, baby grammar?",
+    "dialog_prompt": "gentle, joking"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Coral typing to AI: ‘Me no understand. Bug scary.’",
+    "dialog_prompt": "mocking, joking"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Stoppp, I can’t! I actually want to try that now.",
+    "dialog_prompt": "giggling"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Whatever works! Honestly though, AI made me less scared of tackling new frameworks.",
+    "dialog_prompt": "reflective"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Yep. I jumped into Rust because AI made the learning curve less of a cliff.",
+    "dialog_prompt": "enthusiastic"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Hmm, maybe it’s time I stop roasting and start testing. But I’m blaming y’all if I break my laptop.",
+    "dialog_prompt": "reluctant but playful"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "You won’t break it. Just don’t copy blindly. Think of it as a brainstorming partner.",
+    "dialog_prompt": "steady, wise"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Yes! Like a lab partner in school who did all the heavy lifting. Bless those people.",
+    "dialog_prompt": "nostalgic humor"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "I was never that partner… I was the snack provider.",
+    "dialog_prompt": "jokingly modest"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Snack providers are heroes. No snacks, no motivation.",
+    "dialog_prompt": "lighthearted"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Snack > Code sometimes. That’s the truth.",
+    "dialog_prompt": "casual, humorous"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "Okay, serious moment—do you think AI will change how juniors learn coding?",
+    "dialog_prompt": "thoughtful"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Definitely. They’ll learn faster, but they need mentors reminding them to still think critically.",
+    "dialog_prompt": "serious, balanced"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "It’s like calculators didn’t kill math—they just saved us from brain cramps.",
+    "dialog_prompt": "cheerful analogy"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Exactly. And who doesn’t want fewer cramps?",
+    "dialog_prompt": "joking"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "I want fewer meetings. AI, please cancel them all.",
+    "dialog_prompt": "humorous wish"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Haha, if only! Alright folks, we’re wrapping this up soon.",
+    "dialog_prompt": "warm, host closing"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "This was refreshing. I might actually try using AI this week.",
+    "dialog_prompt": "gentle, optimistic"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "Same—except maybe not while I’m hangry. AI can’t solve that.",
+    "dialog_prompt": "funny closer"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "I’ll cheer you on with chili noodles.",
+    "dialog_prompt": "playful, casual"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "And I’ll cheer you on by doubting everything. Balance restored.",
+    "dialog_prompt": "sarcastic closer"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "Perfect ending. Thanks everyone for joining this chat on AI and programming. Till next time—code smart, snack smarter!",
+    "dialog_prompt": "warm, final closing"
   }
 ]
