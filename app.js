@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pauseBtn = document.getElementById('pauseBtn');
     const stopBtn = document.getElementById('stopBtn');
     const playbackSpeed = document.getElementById('playbackSpeed');
+    const addDialogModalBtn = document.getElementById('addDialogModalBtn');
     
     // Dialog data storage
     let dialogData = [];
@@ -234,4 +235,30 @@ document.addEventListener('DOMContentLoaded', function() {
         // In a real implementation, this would update the playback rate of audio elements
         console.log(`Playback speed set to: ${speed}x`);
     }
+
+    addDialogModalBtn.addEventListener('click', function() {
+        const voice = document.getElementById('voiceSelectModal').value;
+        const prompt = document.getElementById('dialogPromptModal').value;
+        const text = document.getElementById('inputTextModal').value;
+        
+        if (!text.trim()) {
+            alert('Please enter some text for the dialog.');
+            return;
+        }
+        
+        const newEntry = {
+            voice_name: voice,
+            input_text: text,
+            dialog_prompt: prompt || `Dialog entry ${dialogData.length + 1}`
+        };
+        
+        dialogData.push(newEntry);
+        addDialogToContainer(newEntry, dialogData.length - 1);
+        
+        // Clear modal fields and close
+        document.getElementById('dialogPromptModal').value = '';
+        document.getElementById('inputTextModal').value = '';
+        var modal = bootstrap.Modal.getInstance(document.getElementById('addDialogModal'));
+        modal.hide();
+    });
 });
