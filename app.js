@@ -32,9 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Functions
     async function loadSampleDialog() {
+        const timestamp = new Date().getTime();
+        
         try {
             // Fetch the sample.json file
-            const response = await fetch('sample.json');
+            const response = await fetch(`sample.json?t=${timestamp}`);
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
