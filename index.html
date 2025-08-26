@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Speech Builder - Dialog TTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold"><i class="fas fa-user me-2"></i>Speech Builder</h1>
+            <p class="lead">Convert dialog to Text-to-Speech with OpenAI voices</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-plus-circle me-2"></i>Add Dialog Entry</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label voice-label">OpenAI API Key</label>
+                            <input type="password" class="form-control" id="apiKey" 
+                                placeholder="Enter your OpenAI API key">
+                            <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label voice-label">Select Voice</label>
+                            <select class="form-select voice-select" id="voiceSelect">
+                                <option value="alloy">Alloy (Female)</option>
+                                <option value="coral">Coral (Female)</option>
+                                <option value="echo" selected>Echo (Male)</option>
+                                <option value="fable">Fable (Male)</option>
+                                <option value="nova">Nova (Female)</option>
+                                <option value="onyx">Onyx (Male)</option>
+                                <option value="sage">Sage (Female)</option>
+                                <option value="shimmer">Shimmer (Female)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label voice-label">Dialog Prompt</label>
+                            <input type="text" class="form-control" id="dialogPrompt" placeholder="E.g., Question about sustainability">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label voice-label">Input Text</label>
+                            <textarea class="form-control" id="inputText" rows="3" placeholder="Enter text to convert to speech..."></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100" id="addDialogBtn">
+                            <i class="fas fa-plus me-2"></i>Add to Dialog
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0"><i class="fas fa-music me-2"></i>Playback Controls</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary" id="playAllBtn">
+                                <i class="fas fa-play me-2"></i>Play All
+                            </button>
+                            <button class="btn btn-outline-secondary" id="pauseBtn">
+                                <i class="fas fa-pause me-2"></i>Pause
+                            </button>
+                            <button class="btn btn-outline-danger" id="stopBtn">
+                                <i class="fas fa-stop me-2"></i>Stop
+                            </button>
+                        </div>
+                        <div class="mt-3">
+                            <label class="form-label voice-label">Playback Speed</label>
+                            <input type="range" class="form-range" min="0.5" max="2" step="0.1" value="1" id="playbackSpeed">
+                            <div class="d-flex justify-content-between">
+                                <small>0.5x</small>
+                                <small>1x</small>
+                                <small>2x</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0"><i class="fas fa-comments me-2"></i>Dialog Preview</h5>
+                        <button class="btn btn-sm btn-outline-danger" id="clearDialogBtn">
+                            <i class="fas fa-trash me-1"></i>Clear All
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="dialog-container" id="dialogContainer">
+                            <p class="text-center text-muted mt-4">Your dialog will appear here</p>
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button class="btn btn-primary" id="generateBtn">
+                                <i class="fas fa-bolt me-2"></i>Generate TTS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer text-center mt-5">
+        <div class="container">
+            <p>AI Speech Builder &copy; 2025 | Developed by WebbyPage</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+    </script>
+</body>
+</html>
