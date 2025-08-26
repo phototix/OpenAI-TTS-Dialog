@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const stopBtn = document.getElementById('stopBtn');
     const playbackSpeed = document.getElementById('playbackSpeed');
     const addDialogModalBtn = document.getElementById('addDialogModalBtn');
+
+    const leftColumn = document.getElementById('leftColumn');
+    const rightColumn = document.getElementById('rightColumn');
     
     // Dialog data storage
     let dialogData = [];
@@ -96,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div>
                     <strong>${entry.dialog_prompt}</strong>
                     <p class="mb-1">${entry.input_text}</p>
-                    <small class="text-muted">Voice: ${entry.voice_name}</small>
+                    <small class="text-muted">${entry.voice_name}</small>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
@@ -285,10 +288,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function pausePlayback() {
         // This would need additional audio control implementation
-        alert('Pause functionality requires additional audio control implementation');
         currentPlayingIndex = -1;
         const items = dialogContainer.querySelectorAll('.dialog-bubble');
         items.forEach(item => item.classList.remove('highlight'));
+
+        leftColumn.style.display = 'none';
+        rightColumn.style.width = '100%';
+
     }
 
     function stopPlayback() {
