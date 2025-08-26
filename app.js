@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load sample dialog
     loadSampleDialog();
+    initializeSpeakerAvatars();
     
     // Event Listeners
     clearDialogBtn.addEventListener('click', clearDialog);
@@ -120,7 +121,58 @@ document.addEventListener('DOMContentLoaded', function() {
             deleteDialogItem(index);
         });
     }
-    
+
+    // Add this function to initialize speaker avatars
+    function initializeSpeakerAvatars() {
+        // Map voice names to avatar images (you can replace with actual images)
+        speakerAvatars = {
+            'alloy': 'https://placehold.co/128',
+            'coral': 'https://placehold.co/128',
+            'echo': 'https://placehold.co/128',
+            'fable': 'https://placehold.co/128',
+            'nova': 'https://placehold.co/128',
+            'onyx': 'https://placehold.co/128',
+            'sage': 'https://placehold.co/128',
+            'shimmer': 'https://placehold.co/128'
+        };
+        
+        renderSpeakerAvatars();
+    }
+
+    // Function to render all speaker avatars
+    function renderSpeakerAvatars() {
+        const speakersRow = document.getElementById('speakersRow');
+        speakersRow.innerHTML = '';
+        
+        Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
+            const speakerItem = document.createElement('div');
+            speakerItem.className = 'speaker-item';
+            speakerItem.innerHTML = `
+                <img src="${avatarUrl}" 
+                    alt="${voiceName}" 
+                    class="speaker-avatar"
+                    data-voice="${voiceName}"
+                    title="${voiceName}">
+                <div class="speaker-name">${voiceName}</div>
+            `;
+            speakersRow.appendChild(speakerItem);
+        });
+    }
+
+    // Function to update active speaker during playback
+    function updateActiveSpeaker(voiceName) {
+        // Remove active class from all avatars
+        document.querySelectorAll('.speaker-avatar').forEach(avatar => {
+            avatar.classList.remove('active', 'playing', 'wave-animation');
+        });
+        
+        // Add active class to current speaker
+        const currentAvatar = document.querySelector(`.speaker-avatar[data-voice="${voiceName}"]`);
+        if (currentAvatar) {
+            currentAvatar.classList.add('active', 'playing', 'wave-animation');
+        }
+    }
+
     function clearDialog() {
         if (confirm('Are you sure you want to clear all dialog entries?')) {
             dialogData = [];
@@ -196,6 +248,11 @@ document.addEventListener('DOMContentLoaded', function() {
             stopPlayback();
             return;
         }
+    
+        const currentEntry = dialogData[index];
+        
+        // Update active speaker avatar
+        updateActiveSpeaker(currentEntry.voice_name);
         
         // Highlight the playing item
         const items = dialogContainer.querySelectorAll('.dialog-bubble');
@@ -239,6 +296,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const items = dialogContainer.querySelectorAll('.dialog-bubble');
         items.forEach(item => item.classList.remove('highlight'));
         // Additional audio stopping logic would be needed
+    
+        // Remove active classes from avatars
+        document.querySelectorAll('.speaker-avatar').forEach(avatar => {
+            avatar.classList.remove('active', 'playing', 'wave-animation');
+        });
     }
     
     function updatePlaybackSpeed() {
