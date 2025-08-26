@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const generateBtn = document.getElementById('generateBtn');
     const playAllBtn = document.getElementById('playAllBtn');
     const hideBtn = document.getElementById('hideBtn');
+    const showBtn = document.getElementById('showBtn');
     const stopBtn = document.getElementById('stopBtn');
     const playbackSpeed = document.getElementById('playbackSpeed');
     const addDialogModalBtn = document.getElementById('addDialogModalBtn');
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     generateBtn.addEventListener('click', generateTTS);
     playAllBtn.addEventListener('click', playAllDialog);
     hideBtn.addEventListener('click', hideWebUI);
+    showBtn.addEventListener('click', showWebUI);
     stopBtn.addEventListener('click', stopPlayback);
     playbackSpeed.addEventListener('input', updatePlaybackSpeed);
     
@@ -101,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p class="mb-1">${entry.input_text}</p>
                     <small class="text-muted">${entry.voice_name}</small>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2 items-group-btn">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
                     <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
                 </div>
@@ -289,6 +291,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function hideWebUI() {
         leftColumn.style.display = 'none';
         rightColumn.style.width = '100%';
+        clearDialogBtn.style.display = 'none';
+        showBtn.style.display = '';
+        document.querySelectorAll('.items-group-btn').forEach(el => {
+            el.style.display = 'none';
+        });
+    }
+    
+    function showWebUI() {
+        leftColumn.style.display = '';
+        rightColumn.style.width = '50%';
+        clearDialogBtn.style.display = '';
+        showBtn.style.display = 'none';
+        document.querySelectorAll('.items-group-btn').forEach(el => {
+            el.style.display = '';
+        });
     }
 
     function stopPlayback() {
