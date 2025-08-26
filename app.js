@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateSingleTTS(entry, apiKey) {
+        console.log(entry.dialog_prompt);
         const response = await fetch('https://api.openai.com/v1/audio/speech', {
             method: 'POST',
             headers: {
