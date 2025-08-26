@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const clearDialogBtn = document.getElementById('clearDialogBtn');
     const generateBtn = document.getElementById('generateBtn');
     const playAllBtn = document.getElementById('playAllBtn');
-    const pauseBtn = document.getElementById('pauseBtn');
+    const hideBtn = document.getElementById('hideBtn');
     const stopBtn = document.getElementById('stopBtn');
     const playbackSpeed = document.getElementById('playbackSpeed');
     const addDialogModalBtn = document.getElementById('addDialogModalBtn');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clearDialogBtn.addEventListener('click', clearDialog);
     generateBtn.addEventListener('click', generateTTS);
     playAllBtn.addEventListener('click', playAllDialog);
-    pauseBtn.addEventListener('click', pausePlayback);
+    hideBtn.addEventListener('click', hideWebUI);
     stopBtn.addEventListener('click', stopPlayback);
     playbackSpeed.addEventListener('input', updatePlaybackSpeed);
     
@@ -286,15 +286,9 @@ document.addEventListener('DOMContentLoaded', function() {
         playDialogItem(0);
     }
     
-    function pausePlayback() {
-        // This would need additional audio control implementation
-        currentPlayingIndex = -1;
-        const items = dialogContainer.querySelectorAll('.dialog-bubble');
-        items.forEach(item => item.classList.remove('highlight'));
-
+    function hideWebUI() {
         leftColumn.style.display = 'none';
         rightColumn.style.width = '100%';
-
     }
 
     function stopPlayback() {
