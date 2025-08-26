@@ -1,297 +1,297 @@
 [
   {
     "voice_name": "onyx",
-    "input_text": "Hey friends, welcome back! Today I wanted to spill some tea: I’ve been using AI to level up my programming skills.",
-    "dialog_prompt": "host opening, curious, playful tone"
+    "input_text": "嘿，朋友们，欢迎回来！今天我要爆点料：我一直在用 AI 来提升我的编程技能。",
+    "dialog_prompt": "主持人开场，好奇，俏皮语气"
   },
   {
     "voice_name": "alloy",
-    "input_text": "Spill some tea? Onyx, you sound like my niece. But okay, tell us, how’s it going?",
-    "dialog_prompt": "gentle, teasing"
+    "input_text": "爆料？Onyx，你听起来像我侄女。不过好吧，说说看，进展如何？",
+    "dialog_prompt": "温和，打趣"
   },
   {
     "voice_name": "fable",
-    "input_text": "AI for programming? Man, I swear by it. It’s like having a co-worker who doesn’t complain about deadlines.",
-    "dialog_prompt": "confident, amused"
+    "input_text": "用 AI 编程？老兄，我发誓它真香。就像有个同事，永远不会抱怨截止日期。",
+    "dialog_prompt": "自信，带点好笑"
   },
   {
     "voice_name": "echo",
-    "input_text": "Wait, really? I don’t trust it yet. Half the time AI sounds like my cousin bragging and then giving nonsense advice.",
-    "dialog_prompt": "skeptical, witty"
+    "input_text": "等等，真的吗？我还不信它呢。一半时间 AI 听起来像我表哥在吹牛，然后给出一堆废话建议。",
+    "dialog_prompt": "怀疑，机智"
   },
   {
     "voice_name": "coral",
-    "input_text": "Haha, Echo, true, but at least AI doesn’t ghost you after lunch. Ahem… unlike some real coworkers.",
-    "dialog_prompt": "playful jab"
+    "input_text": "哈哈，Echo，有道理，但至少 AI 不会像某些同事午饭后直接消失。咳咳……某人你懂的。",
+    "dialog_prompt": "调侃"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Ooooh, gossip alert! Who’s disappearing after lunch, Coral?",
-    "dialog_prompt": "teasing, cheerful"
+    "input_text": "哎哟，八卦预警！Coral，谁午饭后消失啊？",
+    "dialog_prompt": "打趣，活泼"
   },
   {
     "voice_name": "coral",
-    "input_text": "Not naming names, but someone mysteriously takes ‘coffee breaks’ that last an hour…",
-    "dialog_prompt": "cheeky, half-joking"
+    "input_text": "不点名，但有人‘喝咖啡’能喝一个小时……",
+    "dialog_prompt": "坏笑，半开玩笑"
   },
   {
     "voice_name": "fable",
-    "input_text": "Haha, busted. Not me though—my coffee machine broke, so I’ve been in caffeine rehab.",
-    "dialog_prompt": "lighthearted"
+    "input_text": "哈哈，被抓包了。不过不是我——我的咖啡机坏了，所以我在戒咖啡。",
+    "dialog_prompt": "轻松幽默"
   },
   {
     "voice_name": "echo",
-    "input_text": "Imagine Fable without caffeine… like an IDE without syntax highlighting.",
-    "dialog_prompt": "sarcastic joke"
+    "input_text": "想象一下没有咖啡的 Fable……就像一个 IDE 没有语法高亮。",
+    "dialog_prompt": "讽刺段子"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Speaking of IDEs, that’s where AI’s been most helpful for me—it fills in boilerplate code before I even blink.",
-    "dialog_prompt": "informative, enthusiastic"
+    "input_text": "说到 IDE，这就是 AI 最帮我的地方——它在我眨眼之前就把模板代码补好了。",
+    "dialog_prompt": "信息型，兴奋"
   },
   {
     "voice_name": "alloy",
-    "input_text": "Doesn’t that feel like… cheating? Or maybe just productivity boosted?",
-    "dialog_prompt": "steady, thoughtful"
+    "input_text": "不会觉得……像作弊吗？还是说只是生产力暴增？",
+    "dialog_prompt": "平稳，思考"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Productivity! And definitely sanity-saving. Debugging at 2am feels less lonely when AI is whispering, ‘Hey, you forgot a semicolon.’",
-    "dialog_prompt": "casual, humorous"
+    "input_text": "生产力！而且绝对救命。凌晨两点调试的时候，有 AI 在旁边低语‘嘿，你忘了分号’的时候，孤独感少好多。",
+    "dialog_prompt": "随意，幽默"
   },
   {
     "voice_name": "coral",
-    "input_text": "Totally! I asked it to teach me recursion, and it explained it with cat memes in comments. Best. Lesson. Ever.",
-    "dialog_prompt": "excited, silly"
+    "input_text": "太懂了！我让它教我递归，它居然用猫咪梗图写在注释里。史上最棒的课程！",
+    "dialog_prompt": "兴奋，搞怪"
   },
   {
     "voice_name": "fable",
-    "input_text": "Oh man, I once asked AI to write a regex for email validation. It gave me something scarier than my ex’s text messages.",
-    "dialog_prompt": "playful joke"
+    "input_text": "我有次让 AI 帮我写个邮箱验证的正则。结果它给的东西比我前任的短信还恐怖。",
+    "dialog_prompt": "玩笑"
   },
   {
     "voice_name": "echo",
-    "input_text": "Regex is a curse anyway. AI can’t save us from that dark dimension.",
-    "dialog_prompt": "sarcastic but funny"
+    "input_text": "正则本来就是诅咒，AI 也救不了咱们。",
+    "dialog_prompt": "讽刺又搞笑"
   },
   {
     "voice_name": "alloy",
-    "input_text": "Speaking of curses… anyone else notice how AI sometimes acts overconfident? Like that one friend who gives directions but gets you lost?",
-    "dialog_prompt": "gentle humor"
+    "input_text": "说到诅咒……你们有没有发现 AI 有时候超自信？就像那个指路还带你迷路的朋友。",
+    "dialog_prompt": "温和幽默"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Haha, story of my life last week. I trusted an AI suggestion and my program ran slower than me on a Monday morning.",
-    "dialog_prompt": "funny, relatable"
+    "input_text": "哈哈，上周就是我的惨痛经历。我信了 AI 的建议，结果程序跑得比我周一早晨还慢。",
+    "dialog_prompt": "搞笑，能引起共鸣"
   },
   {
     "voice_name": "coral",
-    "input_text": "Hey, Monday mornings are sacred nap time!",
-    "dialog_prompt": "teasing tone"
+    "input_text": "嘿，周一早晨可是神圣的午睡时间！",
+    "dialog_prompt": "打趣"
   },
   {
     "voice_name": "fable",
-    "input_text": "Nah, nap time is Friday meetings. Nobody listens anyway.",
-    "dialog_prompt": "cheeky joke"
+    "input_text": "不，午睡时间是周五的会议。反正没人听。",
+    "dialog_prompt": "坏笑段子"
   },
   {
     "voice_name": "echo",
-    "input_text": "Facts. I survived last Friday’s meeting by doodling flowcharts of imaginary apps.",
-    "dialog_prompt": "casual, witty"
+    "input_text": "事实。我上周五开会靠画虚构应用的流程图活下来的。",
+    "dialog_prompt": "随意，机智"
   },
   {
     "voice_name": "alloy",
-    "input_text": "At least you didn’t doodle your boss. Last time someone did, it was… awkward.",
-    "dialog_prompt": "gentle, amused storytelling"
+    "input_text": "至少你没画老板。上次有人这么干，场面太尴尬。",
+    "dialog_prompt": "温和，趣味叙述"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Haha, okay, but back to AI—Echo, would you ever try it, or are you waiting until it becomes your manager?",
-    "dialog_prompt": "teasing host tone"
+    "input_text": "哈哈，好了，说回 AI——Echo，你会不会试试它，还是等它升职当你经理？",
+    "dialog_prompt": "调侃主持风格"
   },
   {
     "voice_name": "echo",
-    "input_text": "If AI becomes my manager, at least it won’t send me vague emails like: ‘Let’s circle back’.",
-    "dialog_prompt": "joking complaint"
+    "input_text": "如果 AI 当我经理，至少不会发那种模糊邮件：‘回头聊一下’。",
+    "dialog_prompt": "抱怨式开玩笑"
   },
   {
     "voice_name": "coral",
-    "input_text": "True, AI’s emails are short and brutal. Like, ‘syntax wrong.’ Period.",
-    "dialog_prompt": "playful"
+    "input_text": "没错，AI 的邮件简短又直击灵魂。比如‘语法错误。’完事。",
+    "dialog_prompt": "搞笑"
   },
   {
     "voice_name": "fable",
-    "input_text": "Okay but real talk—AI has actually taught me shortcuts I never knew. Like, I didn’t know half those Python libraries existed.",
-    "dialog_prompt": "reflective, informative"
+    "input_text": "不过说真的，AI 还真教了我不少快捷技巧。我之前都不知道有一半 Python 库。",
+    "dialog_prompt": "反思，信息型"
   },
   {
     "voice_name": "alloy",
-    "input_text": "That’s encouraging. It sounds less like cheating, more like mentorship.",
-    "dialog_prompt": "gentle, thoughtful"
+    "input_text": "听起来挺鼓舞人心的。这更像是导师，而不是作弊。",
+    "dialog_prompt": "温和，深思"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Exactly! It’s like having a patient senior dev… who also happens to know *every* Stack Overflow answer.",
-    "dialog_prompt": "warm, humorous"
+    "input_text": "对啊！就像有个耐心的资深开发者……而且他知道所有 Stack Overflow 的答案。",
+    "dialog_prompt": "温暖，幽默"
   },
   {
     "voice_name": "echo",
-    "input_text": "Wait, patient senior devs exist? That’s rare.",
-    "dialog_prompt": "sarcastic"
+    "input_text": "等等，耐心的资深开发者真的存在吗？稀有啊。",
+    "dialog_prompt": "讽刺"
   },
   {
     "voice_name": "coral",
-    "input_text": "Don’t expose us like that, Echo!",
-    "dialog_prompt": "laughing, playful"
+    "input_text": "别揭穿我们啊，Echo！",
+    "dialog_prompt": "笑着打趣"
   },
   {
     "voice_name": "fable",
-    "input_text": "Okay but sometimes AI gives messy code and then gaslights you like: ‘This is optimal.’",
-    "dialog_prompt": "half-joking, sarcastic"
+    "input_text": "不过有时候 AI 代码写得一团乱，还一本正经地说：‘这最优解。’",
+    "dialog_prompt": "半开玩笑，讽刺"
   },
   {
     "voice_name": "onyx",
-    "input_text": "True, it gave me a solution once and my laptop cried louder than Coral after losing her bug fix unsaved.",
-    "dialog_prompt": "teasing humor"
+    "input_text": "真的，有次它给的方案跑完，我电脑哭得比 Coral 丢了没保存的 bug 修复还惨。",
+    "dialog_prompt": "搞笑调侃"
   },
   {
     "voice_name": "coral",
-    "input_text": "Excuse me! That was a single tear—okay fine, it was dramatic.",
-    "dialog_prompt": "mock-defensive"
+    "input_text": "喂！那只是掉了一滴泪——好吧，我承认有点戏剧化。",
+    "dialog_prompt": "假装辩解"
   },
   {
     "voice_name": "alloy",
-    "input_text": "We’ve all had that one bug that made us emotional. AI or no AI.",
-    "dialog_prompt": "calming, steady"
+    "input_text": "大家都有那个让自己情绪崩溃的 bug。不管有没有 AI。",
+    "dialog_prompt": "平稳，安抚"
   },
   {
     "voice_name": "echo",
-    "input_text": "Yup. My emotional support snack during debugging is instant noodles.",
-    "dialog_prompt": "casual"
+    "input_text": "没错。我调试时的情绪安慰零食就是泡面。",
+    "dialog_prompt": "随意"
   },
   {
     "voice_name": "fable",
-    "input_text": "Bro, same! Except I sprinkle chili until I forget my program exists.",
-    "dialog_prompt": "funny exaggeration"
+    "input_text": "兄弟，我也是！不过我会撒辣椒，辣到忘了程序还在崩。",
+    "dialog_prompt": "搞笑夸张"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Meanwhile I just whisper to my AI buddy: ‘Explain this bug like I’m five.’ And it does.",
-    "dialog_prompt": "playful"
+    "input_text": "而我只会跟 AI 小伙伴说：‘像五岁小孩那样解释这个 bug。’然后它就解释了。",
+    "dialog_prompt": "俏皮"
   },
   {
     "voice_name": "coral",
-    "input_text": "Jealous. Mine explains like I’m doing a PhD. So condescending!",
-    "dialog_prompt": "complaining humor"
+    "input_text": "羡慕！我那个解释得像在写博士论文，居高临下！",
+    "dialog_prompt": "抱怨式幽默"
   },
   {
     "voice_name": "alloy",
-    "input_text": "Maybe you need to phrase it like a child. Ask it with, like, baby grammar?",
-    "dialog_prompt": "gentle, joking"
+    "input_text": "也许你该用小孩口吻问它。比如用宝宝语法？",
+    "dialog_prompt": "温和，开玩笑"
   },
   {
     "voice_name": "echo",
-    "input_text": "Coral typing to AI: ‘Me no understand. Bug scary.’",
-    "dialog_prompt": "mocking, joking"
+    "input_text": "Coral 打字给 AI：‘我不懂。Bug 好可怕。’",
+    "dialog_prompt": "调侃，开玩笑"
   },
   {
     "voice_name": "coral",
-    "input_text": "Stoppp, I can’t! I actually want to try that now.",
-    "dialog_prompt": "giggling"
+    "input_text": "别说，我现在真想试试。",
+    "dialog_prompt": "咯咯笑"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Whatever works! Honestly though, AI made me less scared of tackling new frameworks.",
-    "dialog_prompt": "reflective"
+    "input_text": "不管怎样，能解决问题就行！老实说，AI 让我不再害怕新框架。",
+    "dialog_prompt": "反思"
   },
   {
     "voice_name": "fable",
-    "input_text": "Yep. I jumped into Rust because AI made the learning curve less of a cliff.",
-    "dialog_prompt": "enthusiastic"
+    "input_text": "对啊。我因为 AI，直接上手 Rust，不然学习曲线像悬崖。",
+    "dialog_prompt": "兴奋"
   },
   {
     "voice_name": "echo",
-    "input_text": "Hmm, maybe it’s time I stop roasting and start testing. But I’m blaming y’all if I break my laptop.",
-    "dialog_prompt": "reluctant but playful"
+    "input_text": "嗯，也许该少吐槽多尝试。但要是我搞坏电脑，我就怪你们。",
+    "dialog_prompt": "勉强但俏皮"
   },
   {
     "voice_name": "alloy",
-    "input_text": "You won’t break it. Just don’t copy blindly. Think of it as a brainstorming partner.",
-    "dialog_prompt": "steady, wise"
+    "input_text": "不会搞坏的。别盲目复制，拿它当头脑风暴伙伴。",
+    "dialog_prompt": "平稳，智慧"
   },
   {
     "voice_name": "coral",
-    "input_text": "Yes! Like a lab partner in school who did all the heavy lifting. Bless those people.",
-    "dialog_prompt": "nostalgic humor"
+    "input_text": "对！就像学校里那个帮你全干的实验搭档。谢谢这些人！",
+    "dialog_prompt": "怀旧幽默"
   },
   {
     "voice_name": "onyx",
-    "input_text": "I was never that partner… I was the snack provider.",
-    "dialog_prompt": "jokingly modest"
+    "input_text": "我从来不是那个搭档……我是负责带零食的。",
+    "dialog_prompt": "谦虚开玩笑"
   },
   {
     "voice_name": "fable",
-    "input_text": "Snack providers are heroes. No snacks, no motivation.",
-    "dialog_prompt": "lighthearted"
+    "input_text": "零食担当才是英雄。没有零食，哪来动力。",
+    "dialog_prompt": "轻松"
   },
   {
     "voice_name": "echo",
-    "input_text": "Snack > Code sometimes. That’s the truth.",
-    "dialog_prompt": "casual, humorous"
+    "input_text": "有时候零食比代码重要。这是真理。",
+    "dialog_prompt": "随意，搞笑"
   },
   {
     "voice_name": "alloy",
-    "input_text": "Okay, serious moment—do you think AI will change how juniors learn coding?",
-    "dialog_prompt": "thoughtful"
+    "input_text": "好，认真点——你们觉得 AI 会改变新人学编程的方式吗？",
+    "dialog_prompt": "深思"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Definitely. They’ll learn faster, but they need mentors reminding them to still think critically.",
-    "dialog_prompt": "serious, balanced"
+    "input_text": "绝对会。他们会学得更快，但仍然需要导师提醒保持思考。",
+    "dialog_prompt": "严肃，平衡"
   },
   {
     "voice_name": "coral",
-    "input_text": "It’s like calculators didn’t kill math—they just saved us from brain cramps.",
-    "dialog_prompt": "cheerful analogy"
+    "input_text": "就像计算器没杀死数学——它只是救了我们的脑子。",
+    "dialog_prompt": "开朗的比喻"
   },
   {
     "voice_name": "fable",
-    "input_text": "Exactly. And who doesn’t want fewer cramps?",
-    "dialog_prompt": "joking"
+    "input_text": "没错。谁不想少点脑抽？",
+    "dialog_prompt": "开玩笑"
   },
   {
     "voice_name": "echo",
-    "input_text": "I want fewer meetings. AI, please cancel them all.",
-    "dialog_prompt": "humorous wish"
+    "input_text": "我只想少开会。AI，求你取消所有会议。",
+    "dialog_prompt": "搞笑愿望"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Haha, if only! Alright folks, we’re wrapping this up soon.",
-    "dialog_prompt": "warm, host closing"
+    "input_text": "哈哈，要是能这样就好了！好了，各位，我们要收尾了。",
+    "dialog_prompt": "温暖，主持结尾"
   },
   {
     "voice_name": "alloy",
-    "input_text": "This was refreshing. I might actually try using AI this week.",
-    "dialog_prompt": "gentle, optimistic"
+    "input_text": "这次聊天真不错。我可能真的会试试 AI。",
+    "dialog_prompt": "温和，乐观"
   },
   {
     "voice_name": "coral",
-    "input_text": "Same—except maybe not while I’m hangry. AI can’t solve that.",
-    "dialog_prompt": "funny closer"
+    "input_text": "我也是——不过千万别在我饿的时候。AI 可解决不了这个。",
+    "dialog_prompt": "搞笑收尾"
   },
   {
     "voice_name": "fable",
-    "input_text": "I’ll cheer you on with chili noodles.",
-    "dialog_prompt": "playful, casual"
+    "input_text": "我用辣椒泡面给你加油。",
+    "dialog_prompt": "俏皮，随意"
   },
   {
     "voice_name": "echo",
-    "input_text": "And I’ll cheer you on by doubting everything. Balance restored.",
-    "dialog_prompt": "sarcastic closer"
+    "input_text": "而我继续用怀疑为你们助力。平衡恢复。",
+    "dialog_prompt": "讽刺收尾"
   },
   {
     "voice_name": "onyx",
-    "input_text": "Perfect ending. Thanks everyone for joining this chat on AI and programming. Till next time—code smart, snack smarter!",
-    "dialog_prompt": "warm, final closing"
+    "input_text": "完美收尾。感谢大家参与这次关于 AI 和编程的聊天。下次见——聪明写代码，更聪明吃零食！",
+    "dialog_prompt": "温暖，最终结尾"
   }
 ]
