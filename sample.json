@@ -2,16 +2,16 @@
   {
     "voice_name": "onxy",
     "input_text": "What does sustainability mean in society?",
-    "dialog_prompt": "Question about sustainability definition."
+    "dialog_prompt": "Question"
   },
   {
     "voice_name": "nova",
     "input_text": "Sustainability means meeting today needs without compromising the ability of future generations to meet theirs. It balances environmental protection, economic growth, and social well-being.",
-    "dialog_prompt": "Answer explaining sustainability."
+    "dialog_prompt": "Answer"
   },
   {
     "voice_name": "onxy",
     "input_text": "How does sustainability contribute to a harmonious society?",
-    "dialog_prompt": "Question about sustainability and harmony."
+    "dialog_prompt": "Question"
   }
 ]
