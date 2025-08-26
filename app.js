@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSampleDialog();
     
     // Event Listeners
-    addDialogBtn.addEventListener('click', addDialogEntry);
     clearDialogBtn.addEventListener('click', clearDialog);
     generateBtn.addEventListener('click', generateTTS);
     playAllBtn.addEventListener('click', playAllDialog);
