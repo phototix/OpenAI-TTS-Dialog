@@ -165,7 +165,8 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify({
                 model: "tts-1",
                 voice: entry.voice_name,
-                input: entry.input_text
+                input: entry.input_text,
+                instructions: entry.dialog_prompt
             })
         });
         
