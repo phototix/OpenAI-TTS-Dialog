@@ -40,7 +40,7 @@
         "dialog_prompt": "question"
     },
     {
-        "voice_name": "onyx",
+        "voice_name": "sage",
         "input_text": "企业可采用碳足迹协议（如 GHG Protocol），设定减少排放目标，并通过优化流程实现。",
         "dialog_prompt": "answer"
     },
@@ -80,7 +80,7 @@
         "dialog_prompt": "question"
     },
     {
-        "voice_name": "onyx",
+        "voice_name": "sage",
         "input_text": "ESG（环境、社会、治理）是衡量企业可持续性表现的重要框架，帮助投资者和社会评估企业的长期价值和责任感。",
         "dialog_prompt": "answer"
     },
