@@ -18,20 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPlayingIndex = -1;
     let audioElements = [];
     
-    // Sample dialog from context
-    const sampleDialog = [
-        {
-            "voice_name": "onyx",
-            "input_text": "What does sustainability mean in society?",
-            "dialog_prompt": "Question about sustainability definition."
-        },
-        {
-            "voice_name": "nova",
-            "input_text": "Sustainability means meeting today's needs without compromising the ability of future generations to meet theirs. It balances environmental protection, economic growth, and social well-being.",
-            "dialog_prompt": "Answer explaining sustainability."
-        }
-    ];
-    
     // Load sample dialog
     loadSampleDialog();
     
@@ -45,13 +31,31 @@ document.addEventListener('DOMContentLoaded', function() {
     playbackSpeed.addEventListener('input', updatePlaybackSpeed);
     
     // Functions
-    function loadSampleDialog() {
-        dialogContainer.innerHTML = '';
-        dialogData = [...sampleDialog];
-        
-        dialogData.forEach((entry, index) => {
-            addDialogToContainer(entry, index);
-        });
+    async function loadSampleDialog() {
+        try {
+            // Fetch the sample.json file
+            const response = await fetch('sample.json');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const sampleDialog = await response.json();
+            
+            // Clear the container and update dialog data
+            dialogContainer.innerHTML = '';
+            dialogData = [...sampleDialog];
+            
+            // Add each dialog entry to the container
+            dialogData.forEach((entry, index) => {
+                addDialogToContainer(entry, index);
+            });
+            
+        } catch (error) {
+            console.error('Error loading sample dialog:', error);
+            // Fallback to hardcoded sample or show error message
+            dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample dialog. Please check if sample.json exists.</p>';
+        }
     }
     
     function addDialogEntry() {

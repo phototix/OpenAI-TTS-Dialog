@@ -1,0 +1,12 @@
+[
+    {
+        "voice_name": "onyx",
+        "input_text": "What does sustainability mean in society?",
+        "dialog_prompt": "Question about sustainability definition."
+    },
+    {
+        "voice_name": "nova", 
+        "input_text": "Sustainability means meeting today's needs without compromising the ability of future generations to meet theirs.",
+        "dialog_prompt": "Answer explaining sustainability."
+    }
+]
