@@ -1,0 +1,62 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎来到壹韶杂货店电台！今天我们要聊一个令人兴奋又带点争议的话题——人工智能在内容创作中的应用。无论你是写作者、设计师，还是播客爱好者，你一定或多或少已经感受到 AI 的存在正悄悄改变创作的方式。那么，AI 会是帮手，还是挑战？我们今天一起来探讨。",
+    "dialog_prompt": "cheerful, engaging, welcoming introduction"
+  },
+  {
+    "voice_name": "nova",
+    "input_text": "我觉得 AI 已经在内容创作中扮演了很大的角色了。比如文章写作、图片生成，甚至音乐和视频脚本，AI 工具都可以快速完成。这不仅提升了效率，还给想要尝试创作的人提供了门槛更低的途径。",
+    "dialog_prompt": "insightful, energetic, enthusiastic tone"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "是的，但也有人会担心：如果 AI 可以‘写文章’、‘画画’，甚至‘作曲’，那人类创作者的价值会不会被削弱呢？创作毕竟是一种表达独特人性的过程。",
+    "dialog_prompt": "thoughtful, reflective"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "这个问题很重要。AI 确实可以模仿格式、学习风格，但它毕竟是基于已有数据的生成，而人类的经验、情感和文化积淀，是它无法真正替代的。换句话说，AI 更像是一种扩展我们能力的工具，而不是替代品。",
+    "dialog_prompt": "balanced, reassuring tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "不过，我们不能忽视伦理问题，比如版权归属、数据隐私以及 AI 生成内容的真实性。如果每个人都用 AI 写论文或者新闻，那信息来源的可靠性就需要特别关注。",
+    "dialog_prompt": "serious, cautionary tone"
+  },
+  {
+    "voice_name": "shimmer",
+    "input_text": "没错。在教育、媒体、甚至艺术市场中，透明和标注显得尤其重要。比如在播客节目中，如果有 AI 辅助生成的脚本，最好清晰告诉听众，这样才不会误导。",
+    "dialog_prompt": "clear, gentle, thoughtful"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "展望未来，你们觉得 AI 在内容创作上的潜力是什么？",
+    "dialog_prompt": "curious, inviting others to share vision"
+  },
+  {
+    "voice_name": "sage",
+    "input_text": "我想未来 AI 可能成为协作伙伴。比如一个作家可以用 AI 来生成创意草稿，然后自己再进行修改加工；音乐人可以用 AI 快速找到灵感音符，再赋予自己的情绪。这样，AI 就像一个无限的灵感触发器。",
+    "dialog_prompt": "visionary, wise, forward-looking"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "而且，AI 还能让更多人参与创作。过去，有些人可能因为没有足够的技能就放弃了写歌或者绘画。现在，AI 给他们提供了可能性，创作不再是少数人的专利。",
+    "dialog_prompt": "warm, optimistic, encouraging"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "听起来，AI 其实既是挑战，也是机遇。关键在于我们如何使用它。我们需要负责任地对待技术，同时发挥它为创作带来的积极潜能。换句话说，AI 或许不会取代创作者，但会成为他们的‘共创伙伴’。",
+    "dialog_prompt": "confident, re-assuring summary"
+  },
+  {
+    "voice_name": "nova",
+    "input_text": "是的，我们可以想象 AI 像是一种增强人类创造力的放大镜——让创作者的声音传播得更远，而不是消失。",
+    "dialog_prompt": "uplifting, inspiring closing remark"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "非常感谢各位一起参与今天的对话，也感谢听众朋友的收听。如果你对 AI 创作有自己的看法，不妨也留言与我们分享。这里是壹韶杂货店电台，我们下期节目再见！",
+    "dialog_prompt": "warm, closing farewell"
+  }
+]
