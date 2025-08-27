@@ -240,6 +240,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Add this to your JavaScript
+    async function populateSampleDropdown() {
+        try {
+            const response = await fetch('listSample.php');
+            const sampleFiles = await response.json();
+            
+            const select = document.getElementById('sampleSelect');
+            select.innerHTML = '';
+            
+            sampleFiles.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = file.replace('.json', '');
+                select.appendChild(option);
+            });
+            
+            select.addEventListener('change', function() {
+                if (this.value) {
+                    loadSpecificSample(this.value);
+                }
+            });
+            
+        } catch (error) {
+            console.error('Error loading sample list:', error);
+        }
+    }
+    populateSampleDropdown();
     
     async function generateTTS() {
         const apiKey = document.getElementById('apiKey').value;
