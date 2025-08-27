@@ -97,7 +97,16 @@ document.addEventListener('DOMContentLoaded', function() {
             dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample file</p>';
         }
     }
-    
+
+    // Add these functions to handle local storage
+    function saveApiKeyToLocalStorage(apiKey) {
+        localStorage.setItem('openai_api_key', apiKey);
+    }
+
+    function loadApiKeyFromLocalStorage() {
+        return localStorage.getItem('openai_api_key');
+    }
+
     function addDialogEntry() {
         const voice = voiceSelect.value;
         const prompt = dialogPrompt.value;
@@ -259,6 +268,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleFullscreen(dialogCard, 'dialog');
             }
         }
+    });
+
+    // Load API key from local storage on page load
+    const savedApiKey = loadApiKeyFromLocalStorage();
+    if (savedApiKey) {
+        document.getElementById('apiKey').value = savedApiKey;
+    }
+    
+    // Add event listener to save API key when changed
+    document.getElementById('apiKey').addEventListener('input', function() {
+        saveApiKeyToLocalStorage(this.value);
     });
 
     // Add this to your JavaScript
