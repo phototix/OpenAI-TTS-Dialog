@@ -50,11 +50,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Functions
     async function loadSampleDialog() {
-        const timestamp = new Date().getTime();
-        
         try {
-            // Fetch the sample.json file
-            const response = await fetch(`sample.json?t=${timestamp}`);
+            const response = await fetch('listSample.php');
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const sampleFiles = await response.json();
+            
+            if (sampleFiles.length === 0) {
+                dialogContainer.innerHTML = '<p class="text-center text-muted">No sample files found in /samples/ directory</p>';
+                return;
+            }
+            
+            // Load the first sample file by default
+            await loadSpecificSample(sampleFiles[0]);
+            
+        } catch (error) {
+            console.error('Error loading sample list:', error);
+            dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample files</p>';
+        }
+    }
+
+    async function loadSpecificSample(filename) {
+        try {
+            const response = await fetch(`samples/${filename}`);
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -73,8 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
         } catch (error) {
             console.error('Error loading sample dialog:', error);
-            // Fallback to hardcoded sample or show error message
-            dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample dialog. Please check if sample.json exists.</p>';
+            dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample file</p>';
         }
     }
     
