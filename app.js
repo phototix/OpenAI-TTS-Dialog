@@ -293,6 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rightColumn.style.width = '100%';
         clearDialogBtn.style.display = 'none';
         showBtn.style.display = '';
+        playAllDialog();
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
         });
