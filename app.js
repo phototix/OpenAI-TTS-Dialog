@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearDialogBtn.style.display = 'none';
         showBtn.style.display = '';
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
-            el.style.display = 'none';
+            el.style.setProperty('display', 'none', 'important');
         });
     }
     
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearDialogBtn.style.display = '';
         showBtn.style.display = 'none';
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
-            el.style.display = '';
+            el.style.setProperty('display', '', '');
         });
     }
 
