@@ -1,258 +1,237 @@
 [
   {
-    "speaker": "onyx",
-    "text": "大家好，欢迎收听《壹韶的杂货店》，这里是一个融合了新闻、故事、生活和科技闲谈的小角落。我是主持人壹韶，很高兴能和大家一起聊聊世界大小事，从佛教文化到最新AI科技，再到东南亚的社会变迁。"
+    "voice_name": "onyx",
+    "input_text": "大家好，欢迎收听《壹韶的杂货店》，今天我们要聊聊最近的一些新闻和趋势，从佛教文化到马来西亚的经济，再到科技与健康，还有体育八卦，话题满满！",
+    "dialog_prompt": "Cheerful, welcoming opening as the host."
   },
   {
-    "speaker": "alloy",
-    "text": "是呀，这里就像一家随性的小杂货店，你永远不知道会在货架上发现什么新鲜有趣的东西。无论是经济、健康、还是流行文化，我们都会轻松聊聊。"
+    "voice_name": "alloy",
+    "input_text": "听起来很丰富啊，壹韶。我刚好最近看到关于京都的ROKU酒店的文章，说它原本是皇室的修养地，现在成了艺术文化的集中地呢。",
+    "dialog_prompt": "Gentle, steady, sharing an observation."
   },
   {
-    "speaker": "fable",
-    "text": "没错！这里不只是分享信息，更是彼此交流想法的地方。带点好奇心，来这趟知识小旅行就对了。"
+    "voice_name": "onyx",
+    "input_text": "对耶，这个地方不仅宁静，还特别强调艺术的传承，有点像把传统和现代结合在一起的典范。",
+    "dialog_prompt": "Curious, thoughtful reflection."
   },
   {
-    "speaker": "echo",
-    "text": "好，那就让我们一起开启今天的杂货店时光吧～"
+    "voice_name": "echo",
+    "input_text": "听起来很文艺啊，但说真的，那种地方是不是只适合游客去打卡？",
+    "dialog_prompt": "Skeptical but interested tone."
   },
   {
-    "speaker": "onyx",
-    "text": "嘿，大家最近有听说过京都那个ROKU KYOTO吗？好像是以前皇室的休养地，现在变成艺术文化的中心了。"
+    "voice_name": "coral",
+    "input_text": "不一定哦，有些地方虽然贵，但真的有氛围。我朋友去过，说在那边学茶道，感觉禅意很强。",
+    "dialog_prompt": "Newbie, slightly enthusiastic sharing."
   },
   {
-    "speaker": "alloy",
-    "text": "嗯，我看到过，那环境真是静谧，而且还能感受到日本悠久的艺术传承。蛮适合寻求心灵平静吧。"
+    "voice_name": "fable",
+    "input_text": "这其实挺有趣的，像现在的科技公司也开始讲‘禅意’设计，比如降噪、简约UI，其实都是文化影响渗透到科技里。",
+    "dialog_prompt": "Tech-savvy, explaining connections."
   },
   {
-    "speaker": "echo",
-    "text": "听起来是个豪华度假村吧？这种地方是不是有点太商业化了？"
+    "voice_name": "onyx",
+    "input_text": "说到科技，你们听说吗？马来西亚刚推出了7纳米的边缘AI芯片MARS1000，专门用于机器人和智慧城市。",
+    "dialog_prompt": "Host, highlighting new tech news."
   },
   {
-    "speaker": "fable",
-    "text": "其实它融合了历史跟现代体验，像个文化实验室。对艺术和手工艺人来说，这倒是个交流空间。"
+    "voice_name": "echo",
+    "input_text": "马来西亚？不会吧，我还以为只有台积电或者英伟达这种巨头才搞得出来。",
+    "dialog_prompt": "Skeptical reaction."
   },
   {
-    "speaker": "coral",
-    "text": "哇，那感觉像黑客马拉松的艺术版哈哈。"
+    "voice_name": "fable",
+    "input_text": "是真的哦，他们瞄准的是应用场景，比如IoT和机器人，不是直接跟大厂正面对抗，而是走应用导向。",
+    "dialog_prompt": "Clarifying with expertise."
   },
   {
-    "speaker": "onyx",
-    "text": "对了，转到马来西亚的话，最近半导体行业推出了MARS1000——一个7nm边缘AI芯片，用在智慧城市和机器人上。挺厉害的。"
+    "voice_name": "alloy",
+    "input_text": "其实这种走应用路线挺聪明的，不需要硬碰硬，还能培养自己的生态圈。",
+    "dialog_prompt": "Calm, thoughtful observation."
   },
   {
-    "speaker": "fable",
-    "text": "这个我知道！7nm级别在边缘运算里很前卫了。将来搞智慧交通、IoT会超有用。"
+    "voice_name": "coral",
+    "input_text": "但是这种芯片会不会很难推广呀？我刚学AI工具，就感觉生态很割裂。",
+    "dialog_prompt": "Curious, beginner level concern."
   },
   {
-    "speaker": "echo",
-    "text": "但马来西亚真的有那么强的研发能力吗？感觉大家平时都只提台积电啊。"
+    "voice_name": "onyx",
+    "input_text": "这就牵扯到政策了。像马来西亚议会现在也在讨论老龄化和房价问题，其实这些社会议题也会影响到科技发展。",
+    "dialog_prompt": "Connecting societal issues with tech."
   },
   {
-    "speaker": "alloy",
-    "text": "其实产业链是多点分布的，马来西亚在封测，还有制造配套上也是很重要的节点，不要小看。"
+    "voice_name": "echo",
+    "input_text": "不过我更关心股市吧，最近听说Harrison Holdings的股价跌了13%。这种跌法是不是基本面出问题了？",
+    "dialog_prompt": "Skeptical, financially focused comment."
   },
   {
-    "speaker": "coral",
-    "text": "感觉亚洲各国都在比拼AI芯片啊。我才刚学用AI工具，压力很大。"
+    "voice_name": "alloy",
+    "input_text": "好像基本面还是稳的，可能是市场整体环境不够好吧。",
+    "dialog_prompt": "Gentle reassurance tone."
   },
   {
-    "speaker": "onyx",
-    "text": "哈哈，慢慢来，一步步会熟悉的。说到AI，Nvidia刚推出新的AI“脑”模块，给类人机器人和自动驾驶用的。"
+    "voice_name": "fable",
+    "input_text": "对，外部环境影响比较大，全球都在担忧美联储的政策和通胀，亚洲股市被牵连很正常。",
+    "dialog_prompt": "Explaining financial context."
   },
   {
-    "speaker": "fable",
-    "text": "对，这个模块就是大脑，能处理更快更多的信息。未来机器人不再笨笨的。"
+    "voice_name": "onyx",
+    "input_text": "说到全球，我看到新加坡也暂停了寄往美国的邮政服务，还联手澳洲、日本。这是不是代表局势挺紧张的？",
+    "dialog_prompt": "Host raising geopolitical observation."
   },
   {
-    "speaker": "echo",
-    "text": "听起来也有点可怕欸。机器人聪明到这种程度，会不会替代人类的工作？"
+    "voice_name": "echo",
+    "input_text": "感觉就是被牵着走吧，小国难免要跟大国立场保持一致。",
+    "dialog_prompt": "Skeptical geopolitical comment."
   },
   {
-    "speaker": "alloy",
-    "text": "技术的出现就像一把双刃剑吧，关键在怎么管理和使用。"
+    "voice_name": "coral",
+    "input_text": "话说回来，我更关心生活类的新闻，比如说2026年新加坡引进Lotteria汉堡！这真的让我期待哈哈。",
+    "dialog_prompt": "Casual, cheerful gossip vibe."
   },
   {
-    "speaker": "coral",
-    "text": "嗯，我希望能用AI来帮我debug哈哈。"
+    "voice_name": "alloy",
+    "input_text": "你真的很可爱欸，别人都在担心国际关系，你在想汉堡。",
+    "dialog_prompt": "Gentle, amused response."
   },
   {
-    "speaker": "onyx",
-    "text": "马来西亚最近还在研究老龄化人口，还有吉隆坡房价限制，感觉社会问题和科技并行发展。"
+    "voice_name": "fable",
+    "input_text": "不过食物文化确实是软实力的一部分，韩国品牌进新加坡，也是在扩展影响力。",
+    "dialog_prompt": "Analytical but warm comment."
   },
   {
-    "speaker": "alloy",
-    "text": "这说明政府想在人口与居住上找到平衡，不只是放眼经济。"
+    "voice_name": "onyx",
+    "input_text": "顺便说，Forbes Asia刚刚出的‘100 to Watch’，其实有不少新加坡和马来西亚的创业公司入选，挺励志的。",
+    "dialog_prompt": "Sharing positive startup news."
   },
   {
-    "speaker": "echo",
-    "text": "可是另一方面，财政部说不打算重启GST，钱从哪来呢？"
+    "voice_name": "echo",
+    "input_text": "励志是励志啦，可这些创业公司能撑过几年才是关键。",
+    "dialog_prompt": "Skeptical remark."
   },
   {
-    "speaker": "fable",
-    "text": "靠大项目和国际合作吧，比如超过5亿马币的合约。"
+    "voice_name": "alloy",
+    "input_text": "也不能一直怀疑，很多伟大的公司都是从小小的初创开始的。",
+    "dialog_prompt": "Encouraging, wise tone."
   },
   {
-    "speaker": "coral",
-    "text": "不过工人还是靠外国人啊，对吧？我听说孟加拉工人占了三成多。"
+    "voice_name": "coral",
+    "input_text": "对呀，说不定未来的AI巨头就在这份名单上呢！",
+    "dialog_prompt": "Excited, beginner perspective."
   },
   {
-    "speaker": "onyx",
-    "text": "对，占了37%。这么大的比重对劳工政策影响不小。"
+    "voice_name": "fable",
+    "input_text": "说到AI，你们知道吗？Nvidia刚发布了一款新的‘大脑’模块，专门给机器人和自动驾驶用，数据处理快了很多倍。",
+    "dialog_prompt": "Tech-savvy, sharing news."
   },
   {
-    "speaker": "alloy",
-    "text": "这其实和新加坡也有点像，新加坡也很依赖外劳。"
+    "voice_name": "onyx",
+    "input_text": "哇，这听起来太像科幻片了。以后是不是家里真能有机器人帮你煮饭？",
+    "dialog_prompt": "Host, half-joking reflection."
   },
   {
-    "speaker": "onyx",
-    "text": "说到新加坡，有件小趣事，你们知道Korean快餐Lotteria要开到这里来吗？要等到2026年。"
+    "voice_name": "echo",
+    "input_text": "你别想了，万一哪天机器人坏了，你家饭还得自己煮哈哈。",
+    "dialog_prompt": "Playful skepticism."
   },
   {
-    "speaker": "coral",
-    "text": "真的吗！哇，那到时候又有新店打卡咯。"
+    "voice_name": "coral",
+    "input_text": "可是想象一下真的很酷欸，连扫地都不用自己动手了。",
+    "dialog_prompt": "Playful, excited newbie tone."
   },
   {
-    "speaker": "echo",
-    "text": "哈哈，两年后，不会到时候大家都不想吃炸鸡了吧？"
+    "voice_name": "alloy",
+    "input_text": "科技确实带来便利，但我觉得还是要注意隐私和安全，不然太依赖会有风险。",
+    "dialog_prompt": "Cautious, thoughtful advice."
   },
   {
-    "speaker": "fable",
-    "text": "不用担心，汉堡和炸鸡的需求是跨文化的。"
+    "voice_name": "fable",
+    "input_text": "没错，Google就打算让用户更难侧载APP，就是为了减少风险。不过开发者社群可能不太高兴。",
+    "dialog_prompt": "Balanced, professional explanation."
   },
   {
-    "speaker": "onyx",
-    "text": "在艺术方面，新加坡还要上演《樱桃园》的现代首尔版，好像挺新鲜的。"
+    "voice_name": "onyx",
+    "input_text": "从健康角度讲，最近也看到新研究说长期使用手机可能会影响心理，甚至影响淋巴功能。",
+    "dialog_prompt": "Host, bringing health news."
   },
   {
-    "speaker": "alloy",
-    "text": "融合传统经典和现代背景，这样做常常会引发不一样的观感。"
+    "voice_name": "echo",
+    "input_text": "这不就是在说我吗？每天抱着手机不放。",
+    "dialog_prompt": "Self-deprecating, humorous skepticism."
   },
   {
-    "speaker": "coral",
-    "text": "我猜会很文艺吧，我可能要边看边查背景。"
+    "voice_name": "alloy",
+    "input_text": "哈哈，不过适度用手机也没问题，最重要还是生活要平衡。",
+    "dialog_prompt": "Gentle, balancing reassurance."
   },
   {
-    "speaker": "echo",
-    "text": "其实新加坡最近到处都在讲终身学习，是不是有点过度了？"
+    "voice_name": "coral",
+    "input_text": "对了，我还看到一个关于近视的大规模研究，好像亚洲人的高度近视比例特别高，怪不得我身边戴眼镜的这么多。",
+    "dialog_prompt": "Curious, casual sharing."
   },
   {
-    "speaker": "alloy",
-    "text": "呵呵，学习和成长本来就是无止境的，多一个机会也不坏。"
+    "voice_name": "fable",
+    "input_text": "对，而且科技公司也在想办法，用AI做早期筛查。以后可能戴眼镜的孩子能更早干预。",
+    "dialog_prompt": "Informative, optimistic tech insight."
   },
   {
-    "speaker": "onyx",
-    "text": "在体育方面，美国那边Cal Raleigh竟然打出50支全垒打，第一位做到的捕手。"
+    "voice_name": "onyx",
+    "input_text": "体育方面也有不少八卦，比如Cal Raleigh成了第一位MLB捕手，打出50个全垒打。",
+    "dialog_prompt": "Cheerful gossip about sports."
   },
   {
-    "speaker": "fable",
-    "text": "50支？捕手通常很难啊！这体能和技术都爆表。"
+    "voice_name": "echo",
+    "input_text": "厉害是厉害啦，但我还是觉得棒球节奏太慢，不够刺激。",
+    "dialog_prompt": "Skeptical sports take."
   },
   {
-    "speaker": "echo",
-    "text": "这种成绩会不会跟药检争议挂钩？球员太猛也容易惹怀疑。"
+    "voice_name": "coral",
+    "input_text": "哈哈，那说明你没认真看过！棒球的策略其实挺有意思的。",
+    "dialog_prompt": "Playful defense of sports."
   },
   {
-    "speaker": "alloy",
-    "text": "不要太阴谋论啦，有时就是勤奋和天赋的结合。"
+    "voice_name": "alloy",
+    "input_text": "体育其实也是一种文化嘛，就算不喜欢，也能感受到一种团队精神。",
+    "dialog_prompt": "Calm, steady reflection."
   },
   {
-    "speaker": "coral",
-    "text": "我没怎么跟棒球，但我知道BTS的V去丢球，粉丝应该很疯狂吧！"
+    "voice_name": "fable",
+    "input_text": "对了，娱乐圈也有有趣的事，比如BTS的V去投了棒球的开球，粉丝都疯狂了吧。",
+    "dialog_prompt": "Casual gossip sharing."
   },
   {
-    "speaker": "onyx",
-    "text": "是啊，韩国明星跨界体育节目影响力挺大的。"
+    "voice_name": "onyx",
+    "input_text": "没错，娱乐和体育一结合，就是话题满满啦。",
+    "dialog_prompt": "Playful host commentary."
   },
   {
-    "speaker": "fable",
-    "text": "这其实也是文化软实力的一种体现。"
+    "voice_name": "onyx",
+    "input_text": "好啦，今天我们聊了从佛教文化、马来西亚经济、新加坡创业到AI科技和体育八卦，还顺便八卦了汉堡！希望大家喜欢。",
+    "dialog_prompt": "Closing summary in cheerful host tone."
   },
   {
-    "speaker": "onyx",
-    "text": "再拉回来科技，Google打算让Android应用侧载更困难了，这事你们怎么看？"
+    "voice_name": "alloy",
+    "input_text": "谢谢大家的陪伴，让我们下次继续轻松聊聊世界大小事。",
+    "dialog_prompt": "Gentle warm closing."
   },
   {
-    "speaker": "coral",
-    "text": "作为开发者，感觉都要被困死在Play Store里。"
+    "voice_name": "echo",
+    "input_text": "下次记得多带点八卦新闻啊，不然太认真我会打瞌睡。",
+    "dialog_prompt": "Playful skeptical ending."
   },
   {
-    "speaker": "echo",
-    "text": "他们只是想多赚钱吧，控制生态。"
+    "voice_name": "coral",
+    "input_text": "哈哈，我会继续关注AI和美食新闻，下次再一起分享！",
+    "dialog_prompt": "Cheerful, friendly farewell."
   },
   {
-    "speaker": "alloy",
-    "text": "有时候限制也和安全有关。但确实平衡很难拿捏。"
+    "voice_name": "fable",
+    "input_text": "大家一起见证科技和生活交织的未来吧，下集再见！",
+    "dialog_prompt": "Professional but warm ending."
   },
   {
-    "speaker": "fable",
-    "text": "再看VMware往Arm架构移植，说明大家都在谋划更多样化的底层框架。"
-  },
-  {
-    "speaker": "onyx",
-    "text": "没错，这些技术趋势其实会影响很多人的工作方式和日常。"
-  },
-  {
-    "speaker": "alloy",
-    "text": "嗯，像健康方面的新药试验，也是科技进展一部分嘛。比如针对恐慌症的新组合药物，要提供长期稳定治疗。"
-  },
-  {
-    "speaker": "coral",
-    "text": "那我家人可能受益耶，他有类似焦虑问题。科技如果能帮忙就好了。"
-  },
-  {
-    "speaker": "echo",
-    "text": "但药物太多依赖，可能会忽视心理疗法的必要吧？"
-  },
-  {
-    "speaker": "fable",
-    "text": "科学已经在做脑电模式识别，像OCD的大脑活动特征，未来治疗肯定比以前精准多了。"
-  },
-  {
-    "speaker": "onyx",
-    "text": "总的来看，佛教讲究内心平静，这些科技、社会、文化的变化，也都是我们如何找到平衡的一部分。"
-  },
-  {
-    "speaker": "alloy",
-    "text": "说得很好，古老智慧和现代进展其实可以互补。"
-  },
-  {
-    "speaker": "coral",
-    "text": "是啊，就像ROKU KYOTO那样，把传统和现代结合在一起，挺美的。"
-  },
-  {
-    "speaker": "echo",
-    "text": "好啦，我承认你们说得有点道理。"
-  },
-  {
-    "speaker": "fable",
-    "text": "哈哈，下次我们要不要就开个小沙龙，专门聊科技与生活的结合？"
-  },
-  {
-    "speaker": "onyx",
-    "text": "赞成！这就是“壹韶杂货店电台”的精神嘛～"
-  },
-  {
-    "speaker": "onyx",
-    "text": "好了，今天的《壹韶的杂货店》就到这里啦。谢谢大家陪伴我们一起从ROKU KYOTO的静谧美，到AI科技的未来，再到东南亚社会经济的点滴。"
-  },
-  {
-    "speaker": "coral",
-    "text": "希望大家听完能带走一点点灵感，也能像我们一样，时不时在生活里冒出新的灵光。"
-  },
-  {
-    "speaker": "alloy",
-    "text": "别忘了，世界很大，每天都有新的故事发生。杂货店永远为你留一盏灯。"
-  },
-  {
-    "speaker": "fable",
-    "text": "下次再来，我们继续随性地聊，继续探索未知。"
-  },
-  {
-    "speaker": "echo",
-    "text": "好啦，大家保重，下期节目再见啦！"
-  },
-  {
-    "speaker": "onyx",
-    "text": "这里是《壹韶的杂货店》，我们下次再见！"
+    "voice_name": "onyx",
+    "input_text": "这里是《壹韶的杂货店》，我们下次再见！",
+    "dialog_prompt": "Closing signature as host."
   }
 ]
