@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const leftColumn = document.getElementById('leftColumn');
     const rightColumn = document.getElementById('rightColumn');
+
+    const openaiTTSHeader = document.getElementById('openaiTTSHeader');
+    const openaiAPIConfig = document.getElementById('openaiAPIConfig');
     
     // Dialog data storage
     let dialogData = [];
@@ -292,6 +295,8 @@ document.addEventListener('DOMContentLoaded', function() {
         leftColumn.style.display = 'none';
         rightColumn.style.width = '100%';
         clearDialogBtn.style.display = 'none';
+        openaiAPIConfig.style.display = 'none';
+        openaiTTSHeader.style.display = 'none';
         showBtn.style.display = '';
         playAllDialog();
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
@@ -306,6 +311,8 @@ document.addEventListener('DOMContentLoaded', function() {
         leftColumn.style.display = '';
         rightColumn.style.width = '50%';
         clearDialogBtn.style.display = '';
+        openaiAPIConfig.style.display = '';
+        openaiTTSHeader.style.display = '';
         showBtn.style.display = 'none';
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', '', '');
