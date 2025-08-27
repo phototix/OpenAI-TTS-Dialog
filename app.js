@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogElement.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
                 <div>
-                    <strong>${entry.dialog_prompt}</strong>
+                    <strong class="dialog_prompt">${entry.dialog_prompt}</strong>
                     <p class="mb-1">${entry.input_text}</p>
                     <small class="text-muted">${entry.voice_name}</small>
                 </div>
@@ -297,6 +297,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
         });
+        document.querySelectorAll('.dialog_prompt').forEach(el => {
+            el.style.setProperty('display', 'none', 'important');
+        });
     }
     
     function showWebUI() {
@@ -305,6 +308,9 @@ document.addEventListener('DOMContentLoaded', function() {
         clearDialogBtn.style.display = '';
         showBtn.style.display = 'none';
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
+            el.style.setProperty('display', '', '');
+        });
+        document.querySelectorAll('.dialog_prompt').forEach(el => {
             el.style.setProperty('display', '', '');
         });
     }
