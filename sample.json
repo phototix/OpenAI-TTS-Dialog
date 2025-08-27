@@ -1,297 +1,258 @@
 [
   {
-    "voice_name": "onyx",
-    "input_text": "嘿，朋友们，欢迎回来！今天我要爆点料：我一直在用 AI 来提升我的编程技能。",
-    "dialog_prompt": "主持人开场，好奇，俏皮语气"
+    "speaker": "onyx",
+    "text": "大家好，欢迎收听《壹韶的杂货店》，这里是一个融合了新闻、故事、生活和科技闲谈的小角落。我是主持人壹韶，很高兴能和大家一起聊聊世界大小事，从佛教文化到最新AI科技，再到东南亚的社会变迁。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "爆料？Onyx，你听起来像我侄女。不过好吧，说说看，进展如何？",
-    "dialog_prompt": "温和，打趣"
+    "speaker": "alloy",
+    "text": "是呀，这里就像一家随性的小杂货店，你永远不知道会在货架上发现什么新鲜有趣的东西。无论是经济、健康、还是流行文化，我们都会轻松聊聊。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "用 AI 编程？老兄，我发誓它真香。就像有个同事，永远不会抱怨截止日期。",
-    "dialog_prompt": "自信，带点好笑"
+    "speaker": "fable",
+    "text": "没错！这里不只是分享信息，更是彼此交流想法的地方。带点好奇心，来这趟知识小旅行就对了。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "等等，真的吗？我还不信它呢。一半时间 AI 听起来像我表哥在吹牛，然后给出一堆废话建议。",
-    "dialog_prompt": "怀疑，机智"
+    "speaker": "echo",
+    "text": "好，那就让我们一起开启今天的杂货店时光吧～"
   },
   {
-    "voice_name": "coral",
-    "input_text": "哈哈，Echo，有道理，但至少 AI 不会像某些同事午饭后直接消失。咳咳……某人你懂的。",
-    "dialog_prompt": "调侃"
+    "speaker": "onyx",
+    "text": "嘿，大家最近有听说过京都那个ROKU KYOTO吗？好像是以前皇室的休养地，现在变成艺术文化的中心了。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "哎哟，八卦预警！Coral，谁午饭后消失啊？",
-    "dialog_prompt": "打趣，活泼"
+    "speaker": "alloy",
+    "text": "嗯，我看到过，那环境真是静谧，而且还能感受到日本悠久的艺术传承。蛮适合寻求心灵平静吧。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "不点名，但有人‘喝咖啡’能喝一个小时……",
-    "dialog_prompt": "坏笑，半开玩笑"
+    "speaker": "echo",
+    "text": "听起来是个豪华度假村吧？这种地方是不是有点太商业化了？"
   },
   {
-    "voice_name": "fable",
-    "input_text": "哈哈，被抓包了。不过不是我——我的咖啡机坏了，所以我在戒咖啡。",
-    "dialog_prompt": "轻松幽默"
+    "speaker": "fable",
+    "text": "其实它融合了历史跟现代体验，像个文化实验室。对艺术和手工艺人来说，这倒是个交流空间。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "想象一下没有咖啡的 Fable……就像一个 IDE 没有语法高亮。",
-    "dialog_prompt": "讽刺段子"
+    "speaker": "coral",
+    "text": "哇，那感觉像黑客马拉松的艺术版哈哈。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "说到 IDE，这就是 AI 最帮我的地方——它在我眨眼之前就把模板代码补好了。",
-    "dialog_prompt": "信息型，兴奋"
+    "speaker": "onyx",
+    "text": "对了，转到马来西亚的话，最近半导体行业推出了MARS1000——一个7nm边缘AI芯片，用在智慧城市和机器人上。挺厉害的。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "不会觉得……像作弊吗？还是说只是生产力暴增？",
-    "dialog_prompt": "平稳，思考"
+    "speaker": "fable",
+    "text": "这个我知道！7nm级别在边缘运算里很前卫了。将来搞智慧交通、IoT会超有用。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "生产力！而且绝对救命。凌晨两点调试的时候，有 AI 在旁边低语‘嘿，你忘了semicolon’的时候，孤独感少好多。",
-    "dialog_prompt": "随意，幽默"
+    "speaker": "echo",
+    "text": "但马来西亚真的有那么强的研发能力吗？感觉大家平时都只提台积电啊。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "太懂了！我让它教我递归 recursion，它居然用猫咪梗图写在注释里。史上最棒的课程！",
-    "dialog_prompt": "兴奋，搞怪"
+    "speaker": "alloy",
+    "text": "其实产业链是多点分布的，马来西亚在封测，还有制造配套上也是很重要的节点，不要小看。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "我有次让 AI 帮我写个邮箱验证的regex。结果它给的东西比我前任的短信还恐怖。",
-    "dialog_prompt": "玩笑"
+    "speaker": "coral",
+    "text": "感觉亚洲各国都在比拼AI芯片啊。我才刚学用AI工具，压力很大。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "Regex 本来就是诅咒，AI 也救不了咱们。",
-    "dialog_prompt": "讽刺又搞笑"
+    "speaker": "onyx",
+    "text": "哈哈，慢慢来，一步步会熟悉的。说到AI，Nvidia刚推出新的AI“脑”模块，给类人机器人和自动驾驶用的。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "说到诅咒……你们有没有发现 AI 有时候超自信？就像那个指路还带你迷路的朋友。",
-    "dialog_prompt": "温和幽默"
+    "speaker": "fable",
+    "text": "对，这个模块就是大脑，能处理更快更多的信息。未来机器人不再笨笨的。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "哈哈，上周就是我的惨痛经历。我信了 AI 的建议，结果程序跑得比我周一早晨还慢。",
-    "dialog_prompt": "搞笑，能引起共鸣"
+    "speaker": "echo",
+    "text": "听起来也有点可怕欸。机器人聪明到这种程度，会不会替代人类的工作？"
   },
   {
-    "voice_name": "coral",
-    "input_text": "嘿，周一早晨可是神圣的午睡时间！",
-    "dialog_prompt": "打趣"
+    "speaker": "alloy",
+    "text": "技术的出现就像一把双刃剑吧，关键在怎么管理和使用。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "不，午睡时间是周五的会议。反正没人听。",
-    "dialog_prompt": "坏笑段子"
+    "speaker": "coral",
+    "text": "嗯，我希望能用AI来帮我debug哈哈。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "事实。我上周五开会靠画虚构应用的流程图活下来的。",
-    "dialog_prompt": "随意，机智"
+    "speaker": "onyx",
+    "text": "马来西亚最近还在研究老龄化人口，还有吉隆坡房价限制，感觉社会问题和科技并行发展。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "至少你没画老板。上次有人这么干，场面太尴尬。",
-    "dialog_prompt": "温和，趣味叙述"
+    "speaker": "alloy",
+    "text": "这说明政府想在人口与居住上找到平衡，不只是放眼经济。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "哈哈，好了，说回 AI——Echo，你会不会试试它，还是等它升职当你经理？",
-    "dialog_prompt": "调侃主持风格"
+    "speaker": "echo",
+    "text": "可是另一方面，财政部说不打算重启GST，钱从哪来呢？"
   },
   {
-    "voice_name": "echo",
-    "input_text": "如果 AI 当我经理，至少不会发那种模糊邮件：‘Let’s circle back’。",
-    "dialog_prompt": "抱怨式开玩笑"
+    "speaker": "fable",
+    "text": "靠大项目和国际合作吧，比如超过5亿马币的合约。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "没错，AI 的邮件简短又直击灵魂。比如‘语法错误。’完事。",
-    "dialog_prompt": "搞笑"
+    "speaker": "coral",
+    "text": "不过工人还是靠外国人啊，对吧？我听说孟加拉工人占了三成多。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "不过说真的，AI 还真教了我不少快捷技巧。我之前都不知道有一半 Python 库。",
-    "dialog_prompt": "反思，信息型"
+    "speaker": "onyx",
+    "text": "对，占了37%。这么大的比重对劳工政策影响不小。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "听起来挺鼓舞人心的。这更像是导师，而不是作弊。",
-    "dialog_prompt": "温和，深思"
+    "speaker": "alloy",
+    "text": "这其实和新加坡也有点像，新加坡也很依赖外劳。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "对啊！就像有个耐心的资深开发者……而且他知道所有 Stack Overflow 的答案。",
-    "dialog_prompt": "温暖，幽默"
+    "speaker": "onyx",
+    "text": "说到新加坡，有件小趣事，你们知道Korean快餐Lotteria要开到这里来吗？要等到2026年。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "等等，耐心的资深开发者真的存在吗？稀有啊。",
-    "dialog_prompt": "讽刺"
+    "speaker": "coral",
+    "text": "真的吗！哇，那到时候又有新店打卡咯。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "别揭穿我们啊，Echo！",
-    "dialog_prompt": "笑着打趣"
+    "speaker": "echo",
+    "text": "哈哈，两年后，不会到时候大家都不想吃炸鸡了吧？"
   },
   {
-    "voice_name": "fable",
-    "input_text": "不过有时候 AI 代码写得一团乱，还一本正经地说：‘这最优解。’",
-    "dialog_prompt": "半开玩笑，讽刺"
+    "speaker": "fable",
+    "text": "不用担心，汉堡和炸鸡的需求是跨文化的。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "真的，有次它给的方案跑完，我电脑哭得比 Coral 丢了没保存的 bug 修复还惨。",
-    "dialog_prompt": "搞笑调侃"
+    "speaker": "onyx",
+    "text": "在艺术方面，新加坡还要上演《樱桃园》的现代首尔版，好像挺新鲜的。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "喂！那只是掉了一滴泪——好吧，我承认有点戏剧化。",
-    "dialog_prompt": "假装辩解"
+    "speaker": "alloy",
+    "text": "融合传统经典和现代背景，这样做常常会引发不一样的观感。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "大家都有那个让自己情绪崩溃的 bug。不管有没有 AI。",
-    "dialog_prompt": "平稳，安抚"
+    "speaker": "coral",
+    "text": "我猜会很文艺吧，我可能要边看边查背景。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "没错。我调试时的情绪安慰零食就是泡面。",
-    "dialog_prompt": "随意"
+    "speaker": "echo",
+    "text": "其实新加坡最近到处都在讲终身学习，是不是有点过度了？"
   },
   {
-    "voice_name": "fable",
-    "input_text": "兄弟，我也是！不过我会撒辣椒，辣到忘了程序还在崩。",
-    "dialog_prompt": "搞笑夸张"
+    "speaker": "alloy",
+    "text": "呵呵，学习和成长本来就是无止境的，多一个机会也不坏。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "而我只会跟 AI 小伙伴说：‘像五岁小孩那样解释这个 bug。’然后它就解释了。",
-    "dialog_prompt": "俏皮"
+    "speaker": "onyx",
+    "text": "在体育方面，美国那边Cal Raleigh竟然打出50支全垒打，第一位做到的捕手。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "羡慕！我那个解释得像在写博士论文，居高临下！",
-    "dialog_prompt": "抱怨式幽默"
+    "speaker": "fable",
+    "text": "50支？捕手通常很难啊！这体能和技术都爆表。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "也许你该用小孩口吻问它。比如用宝宝语法？",
-    "dialog_prompt": "温和，开玩笑"
+    "speaker": "echo",
+    "text": "这种成绩会不会跟药检争议挂钩？球员太猛也容易惹怀疑。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "Coral 打字给 AI：‘我不懂。Bug 好可怕。’",
-    "dialog_prompt": "调侃，开玩笑"
+    "speaker": "alloy",
+    "text": "不要太阴谋论啦，有时就是勤奋和天赋的结合。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "别说，我现在真想试试。",
-    "dialog_prompt": "咯咯笑"
+    "speaker": "coral",
+    "text": "我没怎么跟棒球，但我知道BTS的V去丢球，粉丝应该很疯狂吧！"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "不管怎样，能解决问题就行！老实说，AI 让我不再害怕新框架。",
-    "dialog_prompt": "反思"
+    "speaker": "onyx",
+    "text": "是啊，韩国明星跨界体育节目影响力挺大的。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "对啊。我因为 AI，直接上手 Rust，不然学习曲线像悬崖。",
-    "dialog_prompt": "兴奋"
+    "speaker": "fable",
+    "text": "这其实也是文化软实力的一种体现。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "嗯，也许该少吐槽多尝试。但要是我搞坏电脑，我就怪你们。",
-    "dialog_prompt": "勉强但俏皮"
+    "speaker": "onyx",
+    "text": "再拉回来科技，Google打算让Android应用侧载更困难了，这事你们怎么看？"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "不会搞坏的。别盲目复制，拿它当头脑风暴伙伴。",
-    "dialog_prompt": "平稳，智慧"
+    "speaker": "coral",
+    "text": "作为开发者，感觉都要被困死在Play Store里。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "对！就像学校里那个帮你全干的实验搭档。谢谢这些人！",
-    "dialog_prompt": "怀旧幽默"
+    "speaker": "echo",
+    "text": "他们只是想多赚钱吧，控制生态。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "我从来不是那个搭档……我是负责带零食的。",
-    "dialog_prompt": "谦虚开玩笑"
+    "speaker": "alloy",
+    "text": "有时候限制也和安全有关。但确实平衡很难拿捏。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "零食担当才是英雄。没有零食，哪来动力。",
-    "dialog_prompt": "轻松"
+    "speaker": "fable",
+    "text": "再看VMware往Arm架构移植，说明大家都在谋划更多样化的底层框架。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "有时候零食比代码重要。这是真理。",
-    "dialog_prompt": "随意，搞笑"
+    "speaker": "onyx",
+    "text": "没错，这些技术趋势其实会影响很多人的工作方式和日常。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "好，认真点——你们觉得 AI 会改变新人学编程的方式吗？",
-    "dialog_prompt": "深思"
+    "speaker": "alloy",
+    "text": "嗯，像健康方面的新药试验，也是科技进展一部分嘛。比如针对恐慌症的新组合药物，要提供长期稳定治疗。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "绝对会。他们会学得更快，但仍然需要导师提醒保持思考。",
-    "dialog_prompt": "严肃，平衡"
+    "speaker": "coral",
+    "text": "那我家人可能受益耶，他有类似焦虑问题。科技如果能帮忙就好了。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "就像计算器没杀死数学——它只是救了我们的脑子。",
-    "dialog_prompt": "开朗的比喻"
+    "speaker": "echo",
+    "text": "但药物太多依赖，可能会忽视心理疗法的必要吧？"
   },
   {
-    "voice_name": "fable",
-    "input_text": "没错。谁不想少点脑抽？",
-    "dialog_prompt": "开玩笑"
+    "speaker": "fable",
+    "text": "科学已经在做脑电模式识别，像OCD的大脑活动特征，未来治疗肯定比以前精准多了。"
   },
   {
-    "voice_name": "echo",
-    "input_text": "我只想少开会。AI，求你 cancel所有会议。",
-    "dialog_prompt": "搞笑愿望"
+    "speaker": "onyx",
+    "text": "总的来看，佛教讲究内心平静，这些科技、社会、文化的变化，也都是我们如何找到平衡的一部分。"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "哈哈，要是能这样就好了！好了，各位，我们要收尾了。",
-    "dialog_prompt": "温暖，主持结尾"
+    "speaker": "alloy",
+    "text": "说得很好，古老智慧和现代进展其实可以互补。"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "这次聊天真不错。我可能真的会试试 AI。",
-    "dialog_prompt": "温和，乐观"
+    "speaker": "coral",
+    "text": "是啊，就像ROKU KYOTO那样，把传统和现代结合在一起，挺美的。"
   },
   {
-    "voice_name": "coral",
-    "input_text": "我也是——不过千万别在我饿的时候。AI 可解决不了这个。",
-    "dialog_prompt": "搞笑收尾"
+    "speaker": "echo",
+    "text": "好啦，我承认你们说得有点道理。"
   },
   {
-    "voice_name": "fable",
-    "input_text": "我用辣椒泡面给你加油。",
-    "dialog_prompt": "俏皮，随意"
+    "speaker": "fable",
+    "text": "哈哈，下次我们要不要就开个小沙龙，专门聊科技与生活的结合？"
   },
   {
-    "voice_name": "echo",
-    "input_text": "而我继续用怀疑为你们助力。平衡恢复。",
-    "dialog_prompt": "讽刺收尾"
+    "speaker": "onyx",
+    "text": "赞成！这就是“壹韶杂货店电台”的精神嘛～"
   },
   {
-    "voice_name": "onyx",
-    "input_text": "完美收尾。感谢大家参与这次关于 AI 和编程的聊天。下次见——聪明写代码，更聪明吃零食！",
-    "dialog_prompt": "温暖，最终结尾"
+    "speaker": "onyx",
+    "text": "好了，今天的《壹韶的杂货店》就到这里啦。谢谢大家陪伴我们一起从ROKU KYOTO的静谧美，到AI科技的未来，再到东南亚社会经济的点滴。"
+  },
+  {
+    "speaker": "coral",
+    "text": "希望大家听完能带走一点点灵感，也能像我们一样，时不时在生活里冒出新的灵光。"
+  },
+  {
+    "speaker": "alloy",
+    "text": "别忘了，世界很大，每天都有新的故事发生。杂货店永远为你留一盏灯。"
+  },
+  {
+    "speaker": "fable",
+    "text": "下次再来，我们继续随性地聊，继续探索未知。"
+  },
+  {
+    "speaker": "echo",
+    "text": "好啦，大家保重，下期节目再见啦！"
+  },
+  {
+    "speaker": "onyx",
+    "text": "这里是《壹韶的杂货店》，我们下次再见！"
   }
 ]
