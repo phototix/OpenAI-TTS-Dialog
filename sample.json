@@ -1,237 +1,232 @@
 [
   {
     "voice_name": "onyx",
-    "input_text": "大家好，欢迎收听《壹韶的杂货店》，今天我们要聊聊最近的一些新闻和趋势，从佛教文化到马来西亚的经济，再到科技与健康，还有体育八卦，话题满满！",
-    "dialog_prompt": "Cheerful, welcoming opening as the host."
+    "input_text": "大家好，欢迎收听《壹韶的杂货店》。我是壹韶，今天我们聊的话题是：星盘对你有什么帮助？",
+    "dialog_prompt": "cheerful, welcoming, engaging opening for the podcast"
   },
   {
     "voice_name": "alloy",
-    "input_text": "听起来很丰富啊，壹韶。我刚好最近看到关于京都的ROKU酒店的文章，说它原本是皇室的修养地，现在成了艺术文化的集中地呢。",
-    "dialog_prompt": "Gentle, steady, sharing an observation."
+    "input_text": "壹韶，你是真的对星盘感兴趣，还是只是想八卦一下？",
+    "dialog_prompt": "gentle, amused, teasing curiosity"
   },
   {
     "voice_name": "onyx",
-    "input_text": "对耶，这个地方不仅宁静，还特别强调艺术的传承，有点像把传统和现代结合在一起的典范。",
-    "dialog_prompt": "Curious, thoughtful reflection."
+    "input_text": "哈哈，说实话两者都有。我听说有些人真的会根据星盘来做人生的决策，挺神奇的。",
+    "dialog_prompt": "thoughtful, amused curiosity"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "我之前把自己星盘算了一遍，结果觉得像在看一份用户使用说明书，甚至比AI算法跑出来的结果还准。",
+    "dialog_prompt": "nerdy, excited, storytelling with tech comparison"
   },
   {
     "voice_name": "echo",
-    "input_text": "听起来很文艺啊，但说真的，那种地方是不是只适合游客去打卡？",
-    "dialog_prompt": "Skeptical but interested tone."
+    "input_text": "拜托，你不会真相信吧？这不就是把模糊的描述应用到自己身上，然后觉得“哎呀好准”嘛。",
+    "dialog_prompt": "skeptical, a bit teasing but still curious"
   },
   {
     "voice_name": "coral",
-    "input_text": "不一定哦，有些地方虽然贵，但真的有氛围。我朋友去过，说在那边学茶道，感觉禅意很强。",
-    "dialog_prompt": "Newbie, slightly enthusiastic sharing."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "这其实挺有趣的，像现在的科技公司也开始讲‘禅意’设计，比如降噪、简约UI，其实都是文化影响渗透到科技里。",
-    "dialog_prompt": "Tech-savvy, explaining connections."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "说到科技，你们听说吗？马来西亚刚推出了7纳米的边缘AI芯片MARS1000，专门用于机器人和智慧城市。",
-    "dialog_prompt": "Host, highlighting new tech news."
-  },
-  {
-    "voice_name": "echo",
-    "input_text": "马来西亚？不会吧，我还以为只有台积电或者英伟达这种巨头才搞得出来。",
-    "dialog_prompt": "Skeptical reaction."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "是真的哦，他们瞄准的是应用场景，比如IoT和机器人，不是直接跟大厂正面对抗，而是走应用导向。",
-    "dialog_prompt": "Clarifying with expertise."
+    "input_text": "我完全不懂星盘，但同事说星盘可以帮你认清性格盲点。我就好奇，这是不是跟心理测试差不多？",
+    "dialog_prompt": "new learner, curious but cautious"
   },
   {
     "voice_name": "alloy",
-    "input_text": "其实这种走应用路线挺聪明的，不需要硬碰硬，还能培养自己的生态圈。",
-    "dialog_prompt": "Calm, thoughtful observation."
+    "input_text": "我觉得星盘有点像一面镜子，不是要你全盘接受，而是借由它去思考，你自己能不能看到新的角落。",
+    "dialog_prompt": "steady, reflective and gentle"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "听起来星盘更像是一种自我探索的工具，而不是绝对的命运指南，对吗？",
+    "dialog_prompt": "curious, reflective tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "完全可以这么说。我甚至写过个小程序算星盘，把运算结果可视化，就像一个动态的人生图表。",
+    "dialog_prompt": "excited, nerdy, showing off tech skills"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哇哦，还搞程序？你确定这不是科技版的占卜？",
+    "dialog_prompt": "amused, skeptical"
   },
   {
     "voice_name": "coral",
-    "input_text": "但是这种芯片会不会很难推广呀？我刚学AI工具，就感觉生态很割裂。",
-    "dialog_prompt": "Curious, beginner level concern."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "这就牵扯到政策了。像马来西亚议会现在也在讨论老龄化和房价问题，其实这些社会议题也会影响到科技发展。",
-    "dialog_prompt": "Connecting societal issues with tech."
-  },
-  {
-    "voice_name": "echo",
-    "input_text": "不过我更关心股市吧，最近听说Harrison Holdings的股价跌了13%。这种跌法是不是基本面出问题了？",
-    "dialog_prompt": "Skeptical, financially focused comment."
+    "input_text": "哈哈，这倒挺有意思。我才刚开始学用AI工具，要不要哪天也写个‘AI算星盘’跟你PK？",
+    "dialog_prompt": "lighthearted, curious, playful"
   },
   {
     "voice_name": "alloy",
-    "input_text": "好像基本面还是稳的，可能是市场整体环境不够好吧。",
-    "dialog_prompt": "Gentle reassurance tone."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "对，外部环境影响比较大，全球都在担忧美联储的政策和通胀，亚洲股市被牵连很正常。",
-    "dialog_prompt": "Explaining financial context."
+    "input_text": "其实这也说明了，无论是占星还是AI，大家都在寻找一种框架，帮助自己理解人生。",
+    "dialog_prompt": "wise, calm, insightful"
   },
   {
     "voice_name": "onyx",
-    "input_text": "说到全球，我看到新加坡也暂停了寄往美国的邮政服务，还联手澳洲、日本。这是不是代表局势挺紧张的？",
-    "dialog_prompt": "Host raising geopolitical observation."
+    "input_text": "听你们这么说，我反而想到：是不是很多人平时没有机会安静地跟自己对话？星盘就刚好提供了一个理由。",
+    "dialog_prompt": "thoughtful, reflective"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "没错，就像数据分析一样，有些结果你已经隐隐觉得存在，但看到图表之后才会真正正视它。",
+    "dialog_prompt": "explaining with a rational, tech tone"
   },
   {
     "voice_name": "echo",
-    "input_text": "感觉就是被牵着走吧，小国难免要跟大国立场保持一致。",
-    "dialog_prompt": "Skeptical geopolitical comment."
+    "input_text": "那也就是说，星盘的“准”，其实是我们自己把意义套进去的，对吧？",
+    "dialog_prompt": "curious, still skeptical"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "是的，你可以说它是‘投射’，但这投射有时能触发很有价值的思考。",
+    "dialog_prompt": "calm, balanced and thoughtful"
   },
   {
     "voice_name": "coral",
-    "input_text": "话说回来，我更关心生活类的新闻，比如说2026年新加坡引进Lotteria汉堡！这真的让我期待哈哈。",
-    "dialog_prompt": "Casual, cheerful gossip vibe."
-  },
-  {
-    "voice_name": "alloy",
-    "input_text": "你真的很可爱欸，别人都在担心国际关系，你在想汉堡。",
-    "dialog_prompt": "Gentle, amused response."
+    "input_text": "我倒是很想知道，如果星盘能帮我发现自己写代码的‘弱点’就好了，这样debug更快一点。",
+    "dialog_prompt": "joking, playful curiosity"
   },
   {
     "voice_name": "fable",
-    "input_text": "不过食物文化确实是软实力的一部分，韩国品牌进新加坡，也是在扩展影响力。",
-    "dialog_prompt": "Analytical but warm comment."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "顺便说，Forbes Asia刚刚出的‘100 to Watch’，其实有不少新加坡和马来西亚的创业公司入选，挺励志的。",
-    "dialog_prompt": "Sharing positive startup news."
+    "input_text": "哈哈，那你一定是“水逆程序员”星座，bug总是跟着你跑。",
+    "dialog_prompt": "teasing, playful and funny"
   },
   {
     "voice_name": "echo",
-    "input_text": "励志是励志啦，可这些创业公司能撑过几年才是关键。",
-    "dialog_prompt": "Skeptical remark."
-  },
-  {
-    "voice_name": "alloy",
-    "input_text": "也不能一直怀疑，很多伟大的公司都是从小小的初创开始的。",
-    "dialog_prompt": "Encouraging, wise tone."
-  },
-  {
-    "voice_name": "coral",
-    "input_text": "对呀，说不定未来的AI巨头就在这份名单上呢！",
-    "dialog_prompt": "Excited, beginner perspective."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "说到AI，你们知道吗？Nvidia刚发布了一款新的‘大脑’模块，专门给机器人和自动驾驶用，数据处理快了很多倍。",
-    "dialog_prompt": "Tech-savvy, sharing news."
+    "input_text": "听起来，你们是把星盘当作一种创意性的解读方式，而不是绝对的科学。",
+    "dialog_prompt": "curious, measured tone"
   },
   {
     "voice_name": "onyx",
-    "input_text": "哇，这听起来太像科幻片了。以后是不是家里真能有机器人帮你煮饭？",
-    "dialog_prompt": "Host, half-joking reflection."
+    "input_text": "嗯，我越来越觉得它像一本故事书，每个人从里面读出来的剧情都不太一样。",
+    "dialog_prompt": "thoughtful, warm closing summary"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "而且故事书的价值在于，你能不能从里面找到启发，而不仅仅是娱乐。",
+    "dialog_prompt": "gentle, nurturing perspective"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "原来如此，那我也要去研究一下。说不定下次我就来分享‘程序员星盘指南’了。",
+    "dialog_prompt": "playful, excited curiosity"
   },
   {
     "voice_name": "echo",
-    "input_text": "你别想了，万一哪天机器人坏了，你家饭还得自己煮哈哈。",
-    "dialog_prompt": "Playful skepticism."
-  },
-  {
-    "voice_name": "coral",
-    "input_text": "可是想象一下真的很酷欸，连扫地都不用自己动手了。",
-    "dialog_prompt": "Playful, excited newbie tone."
-  },
-  {
-    "voice_name": "alloy",
-    "input_text": "科技确实带来便利，但我觉得还是要注意隐私和安全，不然太依赖会有风险。",
-    "dialog_prompt": "Cautious, thoughtful advice."
+    "input_text": "好吧，我虽然还是半信半疑，但至少今天不觉得它完全无厘头了。",
+    "dialog_prompt": "accepting, open-minded tone"
   },
   {
     "voice_name": "fable",
-    "input_text": "没错，Google就打算让用户更难侧载APP，就是为了减少风险。不过开发者社群可能不太高兴。",
-    "dialog_prompt": "Balanced, professional explanation."
+    "input_text": "对了，壹韶，你知道吗，有人用星盘来决定什么时候换工作，我朋友就是这样。",
+    "dialog_prompt": "casual, storytelling gossip"
   },
   {
     "voice_name": "onyx",
-    "input_text": "从健康角度讲，最近也看到新研究说长期使用手机可能会影响心理，甚至影响淋巴功能。",
-    "dialog_prompt": "Host, bringing health news."
+    "input_text": "真的吗？那结果呢？赶紧讲八卦！",
+    "dialog_prompt": "excited, curious gossip mode"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "她本来要跳槽，结果星盘说她的契机在年底，她就忍了三个月，真的年底就拿到更好的offer。",
+    "dialog_prompt": "gossip storytelling"
   },
   {
     "voice_name": "echo",
-    "input_text": "这不就是在说我吗？每天抱着手机不放。",
-    "dialog_prompt": "Self-deprecating, humorous skepticism."
+    "input_text": "哇，这是不是自我暗示？她心里有方向了，所以自然表现好。",
+    "dialog_prompt": "skeptical but engaging"
   },
   {
     "voice_name": "alloy",
-    "input_text": "哈哈，不过适度用手机也没问题，最重要还是生活要平衡。",
-    "dialog_prompt": "Gentle, balancing reassurance."
+    "input_text": "不管原因是什么，对于她来说星盘起到的就是一种‘信念支撑’。",
+    "dialog_prompt": "balanced and reflective"
   },
   {
     "voice_name": "coral",
-    "input_text": "对了，我还看到一个关于近视的大规模研究，好像亚洲人的高度近视比例特别高，怪不得我身边戴眼镜的这么多。",
-    "dialog_prompt": "Curious, casual sharing."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "对，而且科技公司也在想办法，用AI做早期筛查。以后可能戴眼镜的孩子能更早干预。",
-    "dialog_prompt": "Informative, optimistic tech insight."
+    "input_text": "听起来就像代码里的注释，没有它，程序也能运行，但有时候它会帮你走对方向。",
+    "dialog_prompt": "playful, coding metaphor"
   },
   {
     "voice_name": "onyx",
-    "input_text": "体育方面也有不少八卦，比如Cal Raleigh成了第一位MLB捕手，打出50个全垒打。",
-    "dialog_prompt": "Cheerful gossip about sports."
+    "input_text": "哈哈，这比喻太妙了！所以星盘是人生的注释？",
+    "dialog_prompt": "curious, amused"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "没错，星盘：人生debug助手！",
+    "dialog_prompt": "humorous, techy pun"
   },
   {
     "voice_name": "echo",
-    "input_text": "厉害是厉害啦，但我还是觉得棒球节奏太慢，不够刺激。",
-    "dialog_prompt": "Skeptical sports take."
+    "input_text": "要是真有‘debug按钮’，我第一个买！",
+    "dialog_prompt": "lighthearted, joking skepticism"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "不过说实话，我觉得星盘最大的帮助是让你知道自己不是孤单的，总有一些解读让人觉得被理解。",
+    "dialog_prompt": "gentle, empathetic sharing"
   },
   {
     "voice_name": "coral",
-    "input_text": "哈哈，那说明你没认真看过！棒球的策略其实挺有意思的。",
-    "dialog_prompt": "Playful defense of sports."
+    "input_text": "对，我有个朋友就是这样，她说星盘像一个朋友，会告诉她‘你这样也没关系’。",
+    "dialog_prompt": "sharing anecdote warmly"
   },
   {
-    "voice_name": "alloy",
-    "input_text": "体育其实也是一种文化嘛，就算不喜欢，也能感受到一种团队精神。",
-    "dialog_prompt": "Calm, steady reflection."
+    "voice_name": "onyx",
+    "input_text": "嗯，这很像有人翻开一本书，却觉得作者在和自己对话。",
+    "dialog_prompt": "warm, thoughtful comparison"
   },
   {
     "voice_name": "fable",
-    "input_text": "对了，娱乐圈也有有趣的事，比如BTS的V去投了棒球的开球，粉丝都疯狂了吧。",
-    "dialog_prompt": "Casual gossip sharing."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "没错，娱乐和体育一结合，就是话题满满啦。",
-    "dialog_prompt": "Playful host commentary."
-  },
-  {
-    "voice_name": "onyx",
-    "input_text": "好啦，今天我们聊了从佛教文化、马来西亚经济、新加坡创业到AI科技和体育八卦，还顺便八卦了汉堡！希望大家喜欢。",
-    "dialog_prompt": "Closing summary in cheerful host tone."
-  },
-  {
-    "voice_name": "alloy",
-    "input_text": "谢谢大家的陪伴，让我们下次继续轻松聊聊世界大小事。",
-    "dialog_prompt": "Gentle warm closing."
+    "input_text": "我忍不住想做个AI项目，把星盘和心理学结合起来，说不定能做一个个性化成长助手。",
+    "dialog_prompt": "excited visionary"
   },
   {
     "voice_name": "echo",
-    "input_text": "下次记得多带点八卦新闻啊，不然太认真我会打瞌睡。",
-    "dialog_prompt": "Playful skeptical ending."
+    "input_text": "听起来很潮，搞不好投资人会买单，不过我还是先保留态度。",
+    "dialog_prompt": "skeptical but slightly impressed"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "这就是星盘的魅力，当科学和玄学之间有个灰色地带，人们反而觉得它更神秘。",
+    "dialog_prompt": "calm, wise observation"
   },
   {
     "voice_name": "coral",
-    "input_text": "哈哈，我会继续关注AI和美食新闻，下次再一起分享！",
-    "dialog_prompt": "Cheerful, friendly farewell."
-  },
-  {
-    "voice_name": "fable",
-    "input_text": "大家一起见证科技和生活交织的未来吧，下集再见！",
-    "dialog_prompt": "Professional but warm ending."
+    "input_text": "哈哈，说不定下次星盘会告诉我‘你该早点休息’，比智能手环还管用。",
+    "dialog_prompt": "playful joking"
   },
   {
     "voice_name": "onyx",
-    "input_text": "这里是《壹韶的杂货店》，我们下次再见！",
-    "dialog_prompt": "Closing signature as host."
+    "input_text": "那它真的帮到你了，因为我们都需要提醒来照顾自己。",
+    "dialog_prompt": "warm, reflective tone"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "我发现今天聊到最后，我也有点动摇了，看来星盘的力量就是这个吧——让怀疑的人也忍不住想尝试。",
+    "dialog_prompt": "casual admission"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "那就来吧，我帮你算一盘，你会发现意外惊喜。",
+    "dialog_prompt": "cheerful, teasing invitation"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "好啊，别到时候说我太挑剔！",
+    "dialog_prompt": "joking but willing tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "好啦，大家今天的分享让我觉得，星盘未必是答案，但它可能是问题的开始。",
+    "dialog_prompt": "host-style philosophical wrap-up"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "没错，提出问题的过程，本身就是帮助。",
+    "dialog_prompt": "calm and gentle conclusion"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "感谢大家的陪伴，也谢谢你们的真心分享。这里是《壹韶的杂货店》，我们下次再见。",
+    "dialog_prompt": "warm, podcast closing"
   }
 ]
