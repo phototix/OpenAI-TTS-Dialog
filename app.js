@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const openaiTTSHeader = document.getElementById('openaiTTSHeader');
     const openaiAPIConfig = document.getElementById('openaiAPIConfig');
+
+    const fullscreenSpeakersBtn = document.getElementById('fullscreenSpeakersBtn');
+    const fullscreenDialogBtn = document.getElementById('fullscreenDialogBtn');
+    const speakersCard = document.querySelector('.card:has(#speakersRow)');
+    const dialogCard = document.querySelector('.card:has(#dialogContainer)');
     
     // Dialog data storage
     let dialogData = [];
@@ -38,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
     showBtn.addEventListener('click', showWebUI);
     stopBtn.addEventListener('click', stopPlayback);
     playbackSpeed.addEventListener('input', updatePlaybackSpeed);
+
+    // Add event listeners
+    fullscreenSpeakersBtn.addEventListener('click', () => toggleFullscreen(speakersCard, 'speakers'));
+    fullscreenDialogBtn.addEventListener('click', () => toggleFullscreen(dialogCard, 'dialog'));
     
     // Functions
     async function loadSampleDialog() {
@@ -190,6 +199,47 @@ document.addEventListener('DOMContentLoaded', function() {
             playAllBtn.disabled = true;
         }
     }
+
+    // Fullscreen toggle function
+    function toggleFullscreen(element, type) {
+        if (element.classList.contains('fullscreen-mode')) {
+            // Exit fullscreen
+            element.classList.remove('fullscreen-mode');
+            document.querySelector(`.exit-fullscreen-${type}`)?.remove();
+            
+            // Update button icon
+            const btn = type === 'speakers' ? fullscreenSpeakersBtn : fullscreenDialogBtn;
+            btn.innerHTML = '<i class="fas fa-expand"></i>';
+            
+        } else {
+            // Enter fullscreen
+            element.classList.add('fullscreen-mode');
+            
+            // Create exit button
+            const exitBtn = document.createElement('button');
+            exitBtn.className = `btn btn-danger exit-fullscreen-btn exit-fullscreen-${type}`;
+            exitBtn.innerHTML = '<i class="fas fa-compress"></i>';
+            exitBtn.onclick = () => toggleFullscreen(element, type);
+            
+            element.appendChild(exitBtn);
+            
+            // Update button icon
+            const btn = type === 'speakers' ? fullscreenSpeakersBtn : fullscreenDialogBtn;
+            btn.innerHTML = '<i class="fas fa-compress"></i>';
+        }
+    }
+
+    // Handle ESC key to exit fullscreen
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            if (speakersCard.classList.contains('fullscreen-mode')) {
+                toggleFullscreen(speakersCard, 'speakers');
+            }
+            if (dialogCard.classList.contains('fullscreen-mode')) {
+                toggleFullscreen(dialogCard, 'dialog');
+            }
+        }
+    });
     
     async function generateTTS() {
         const apiKey = document.getElementById('apiKey').value;
