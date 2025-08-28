@@ -173,14 +173,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function initializeSpeakerAvatars() {
         // Map voice names to avatar images (you can replace with actual images)
         speakerAvatars = {
-            'alloy': 'https://cloud.webbypage.com/index.php/s/X2xjA3LT3sL4iHr/download',
-            'coral': 'https://cloud.webbypage.com/index.php/s/yJ39RYEB7F6qRd7/download',
-            'echo': 'https://cloud.webbypage.com/index.php/s/cjJXnWLPWeGPHRG/download',
-            'fable': 'https://cloud.webbypage.com/index.php/s/MWQN2y77jKznAiD/download',
-            'nova': 'https://cloud.webbypage.com/index.php/s/bJrD6MCfzjLEaBN/download',
-            'onyx': 'https://cloud.i-dc.institute/index.php/avatar/Brandon%20Chong/512/dark?v=3',
-            'sage': 'https://cloud.webbypage.com/index.php/s/yr9aAJSmgEmDNnB/download',
-            'shimmer': 'https://cloud.webbypage.com/index.php/s/4e6B9EKjrfT94cK/download'
+            'alloy': '/assets/avatars/alloy.jpg',
+            'coral': '/assets/avatars/coral.jpg',
+            'echo': '/assets/avatars/echo.jpg',
+            'fable': '/assets/avatars/fable.jpg',
+            'nova': '/assets/avatars/nova.jpg',
+            'onyx': '/assets/avatars/onyx.png',
+            'sage': '/assets/avatars/sage.jpg',
+            'shimmer': '/assets/avatars/shimmer.jpg'
         };
         
         renderSpeakerAvatars();
