@@ -233,10 +233,51 @@ body {
 /* Meeting Layout with Webcam-style Tiles */
 .meeting-layout #speakersRow {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px !important;
-    padding: 15px !important;
+    grid-template-areas: 
+        "host speakers"
+        "host speakers";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px !important;
+    padding: 20px !important;
     width: 100%;
+}
+
+.meeting-layout .host-tile {
+    grid-area: host;
+    min-height: 300px;
+    border: 3px solid #6c5ce7;
+}
+
+.meeting-layout .host-tile {
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(142, 68, 173, 0.1));
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meeting-layout .host-tile .speaker-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    border: 4px solid #6c5ce7;
+}
+
+.meeting-layout .host-tile .speaker-name-overlay {
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(transparent, rgba(108, 92, 231, 0.9));
+    padding: 15px 8px 12px;
+}
+
+.meeting-layout .speakers-grid {
+    grid-area: speakers;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
 }
 
 .meeting-layout .speaker-item {
@@ -256,9 +297,10 @@ body {
     aspect-ratio: 3/2;
 }
 
-.meeting-layout .speaker-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+.meeting-layout .speaker-item {
+    flex: 0 0 calc(33.333% - 15px);
+    min-width: 150px;
+    max-width: 200px;
 }
 
 .meeting-layout .speaker-avatar-container {
@@ -334,4 +376,24 @@ body {
 
 .meeting-layout .mic-status.muted {
     background: #e74c3c; /* Red for muted */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .meeting-layout #speakersRow {
+        grid-template-areas: 
+            "host"
+            "speakers";
+        grid-template-columns: 1fr;
+    }
+    
+    .meeting-layout .speaker-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .meeting-layout .speaker-item {
+        flex: 0 0 100%;
+    }
 }

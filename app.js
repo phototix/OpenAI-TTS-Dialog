@@ -108,21 +108,24 @@ document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.getElementById('layoutToggleBtn');
         
         if (currentLayoutMode === 'circle') {
-            // Switch to meeting layout
+            // Switch to meeting layout with host separation
             speakersRow.classList.add('meeting-layout');
             speakersRow.classList.remove('circle-layout');
             toggleBtn.innerHTML = '<i class="fas fa-circle me-1"></i>Switch to Circle View';
             currentLayoutMode = 'meeting';
+            
+            // Re-render with host separation
+            renderSpeakerAvatars();
         } else {
             // Switch to circle layout
             speakersRow.classList.remove('meeting-layout');
             speakersRow.classList.add('circle-layout');
             toggleBtn.innerHTML = '<i class="fas fa-th-large me-1"></i>Switch to Meeting View';
             currentLayoutMode = 'circle';
+            
+            // Re-render avatars with circle layout
+            renderSpeakerAvatars();
         }
-        
-        // Re-render avatars with current layout
-        renderSpeakerAvatars();
     }
 
     // Add these functions to handle local storage
@@ -217,7 +220,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
         
-        Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
+        // Create host tile (first speaker)
+        const hostVoice = Object.keys(speakerAvatars)[0];
+        const hostItem = document.createElement('div');
+        hostItem.className = 'speaker-item host-tile';
+        hostItem.setAttribute('data-voice', hostVoice);
+        hostItem.innerHTML = `
+            <div class="speaker-avatar-container">
+                <img src="${speakerAvatars[hostVoice]}" 
+                    alt="${hostVoice}" 
+                    class="speaker-avatar"
+                    title="${hostVoice} (Host)">
+                <div class="mic-status"></div>
+                <div class="speaker-name-overlay">${hostVoice} (Host)</div>
+            </div>
+        `;
+        speakersRow.appendChild(hostItem);
+        
+        // Create speakers grid container
+        const speakersGrid = document.createElement('div');
+        speakersGrid.className = 'speakers-grid';
+        
+        // Add other speakers (skip the first one)
+        const otherSpeakers = Object.entries(speakerAvatars).slice(1);
+        otherSpeakers.forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
             speakerItem.className = 'speaker-item';
             speakerItem.setAttribute('data-voice', voiceName);
@@ -227,16 +253,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${avatarUrl}" 
                         alt="${voiceName}" 
                         class="speaker-avatar"
-                        data-voice="${voiceName}"
                         title="${voiceName}">
                     <div class="mic-status"></div>
                     <div class="speaker-name-overlay">${voiceName}</div>
                 </div>
             `;
-            speakersRow.appendChild(speakerItem);
-            
-            // Add click event for testing
-            speakerItem.addEventListener('click', function() {
+            speakersGrid.appendChild(speakerItem);
+        });
+        
+        speakersRow.appendChild(speakersGrid);
+        
+        // Add click events
+        document.querySelectorAll('.speaker-item').forEach(item => {
+            item.addEventListener('click', function() {
                 const allItems = document.querySelectorAll('.speaker-item');
                 allItems.forEach(item => item.classList.remove('active', 'playing'));
                 this.classList.add('active', 'playing');
