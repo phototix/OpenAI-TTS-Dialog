@@ -340,7 +340,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
-            alert('TTS generation complete! Ready to play.');
             playAllBtn.disabled = false;
             
         } catch (error) {
