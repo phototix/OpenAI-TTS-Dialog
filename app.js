@@ -25,9 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const fullscreenDialogBtn = document.getElementById('fullscreenDialogBtn');
     const speakersCard = document.querySelector('.card:has(#speakersRow)');
     const dialogCard = document.querySelector('.card:has(#dialogContainer)');
-        
-    const miniPlayBtn = document.getElementById('miniPlayBtn');
-    const miniStopBtn = document.getElementById('miniStopBtn');
     
     // Dialog data storage
     let dialogData = [];
@@ -376,15 +373,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     async function playDialogItem(index) {
+        
+        const miniPlayBtn = document.getElementById('miniPlayBtn');
+
         stopPlayback();
         
         if (index >= audioElements.length) {
             stopPlayback();
-            console.log("Playback stopped.");
-            miniStopBtn.addEventListener('click', async () => {
-                // Hide the button safely
-                miniPlayBtn.style.display = '';
-            });
+            miniPlayBtn.style.display = '';
             return;
         }
     
@@ -406,6 +402,8 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.onended = () => {
             if (currentPlayingIndex === index) {
                 playDialogItem(index + 1);
+            }else{
+                stopPlayback();
             }
         };
         
@@ -486,6 +484,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('miniPlayBtn').addEventListener('click', playAllDialog);
         document.getElementById('miniStopBtn').addEventListener('click', stopPlayback);
         document.getElementById('showBtn').addEventListener('click', showWebUI);
+        
+        const miniPlayBtn = document.getElementById('miniPlayBtn');
+        const miniStopBtn = document.getElementById('miniStopBtn');
 
         miniPlayBtn.addEventListener('click', async () => {
             // Hide the button safely
