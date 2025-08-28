@@ -416,6 +416,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         wait(5000);
+        console.log("Paused for 5 seconds");
         playDialogItem(0);
     }
     
