@@ -91,6 +91,10 @@ body {
     text-align: center;
 }
 
+.speaker-name-overlay{
+    text-align: center;;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.7);
@@ -236,6 +240,7 @@ body {
 }
 
 .meeting-layout .speaker-item {
+    min-width: 160px !important;
     border-radius: 12px;
     padding: 0;
     overflow: hidden;
