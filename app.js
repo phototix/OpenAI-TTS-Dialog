@@ -480,10 +480,16 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('showBtn').addEventListener('click', showWebUI);
         
         const miniPlayBtn = document.getElementById('miniPlayBtn');
+        const miniStopBtn = document.getElementById('miniStopBtn');
 
         miniPlayBtn.addEventListener('click', async () => {
             // Hide the button safely
             miniPlayBtn.style.display = 'none';
+        });
+
+        miniStopBtn.addEventListener('click', async () => {
+            // Hide the button safely
+            miniPlayBtn.style.display = '';
         });
 
     }
