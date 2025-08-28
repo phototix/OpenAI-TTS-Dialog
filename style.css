@@ -236,7 +236,6 @@ body {
 }
 
 .meeting-layout .speaker-item {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
     border-radius: 12px;
     padding: 0;
     overflow: hidden;
