@@ -404,13 +404,18 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.playbackRate = parseFloat(playbackSpeed.value);
         await audio.play();
     }
+
+    // Helper function to pause
+    function wait(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
     
     function playAllDialog() {
         if (audioElements.length === 0) {
             alert('Please generate TTS first.');
             return;
         }
-        
+        await wait(10000);
         playDialogItem(0);
     }
     
