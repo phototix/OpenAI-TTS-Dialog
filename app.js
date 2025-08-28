@@ -221,15 +221,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
-            speakerItem.className = 'speaker-item';
+            
             speakerItem.setAttribute('data-voice', voiceName);
 
-            if(intIndex === 0){ speakerStyleName = 'host-tile'; }else{ speakerStyleName = ''; }
+            if(intIndex === 0){ 
+                speakerItem.className = 'speaker-item host-tile';
+            }else{ 
+                speakerItem.className = 'speaker-item';
+            }
 
             intIndex++;
 
             speakerItem.innerHTML = `
-                <div class="speaker-avatar-container ${speakerStyleName}">
+                <div class="speaker-avatar-container">
                     <img src="${avatarUrl}" 
                         alt="${voiceName}" 
                         class="speaker-avatar"
