@@ -6,7 +6,7 @@
     <title>AI Speech Builder - Dialog TTS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?version=1.7">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 </head>
 <body>
 
@@ -188,6 +188,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js?version=1.45"></script>
+    <script src="app.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
