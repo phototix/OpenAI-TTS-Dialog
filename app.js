@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load API key from local storage on page load
     const savedEleApiKey = loadEleApiKeyFromLocalStorage();
     if (savedEleApiKey) {
-        document.getElementById('apiEleKey').value = savedApiKey;
+        document.getElementById('apiEleKey').value = savedEleApiKey;
     }
     
     // Add event listener to save API key when changed
