@@ -380,7 +380,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (index >= audioElements.length) {
             stopPlayback();
-            miniPlayBtn.style.display = '';
+            if (miniPlayBtn) {
+                miniPlayBtn.style.display = '';
+            }
             return;
         }
     
