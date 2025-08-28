@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
         let intIndex = 0;
-        let speakerStyleName = 'speaker-tile';
+        let speakerStyleName = '';
         
         Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             intIndex++;
 
-            if(intIndex==0){ speakerStyleName = 'host-tile'; }
+            if(intIndex==0){ speakerStyleName = 'host-tile'; }else{ speakerStyleName = ''; }
 
             speakerItem.innerHTML = `
                 <div class="speaker-avatar-container ${speakerStyleName}">
