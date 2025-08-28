@@ -1,0 +1,157 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎来到《壹韶的杂货店》，今天我们要聊的话题是——我最近搞的一个AI Jarvis系统！",
+    "dialog_prompt": "cheerful, welcoming, engaging introduction for the podcast"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "Jarvis？听起来好像钢铁侠里的那个AI啊，你真的做出来了？",
+    "dialog_prompt": "gentle surprise, steady and interested like a curious friend"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "没错！他组了一台NVIDIA A1000工作站，再配合LLama模型和Open WebUI，真就像个人工智能助手一样。",
+    "dialog_prompt": "proud, explanatory, tech-savvy enthusiasm"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "等下，A1000？不是很顶级的显卡吧？能跑这种AI吗？",
+    "dialog_prompt": "skeptical but curious tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，对啊，我一开始也有点担心。不过A1000效率和稳定性真的不错，运行多个AI任务也没问题。",
+    "dialog_prompt": "reassuring, thoughtful explanation"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "哇，我才刚刚接触AI工具，这听起来比我想象的要复杂好多。",
+    "dialog_prompt": "innocent curiosity, friendly and humble tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "别怕，其实只要搞定驱动和基础环境，剩下的部署不算太难啦。",
+    "dialog_prompt": "encouraging, experienced tone"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "那它到底能帮你做什么？光是聊天吗？",
+    "dialog_prompt": "steady curiosity, like a calm friend asking"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "不仅仅是聊天，它还能帮我排程、写报告、数据分析，甚至写点代码！",
+    "dialog_prompt": "excited, informative"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "听起来有点夸张啊，你确定不是‘人工智障’？",
+    "dialog_prompt": "teasing tone, skeptical humor"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，有时候也会犯蠢啦，比如一次把提醒设到凌晨三点……差点把我吓醒。",
+    "dialog_prompt": "playful, laughing at a personal story"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "哈哈！那真的很像我第一次写脚本的时候，代码一循环就停不下来。",
+    "dialog_prompt": "amused, relatable laugh"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "而且他还做了自动化脚本，可以让AI直接跟GitHub和AWS交互，工作流超级高效。",
+    "dialog_prompt": "enthusiastic technical brag"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "这听起来很厉害，不过会不会有点太依赖AI了？",
+    "dialog_prompt": "calm but concerned tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "也有这种担心，所以我会让它做辅助，而不是完全替代我。",
+    "dialog_prompt": "balanced, thoughtful explanation"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "我只想知道，速度真的快吗？不会像我家老电脑那样半天没响应吧？",
+    "dialog_prompt": "skeptical, teasing curiosity"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "几乎是实时响应！基本问什么，它都能立刻回。",
+    "dialog_prompt": "proud, confident response"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那我是不是也该试试搭建一个？不过我连GPU都还没买……",
+    "dialog_prompt": "naive, curious willingness"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "有些云平台也能跑，先别急着买硬件，你可以用小规模的试试水。",
+    "dialog_prompt": "helpful, mentoring tone"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "其实我更想听听这个AI会不会‘八卦’，能不能陪你聊天解闷？",
+    "dialog_prompt": "teasing but warm curiosity"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，偶尔能聊得很有趣，但也会很认真地回答，好像一个永远不会累的朋友。",
+    "dialog_prompt": "gentle humor, reflective explanation"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "嗯，好吧，听你这么说我开始有点心动了……",
+    "dialog_prompt": "skeptical turning into interest"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我们要不要哪天开个小组，一起玩AI agent？",
+    "dialog_prompt": "excited suggestion, teamwork spirit"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "好主意！每个人都可以试着训练属于自己风格的AI助手！",
+    "dialog_prompt": "energetic agreement"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "不过得先有人愿意当‘技术顾问’，要不然我们肯定走不下去。",
+    "dialog_prompt": "calm, rational remark with realism"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "没问题，我来当那个顾问！放心，有我在。",
+    "dialog_prompt": "cheerful assurance"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "看吧，壹韶这次真的变成我们的Tony Stark了。",
+    "dialog_prompt": "half-joking admiration"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，别抬举我了，我顶多算‘打工版钢铁侠’。",
+    "dialog_prompt": "playful self-deprecation"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我觉得挺棒的啦，至少这比整天喊‘Hello World’好玩多了！",
+    "dialog_prompt": "light humor, supportive tone"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "大家好像都开始兴奋起来了呢，这样的分享真的很有意思。",
+    "dialog_prompt": "warm concluding remark toward the group"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "今天的《壹韶的杂货店》就聊到这里，谢谢你们的陪伴，希望大家也能在生活里创造点属于自己的‘未来感’。",
+    "dialog_prompt": "thoughtful, grateful ending note"
+  }
+]
