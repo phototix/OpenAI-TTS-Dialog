@@ -226,9 +226,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if(intIndex === 0){ 
                 speakerItem.className = 'speaker-item host-tile';
-                voiceName = "壹韶";
+                voiceNameDisplay = "壹韶";
             }else{ 
                 speakerItem.className = 'speaker-item';
+                voiceNameDisplay = voiceName;
             }
 
             intIndex++;
@@ -236,12 +237,12 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerItem.innerHTML = `
                 <div class="speaker-avatar-container">
                     <img src="${avatarUrl}" 
-                        alt="${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}" 
+                        alt="${voiceNameDisplay.charAt(0).toUpperCase() + voiceNameDisplay.slice(1)}" 
                         class="speaker-avatar"
                         data-voice="${voiceName}"
-                        title="${voiceName}">
+                        title="${voiceNameDisplay}">
                     <div class="mic-status"></div>
-                    <div class="speaker-name-overlay">${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}</div>
+                    <div class="speaker-name-overlay">${voiceNameDisplay.charAt(0).toUpperCase() + voiceNameDisplay.slice(1)}</div>
                 </div>
             `;
             speakersRow.appendChild(speakerItem);
@@ -275,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const speakerItems = document.querySelectorAll('.speaker-item');
             speakerItems.forEach(item => {
                 const nameElement = item.querySelector('.speaker-name-overlay');
-                if (nameElement && nameElement.getAttribute('data-voice').trim().toLowerCase() === voiceName.toLowerCase()) {
+                if (nameElement && nameElement.getAttribute('data-voice').toLowerCase() === voiceName.toLowerCase()) {
                     currentAvatar = item.querySelector('.speaker-avatar');
                     currentSpeakerItem = item;
                 }
