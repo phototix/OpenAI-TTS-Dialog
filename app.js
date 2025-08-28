@@ -226,6 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if(intIndex === 0){ 
                 speakerItem.className = 'speaker-item host-tile';
+                voiceName = "壹韶";
             }else{ 
                 speakerItem.className = 'speaker-item';
             }
@@ -238,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         alt="${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}" 
                         class="speaker-avatar"
                         data-voice="${voiceName}"
-                        title="${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}">
+                        title="${voiceName}">
                     <div class="mic-status"></div>
                     <div class="speaker-name-overlay">${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}</div>
                 </div>
@@ -274,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const speakerItems = document.querySelectorAll('.speaker-item');
             speakerItems.forEach(item => {
                 const nameElement = item.querySelector('.speaker-name-overlay');
-                if (nameElement && nameElement.textContent.trim().toLowerCase() === voiceName.toLowerCase()) {
+                if (nameElement && nameElement.getAttribute('data-voice').trim().toLowerCase() === voiceName.toLowerCase()) {
                     currentAvatar = item.querySelector('.speaker-avatar');
                     currentSpeakerItem = item;
                 }
