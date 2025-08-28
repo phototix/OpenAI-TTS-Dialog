@@ -20,8 +20,8 @@ body {
     background-color: #f8f9fa;
 }
 .dialog-container {
-    max-height: 400px;
-    overflow-y: auto;
+    max-height: 240px;
+    overflow-y: hidden;
     padding: 15px;
     background-color: #f8f9fa;
     border-radius: 8px;
