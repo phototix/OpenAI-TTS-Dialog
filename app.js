@@ -164,14 +164,15 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogElement.className = `dialog-bubble ${index % 2 === 0 ? 'user' : 'user'}`;
         dialogElement.dataset.index = index;
         
-        if(entry.voice_name == 'onyx'){ entry.voice_name = '壹韶 by Onyx'; }
+        let bubbleUser = entry.voice_name;
+        if(entry.voice_name == 'onyx'){ bubbleUser = '壹韶 by Onyx'; }
 
         dialogElement.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
                 <div>
                     <strong class="dialog_prompt">${entry.dialog_prompt}</strong>
                     <p class="mb-1">${entry.input_text}</p>
-                    <small class="text-muted">${entry.voice_name}</small>
+                    <small class="text-muted">${bubbleUser}</small>
                 </div>
                 <div class="d-flex align-items-center gap-2 btnWebUIItems">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
