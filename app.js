@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Modify the addDialogToContainer function to include delete button event listener
     function addDialogToContainer(entry, index) {
         const dialogElement = document.createElement('div');
-        dialogElement.className = `dialog-bubble ${index % 2 === 0 ? 'user' : 'ai'}`;
+        dialogElement.className = `dialog-bubble ${index % 2 === 0 ? 'user' : 'user'}`;
         dialogElement.dataset.index = index;
         
         dialogElement.innerHTML = `
