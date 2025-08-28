@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogElement.dataset.index = index;
         
         let bubbleUser = entry.voice_name;
-        if(entry.voice_name == 'onyx'){ bubbleUser = '壹韶 by Onyx'; }
+        if(entry.voice_name == 'onyx'){ bubbleUser = '壹韶'; }
 
         dialogElement.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateOpenAITTS(entry, apiKey) {
-        console.log("Generate with OpenAI: " + entry);
+        console.log("Generate with OpenAI: " + entry.input_text);
         const response = await fetch('https://api.openai.com/v1/audio/speech', {
             method: 'POST',
             headers: {
@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateElevenLabsTTS(entry, eleApiKey, eleVoiceID) {
-        console.log("Generate with EleveLabs: " + entry);
+        console.log("Generate with EleveLabs: " + entry.input_text);
         const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${eleVoiceID}`, {
             method: 'POST',
             headers: {
