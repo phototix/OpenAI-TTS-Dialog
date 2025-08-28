@@ -200,11 +200,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Map voice names to avatar images (you can replace with actual images)
         speakerAvatars = {
             'onyx': '/assets/avatars/onyx.png',
-            'alloy': '/assets/avatars/female-default.jpg',
+            'alloy': '/assets/avatars/female-default.png',
             'coral': '/assets/avatars/coral.jpg',
-            'echo': '/assets/avatars/male-default.jpg',
+            'echo': '/assets/avatars/male-default.png',
             'fable': '/assets/avatars/fable.jpg',
-            'nova': '/assets/avatars/female-default.jpg',
+            'nova': '/assets/avatars/female-default.png',
             'sage': '/assets/avatars/sage.jpg',
             'shimmer': '/assets/avatars/shimmer.jpg'
         };
