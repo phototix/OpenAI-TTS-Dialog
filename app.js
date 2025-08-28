@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             select.addEventListener('change', function() {
                 if (this.value) {
+                    generateBtn.disabled = false;
                     loadSpecificSample(this.value);
                 }
             });
