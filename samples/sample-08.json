@@ -1,0 +1,234 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎收听《壹韶的杂货店》，我是壹韶。今天我们来聊聊一个特别有意思的话题，关于乾隆皇帝、和珅和纪晓岚，电视剧形象和真实历史之间的巨大差别。",
+    "dialog_prompt": "Cheerful, welcoming podcast intro."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "我小时候超爱看《铁齿铜牙纪晓岚》，总是觉得乾隆又幽默又开明，纪晓岚机智善良，和珅就是坏蛋的代名词。",
+    "dialog_prompt": "Nostalgic, warm tone."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哈哈，我也看过！里面乾隆经常微服私访，还听老百姓讲段子，感觉特别接地气。这真的假的呀？",
+    "dialog_prompt": "Skeptical, amused tone."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "其实这就是电视剧的加工喽。真实的乾隆可不是那么和气的人，他是一个精明且控制欲极强的皇帝，还推行了超过一百三十起文字狱。",
+    "dialog_prompt": "Serious explanation."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "没错。真要说的话，乾隆就是个绝对的“项目管理核心”，每个权臣都是他的工具罢了，不是说谁能糊弄他的。",
+    "dialog_prompt": "Tech-savvy analysis."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "哇，那和珅呢？电视剧里他总是被纪晓岚欺负啊，搞笑得像个小丑。",
+    "dialog_prompt": "Naive, curious."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "真实情况完全不同。和珅的办事能力特别强，语言天赋惊人，乾隆才重用他。他可不是只能拍马屁的‘谄媚鬼’。",
+    "dialog_prompt": "Calm clarification."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "真的假的？那他怎么会那么贪啊？",
+    "dialog_prompt": "Curious questioning."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "因为乾隆也需要钱啊！和珅像是乾隆的‘理财管家’，替皇帝搞钱，也自己捞一大半。算是共生关系。",
+    "dialog_prompt": "Explanatory, engaging."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "对，就像现在公司里的IT外包，既帮老板省事，又自己拿提成。双赢，直到有一天老板换人。",
+    "dialog_prompt": "Humorous analogy."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "噢！那为什么后来他会落马？",
+    "dialog_prompt": "Curious tone."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "因为乾隆死后，新皇嘉庆登位了。嘉庆需要树立权威，抄和珅的家正好填补财政，还能立威。",
+    "dialog_prompt": "Gentle but factual."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "怪不得那句‘和珅跌倒，嘉庆吃饱’流传下来，原来是真有其事！",
+    "dialog_prompt": "Amused, impressed tone."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "对啊，和珅的家产差不多相当于清朝十几年的财政收入，震惊不震惊？",
+    "dialog_prompt": "Playfully rhetorical."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那纪晓岚真的一点都没跟和珅对抗吗？",
+    "dialog_prompt": "Curious learner tone."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "严格来说，并没有。纪晓岚只是主持《四库全书》的文官，不能跟和珅这种实权派抗衡。",
+    "dialog_prompt": "Steady explanation."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "而且纪晓岚生活习惯也和电视剧塑造的完全不同，他还挺奢侈，有烟瘾，爱吃喝，挺“人间烟火”的。",
+    "dialog_prompt": "Informative, lively tone."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哇，和电视剧的‘清官伟大形象’完全不一样啊！这就叫人设崩塌！",
+    "dialog_prompt": "Skeptical but playful tone."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "没办法嘛，艺术总要夸张。不然就没戏剧冲突了。",
+    "dialog_prompt": "Casual, concluding point."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "说到底，这是一个皇帝玩弄权术、权臣执行利益、文人自保学问的灰暗时代。",
+    "dialog_prompt": "Reflective, serious tone."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "听完感觉好落差啊，历史居然这么沉重。",
+    "dialog_prompt": "Naïve, thoughtful tone."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "不过这就是学习历史的意义吧，帮我们识别现实中的‘假象’。",
+    "dialog_prompt": "Analytical tone."
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "哎，说到‘假象’和‘真实’，让我想起一个小插曲。今天节目有个广告环节，请大家不要快进噢！",
+    "dialog_prompt": "Playful transition to ad."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "噢？广告来了？别告诉我是啥奇怪的产品？",
+    "dialog_prompt": "Skeptical, teasing tone."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "人家可是正经广告！我们本期的赞助商是——WebbyPage！",
+    "dialog_prompt": "Excited, engaging ad start."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "啊？这名字好可爱，是做啥的呀？",
+    "dialog_prompt": "Innocent, curious tone."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "WebbyPage是一家提供网站开发的公司。他们能帮小企业、博主甚至个人快速建立专业网站。",
+    "dialog_prompt": "Calm, professional ad info."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "而且他们的定制化很厉害，用户体验超级流畅，适合我们这种忙到没时间学编程的人。",
+    "dialog_prompt": "Natural, host-style recommendation."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哼，说得我心动了。他们能帮我做个纪晓岚粉丝网站吗？",
+    "dialog_prompt": "Joking, skeptical."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "当然能！从电商到个人博客，再到历史爱好者站点，WebbyPage一站式搞定。",
+    "dialog_prompt": "Confident reassurance."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "听起来很厉害噢。那有优惠码吗？",
+    "dialog_prompt": "Playful, curious."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "有！只要访问 webbyPage.com，输入杂货店的优惠码“YISHO10”，就能享受9折优惠哟～",
+    "dialog_prompt": "Playful ad closing."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "好吧，我承认，这广告还挺贴心的，不是乱七八糟的。",
+    "dialog_prompt": "Amused, skeptical approval."
+  },
+
+  {
+    "voice_name": "alloy",
+    "input_text": "好了，咱们广告回到正题吧。其实乾隆和和珅的关系，是我们理解权力和腐败的典型案例。",
+    "dialog_prompt": "Smooth transition back."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "这么说，乾隆才是整个腐败系统的核心？",
+    "dialog_prompt": "Curious learner tone."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "没错，和珅只是执行者。乾隆享受了所有好处，也放任了腐败发展。",
+    "dialog_prompt": "Serious explanation."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "所以说啊，历史没有单纯的好人或坏人，只有利益关系。",
+    "dialog_prompt": "Skeptical reflection."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "对！就像技术，我们看到的是炫酷的应用，其实背后是复杂的逻辑和算力支持。",
+    "dialog_prompt": "Tech metaphor, analytical."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "啊，我明白了。纪晓岚在历史里就是那个‘安静的学者’，而不是‘人民英雄’。",
+    "dialog_prompt": "Realization, enlightened tone."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "没错。历史和影视的差距，就是现实和理想化叙事之间的差距。",
+    "dialog_prompt": "Mature summary."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "今天的结论，大家要记住，电视剧是娱乐，历史是严肃。不要混为一谈。",
+    "dialog_prompt": "Firm but warm wrap-up."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "好啦，我以后看历史剧，先都打个问号。",
+    "dialog_prompt": "Playful tone."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我也是，学到好多，爱了！",
+    "dialog_prompt": "Cheerful, naive tone."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "行，今天播客应该不少听众跟我们一样刷新三观了。",
+    "dialog_prompt": "Relaxed tone."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "好，下次我们再聊聊别的历史误会，继续揭秘。",
+    "dialog_prompt": "Gentle outro tone."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "好的，本期《壹韶的杂货店》就到这里。感谢大家的陪伴！我们下期再见！",
+    "dialog_prompt": "Friendly podcast closing."
+  }
+]
