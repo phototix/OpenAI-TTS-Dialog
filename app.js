@@ -446,7 +446,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         try {
-            // Generate TTS for each dialog entry
             audioElements = [];
             
             for (let i = 0; i < dialogData.length; i++) {
@@ -459,8 +458,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             playAllBtn.disabled = false;
-            // Generation complete
-            // alert('TTS generation complete! You can now play the dialog.');
             
         } catch (error) {
             console.error('TTS Generation Error:', error);
@@ -469,7 +466,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateSingleTTS(entry, apiKey) {
-        console.log(entry.dialog_prompt);
+        // Check if this is the host (onyx) and ElevenLabs API is configured
+        if (entry.voice_name === 'onyx') {
+            const eleApiKey = loadEleApiKeyFromLocalStorage();
+            const eleVoiceID = loadEleApiVoiceIDFromLocalStorage();
+            
+            if (eleApiKey && eleVoiceID) {
+                try {
+                    // Use ElevenLabs API for host voice
+                    return await generateElevenLabsTTS(entry, eleApiKey, eleVoiceID);
+                } catch (error) {
+                    console.warn('ElevenLabs TTS generation failed, falling back to OpenAI:', error);
+                    // Fall back to OpenAI if ElevenLabs fails
+                }
+            }
+        }
+        
+        // Use OpenAI for all other voices or if ElevenLabs is not configured
+        return await generateOpenAITTS(entry, apiKey);
+    }
+
+    async function generateOpenAITTS(entry, apiKey) {
         const response = await fetch('https://api.openai.com/v1/audio/speech', {
             method: 'POST',
             headers: {
@@ -485,7 +502,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         if (!response.ok) {
-            throw new Error(`API Error: ${response.status} ${response.statusText}`);
+            throw new Error(`OpenAI API Error: ${response.status} ${response.statusText}`);
+        }
+        
+        return await response.blob();
+    }
+
+    async function generateElevenLabsTTS(entry, eleApiKey, eleVoiceID) {
+        const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${eleVoiceID}`, {
+            method: 'POST',
+            headers: {
+                'Accept': 'audio/mpeg',
+                'Content-Type': 'application/json',
+                'xi-api-key': eleApiKey
+            },
+            body: JSON.stringify({
+                text: entry.input_text,
+                model_id: "eleven_monolingual_v1",
+                voice_settings: {
+                    stability: 0.5,
+                    similarity_boost: 0.5
+                }
+            })
+        });
+        
+        if (!response.ok) {
+            throw new Error(`ElevenLabs API Error: ${response.status} ${response.statusText}`);
         }
         
         return await response.blob();
