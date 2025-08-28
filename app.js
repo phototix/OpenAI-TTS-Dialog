@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const generateBtn = document.getElementById('generateBtn');
     const playAllBtn = document.getElementById('playAllBtn');
     const hideBtn = document.getElementById('hideBtn');
-    const showBtn = document.getElementById('showBtn');
     const stopBtn = document.getElementById('stopBtn');
     const playbackSpeed = document.getElementById('playbackSpeed');
     const addDialogModalBtn = document.getElementById('addDialogModalBtn');
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     generateBtn.addEventListener('click', generateTTS);
     playAllBtn.addEventListener('click', playAllDialog);
     hideBtn.addEventListener('click', hideWebUI);
-    showBtn.addEventListener('click', showWebUI);
     stopBtn.addEventListener('click', stopPlayback);
     playbackSpeed.addEventListener('input', updatePlaybackSpeed);
 
