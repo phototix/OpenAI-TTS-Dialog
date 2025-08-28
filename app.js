@@ -409,14 +409,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function wait(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-    
-    function playAllDialog() {
+
+    // Make the function async
+    async function playAllDialog() {
         if (audioElements.length === 0) {
             alert('Please generate TTS first.');
             return;
         }
-        wait(5000);
+
+        console.log("Waiting 5 seconds...");
+        await wait(5000); // works now
         console.log("Paused for 5 seconds");
+
         playDialogItem(0);
     }
     
