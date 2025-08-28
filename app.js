@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const leftColumn = document.getElementById('leftColumn');
     const rightColumn = document.getElementById('rightColumn');
+    const footer = document.getElementById('footer');
 
     const openaiTTSHeader = document.getElementById('openaiTTSHeader');
     const openaiAPIConfig = document.getElementById('openaiAPIConfig');
@@ -412,6 +413,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function hideWebUI() {
         leftColumn.style.display = 'none';
         rightColumn.style.width = '100%';
+        footer.style.display = 'none';
         clearDialogBtn.style.display = 'none';
         openaiAPIConfig.style.display = 'none';
         openaiTTSHeader.style.display = 'none';
@@ -431,7 +433,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function showWebUI() {
         leftColumn.style.display = '';
-        rightColumn.style.width = '50%';
+        rightColumn.style.width = '';
+        footer.style.display = '';
         clearDialogBtn.style.display = '';
         openaiAPIConfig.style.display = '';
         openaiTTSHeader.style.display = '';
