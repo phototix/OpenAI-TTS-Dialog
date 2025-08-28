@@ -380,6 +380,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (index >= audioElements.length) {
             stopPlayback();
+            console.log("Playback stopped.");
+            miniStopBtn.addEventListener('click', async () => {
+                // Hide the button safely
+                miniPlayBtn.style.display = '';
+            });
             return;
         }
     
@@ -401,13 +406,6 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.onended = () => {
             if (currentPlayingIndex === index) {
                 playDialogItem(index + 1);
-            }else{
-                console.log("Playback stopped.");
-                stopPlayback();
-                miniStopBtn.addEventListener('click', async () => {
-                    // Hide the button safely
-                    miniPlayBtn.style.display = '';
-                });
             }
         };
         
