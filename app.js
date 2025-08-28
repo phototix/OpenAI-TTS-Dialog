@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if(intIndex === 0){ 
                 speakerItem.className = 'speaker-item host-tile';
-                voiceNameDisplay = "壹韶";
+                voiceNameDisplay = "壹韶 (Host)";
             }else{ 
                 speakerItem.className = 'speaker-item';
                 voiceNameDisplay = voiceName;

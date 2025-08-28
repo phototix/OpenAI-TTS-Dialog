@@ -57,6 +57,10 @@ body {
 }
 
 /* Avatar Styles */
+.host-tile{
+    background-color: grey;
+}
+
 .speaker-avatar {
     width: 60px;
     height: 60px;
