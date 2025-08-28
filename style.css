@@ -61,6 +61,7 @@ body {
     background-color: grey;
     text-align: center;
     border: 3px solid transparent;
+    border-radius: 20%;
 }
 
 .speaker-avatar {
