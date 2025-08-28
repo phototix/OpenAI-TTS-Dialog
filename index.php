@@ -26,11 +26,17 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-12">
+                        <small class="text-muted">OpenAI API</small>
+                    </div>
+                    <div class="col-md-12">
                         <input type="password" class="form-control" id="apiKey" 
                             placeholder="Enter your OpenAI API key">
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-12">
+                        <small class="text-muted">ElevenLabs API</small>
+                    </div>
                     <div class="col-md-12">
                         <input type="password" class="form-control" id="apiEleKey" 
                             placeholder="Enter your ElevenLabs API key">
