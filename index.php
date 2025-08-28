@@ -42,6 +42,9 @@
                             placeholder="Enter your ElevenLabs API key">
                     </div>
                     <div class="col-md-12">
+                        <small class="text-muted">ElevenLabs Voice ID</small>
+                    </div>
+                    <div class="col-md-12">
                         <input type="text" class="form-control" id="apiEleVoiceID" 
                             placeholder="Enter your ElevenLabs Voice ID">
                     </div>
