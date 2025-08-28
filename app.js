@@ -220,6 +220,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
         
+        // Add appropriate class based on current layout mode
+        if (currentLayoutMode === 'meeting') {
+            speakersRow.classList.add('meeting-layout');
+            speakersRow.classList.remove('circle-layout');
+        } else {
+            speakersRow.classList.add('circle-layout');
+            speakersRow.classList.remove('meeting-layout');
+        }
+        
         // Create host tile (first speaker)
         const hostVoice = Object.keys(speakerAvatars)[0];
         const hostItem = document.createElement('div');

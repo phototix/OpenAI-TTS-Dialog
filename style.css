@@ -54,6 +54,7 @@ body {
     justify-content: center !important;
     gap: 20px !important;
     padding: 15px !important;
+    flex-direction: row !important; /* Ensure horizontal layout */
 }
 
 /* Avatar Styles */
@@ -82,6 +83,7 @@ body {
     flex-direction: column !important;
     align-items: center !important;
     min-width: 80px !important;
+    margin: 0 10px !important; /* Add horizontal spacing */
 }
 
 .speaker-name {
@@ -234,9 +236,8 @@ body {
 .meeting-layout #speakersRow {
     display: grid !important;
     grid-template-areas: 
-        "host speakers"
         "host speakers";
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; /* Left for host, right for speakers */
     grid-template-rows: auto;
     gap: 20px !important;
     padding: 20px !important;
@@ -275,6 +276,7 @@ body {
     grid-area: speakers;
     display: flex !important;
     flex-wrap: wrap !important;
+    flex-direction: row !important; /* Ensure horizontal layout */
     gap: 15px !important;
     justify-content: flex-start !important;
     align-items: flex-start !important;
@@ -290,17 +292,13 @@ body {
     aspect-ratio: 4/3; /* Standard webcam ratio */
     position: relative;
     border: 2px solid transparent;
+    flex: 0 0 auto !important; /* Don't grow or shrink */
+    margin: 0 10px 20px 0 !important; /* Horizontal and vertical spacing */
 }
 
 /* Alternative 3:2 ratio option */
 .meeting-layout.ratio-3-2 .speaker-item {
     aspect-ratio: 3/2;
-}
-
-.meeting-layout .speaker-item {
-    flex: 0 0 calc(33.333% - 15px);
-    min-width: 150px;
-    max-width: 200px;
 }
 
 .meeting-layout .speaker-avatar-container {
