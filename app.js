@@ -314,6 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     async function generateTTS() {
         const apiKey = document.getElementById('apiKey').value;
+        generateBtn.disabled = true;
         
         if (!apiKey) {
             alert('Please enter your OpenAI API key.');
@@ -339,6 +340,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             playAllBtn.disabled = false;
+            // Generation complete
+            // alert('TTS generation complete! You can now play the dialog.');
             
         } catch (error) {
             console.error('TTS Generation Error:', error);
@@ -526,6 +529,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add this function to rebuild the dialog container
     function rebuildDialogContainer() {
+        generateBtn.disabled = true;
         dialogContainer.innerHTML = '';
         if (dialogData.length === 0) {
             dialogContainer.innerHTML = '<p class="text-center text-muted mt-4">Your dialog will appear here</p>';
@@ -535,6 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogData.forEach((entry, index) => {
             addDialogToContainer(entry, index);
         });
+        generateBtn.disabled = false;
     }
 
     addDialogModalBtn.addEventListener('click', function() {
