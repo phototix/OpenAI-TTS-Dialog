@@ -236,6 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Exit fullscreen
             element.classList.remove('fullscreen-mode');
             document.querySelector(`.exit-fullscreen-${type}`)?.remove();
+            fullscreenSpeakersBtn.style.display = '';
+            fullscreenDialogBtn.style.display = '';
             
             // Update button icon
             const btn = type === 'speakers' ? fullscreenSpeakersBtn : fullscreenDialogBtn;
@@ -244,6 +246,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             // Enter fullscreen
             element.classList.add('fullscreen-mode');
+            fullscreenSpeakersBtn.style.display = 'none';
+            fullscreenDialogBtn.style.display = 'none';
             
             // Create exit button
             const exitBtn = document.createElement('button');
