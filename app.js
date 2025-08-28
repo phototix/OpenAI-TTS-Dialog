@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     url: URL.createObjectURL(audioBlob)
                 });
             }
-            
+
             playAllBtn.disabled = false;
             
         } catch (error) {
@@ -424,7 +424,9 @@ document.addEventListener('DOMContentLoaded', function() {
         fullscreenSpeakersBtn.style.display = '';
         fullscreenDialogBtn.style.display = '';
 
-        showBtn.style.display = '';
+        // Create and show control buttons
+        showControlButtons();
+        
         playAllDialog();
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
@@ -432,6 +434,40 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.dialog_prompt').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
         });
+    }
+
+    // Add this new function to create control buttons
+    function showControlButtons() {
+        // Remove existing control buttons if they exist
+        document.getElementById('miniControlButtons')?.remove();
+        
+        const controlButtons = document.createElement('div');
+        controlButtons.id = 'miniControlButtons';
+        controlButtons.style.position = 'fixed';
+        controlButtons.style.bottom = '20px';
+        controlButtons.style.right = '20px';
+        controlButtons.style.zIndex = '1000';
+        controlButtons.style.display = 'flex';
+        controlButtons.style.gap = '10px';
+        
+        controlButtons.innerHTML = `
+            <button class="btn btn-primary btn-lg rounded-circle" id="miniPlayBtn" title="Play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="btn btn-danger btn-lg rounded-circle" id="miniStopBtn" title="Stop">
+                <i class="fas fa-stop"></i>
+            </button>
+            <button class="btn btn-secondary btn-lg rounded-circle" id="showBtn" title="Show UI">
+                <i class="fas fa-eye"></i>
+            </button>
+        `;
+        
+        document.body.appendChild(controlButtons);
+        
+        // Add event listeners
+        document.getElementById('miniPlayBtn').addEventListener('click', playAllDialog);
+        document.getElementById('miniStopBtn').addEventListener('click', stopPlayback);
+        document.getElementById('showBtn').addEventListener('click', showWebUI);
     }
     
     function showWebUI() {
@@ -445,7 +481,9 @@ document.addEventListener('DOMContentLoaded', function() {
         fullscreenSpeakersBtn.style.display = 'none';
         fullscreenDialogBtn.style.display = 'none';
 
-        showBtn.style.display = 'none';
+        // Remove mini control buttons
+        document.getElementById('miniControlButtons')?.remove();
+        
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', '', '');
         });
