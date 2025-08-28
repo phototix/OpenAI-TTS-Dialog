@@ -402,6 +402,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (currentPlayingIndex === index) {
                 playDialogItem(index + 1);
             }else{
+                console.log("Playback stopped.");
                 stopPlayback();
                 miniStopBtn.addEventListener('click', async () => {
                     // Hide the button safely
