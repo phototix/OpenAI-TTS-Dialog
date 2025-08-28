@@ -246,24 +246,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update active speaker during playback
     function updateActiveSpeaker(voiceName) {
-        // Remove active class from all avatars in both layouts
+        // First, remove all active states from previous speakers
         document.querySelectorAll('.speaker-avatar').forEach(avatar => {
             avatar.classList.remove('active', 'playing', 'wave-animation');
         });
+        document.querySelectorAll('.speaker-item').forEach(item => {
+            item.classList.remove('active', 'playing');
+        });
         
-        // Add active class to current speaker - handle both layout modes
+        // Add active class to current speaker
         let currentAvatar;
+        let currentSpeakerItem;
         
         if (currentLayoutMode === 'circle') {
-            // Circle layout: avatars have data-voice attribute
             currentAvatar = document.querySelector(`.speaker-avatar[data-voice="${voiceName}"]`);
         } else {
-            // Meeting layout: find by speaker name overlay text
             const speakerItems = document.querySelectorAll('.speaker-item');
             speakerItems.forEach(item => {
                 const nameElement = item.querySelector('.speaker-name-overlay');
                 if (nameElement && nameElement.textContent.trim() === voiceName) {
                     currentAvatar = item.querySelector('.speaker-avatar');
+                    currentSpeakerItem = item;
                 }
             });
         }
@@ -272,11 +275,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentAvatar.classList.add('active', 'playing', 'wave-animation');
             
             // Also highlight the parent container in meeting layout
-            if (currentLayoutMode === 'meeting') {
-                const speakerItem = currentAvatar.closest('.speaker-item');
-                if (speakerItem) {
-                    speakerItem.classList.add('active', 'playing');
-                }
+            if (currentLayoutMode === 'meeting' && currentSpeakerItem) {
+                currentSpeakerItem.classList.add('active', 'playing');
             }
         }
     }
@@ -592,11 +592,15 @@ document.addEventListener('DOMContentLoaded', function() {
         currentPlayingIndex = -1;
         const items = dialogContainer.querySelectorAll('.dialog-bubble');
         items.forEach(item => item.classList.remove('highlight'));
-        // Additional audio stopping logic would be needed
-    
-        // Remove active classes from avatars
+        
+        // Remove active classes from avatars AND speaker items (for meeting layout)
         document.querySelectorAll('.speaker-avatar').forEach(avatar => {
             avatar.classList.remove('active', 'playing', 'wave-animation');
+        });
+        
+        // Additional: Remove active classes from speaker items in meeting layout
+        document.querySelectorAll('.speaker-item').forEach(item => {
+            item.classList.remove('active', 'playing');
         });
     }
     
