@@ -134,6 +134,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return localStorage.getItem('openai_api_key');
     }
 
+    // Add these functions to handle local storage
+    function saveEleApiKeyToLocalStorage(apiKey) {
+        localStorage.setItem('elevenlabs_api_key', apiKey);
+    }
+
+    function loadEleApiKeyFromLocalStorage() {
+        return localStorage.getItem('elevenlabs_api_key');
+    }
+
     function addDialogEntry() {
         const voice = voiceSelect.value;
         const prompt = dialogPrompt.value;
@@ -360,6 +369,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to save API key when changed
     document.getElementById('apiKey').addEventListener('input', function() {
         saveApiKeyToLocalStorage(this.value);
+    });
+
+    // Load API key from local storage on page load
+    const savedEleApiKey = loadEleApiKeyFromLocalStorage();
+    if (savedEleApiKey) {
+        document.getElementById('apiEleKey').value = savedApiKey;
+    }
+    
+    // Add event listener to save API key when changed
+    document.getElementById('apiEleKey').addEventListener('input', function() {
+        saveEleApiKeyToLocalStorage(this.value);
     });
 
     // Add this to your JavaScript

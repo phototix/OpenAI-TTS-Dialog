@@ -21,13 +21,22 @@
         <!-- API Key Section (Separated at top) -->
         <div class="card mb-4" id="openaiAPIConfig">
             <div class="card-header bg-white">
-                <h5 class="card-title mb-0"><i class="fas fa-key me-2"></i>OpenAI API Configuration</h5>
+                <h5 class="card-title mb-0"><i class="fas fa-key me-2"></i>OpenAI & ElevenLabs API Configuration</h5>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-8">
                         <input type="password" class="form-control" id="apiKey" 
                             placeholder="Enter your OpenAI API key">
+                    </div>
+                    <div class="col-md-4">
+                        <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="password" class="form-control" id="apiEleKey" 
+                            placeholder="Enter your ElevenLabs API key">
                     </div>
                     <div class="col-md-4">
                         <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
