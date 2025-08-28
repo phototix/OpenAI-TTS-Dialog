@@ -227,6 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${avatarUrl}" 
                         alt="${voiceName}" 
                         class="speaker-avatar"
+                        data-voice="${voiceName}"
                         title="${voiceName}">
                     <div class="mic-status"></div>
                     <div class="speaker-name-overlay">${voiceName}</div>
@@ -245,15 +246,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update active speaker during playback
     function updateActiveSpeaker(voiceName) {
-        // Remove active class from all avatars
+        // Remove active class from all avatars in both layouts
         document.querySelectorAll('.speaker-avatar').forEach(avatar => {
             avatar.classList.remove('active', 'playing', 'wave-animation');
         });
         
-        // Add active class to current speaker
-        const currentAvatar = document.querySelector(`.speaker-avatar[data-voice="${voiceName}"]`);
+        // Add active class to current speaker - handle both layout modes
+        let currentAvatar;
+        
+        if (currentLayoutMode === 'circle') {
+            // Circle layout: avatars have data-voice attribute
+            currentAvatar = document.querySelector(`.speaker-avatar[data-voice="${voiceName}"]`);
+        } else {
+            // Meeting layout: find by speaker name overlay text
+            const speakerItems = document.querySelectorAll('.speaker-item');
+            speakerItems.forEach(item => {
+                const nameElement = item.querySelector('.speaker-name-overlay');
+                if (nameElement && nameElement.textContent.trim() === voiceName) {
+                    currentAvatar = item.querySelector('.speaker-avatar');
+                }
+            });
+        }
+        
         if (currentAvatar) {
             currentAvatar.classList.add('active', 'playing', 'wave-animation');
+            
+            // Also highlight the parent container in meeting layout
+            if (currentLayoutMode === 'meeting') {
+                const speakerItem = currentAvatar.closest('.speaker-item');
+                if (speakerItem) {
+                    speakerItem.classList.add('active', 'playing');
+                }
+            }
         }
     }
 
