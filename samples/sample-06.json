@@ -151,7 +151,82 @@
   },
   {
     "voice_name": "onyx",
-    "input_text": "今天的《壹韶的杂货店》就聊到这里，谢谢你们的陪伴，希望大家也能在生活里创造点属于自己的‘未来感’。",
+    "input_text": "说到这里，先插播一个广告时间——今天的节目由 WebbyPage 网站开发赞助播出！",
+    "dialog_prompt": "energetic podcast-style ad intro"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "WebbyPage？听起来是帮人搭建网站的？",
+    "dialog_prompt": "gentle curiosity, asking for clarification"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "是的，他们提供专业的网站开发与定制服务，从个人小站到企业官网，都能量身设计。",
+    "dialog_prompt": "explanatory, professional endorsement"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "真的假的？那要是像我这种完全不懂编程的人也能做网站吗？",
+    "dialog_prompt": "skeptical but semi-interested ad engagement"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "没错，WebbyPage有完整的一对一团队支持，你只要说出想法，他们就能帮你搭出一个漂亮又好用的网站。",
+    "dialog_prompt": "friendly, persuasive advertising tone"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "听起来连我都能试试了，说不定能做个展示我作品集的小站！",
+    "dialog_prompt": "enthusiastic ad engagement"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "好啦，广告时间结束，回到我们的AI话题——说到作品集，我觉得AI也能帮忙生成素材呢！",
+    "dialog_prompt": "smooth transition back to main topic"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "对啊，像自动生成报告、写提示文稿，这些都能节省一半以上的时间。",
+    "dialog_prompt": "enthusiastic technical tone"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哼，要真这么强，那是不是以后我们都失业了？",
+    "dialog_prompt": "sarcastic humor with slight worry"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "其实科技越进步，我们越需要把精力放在创造和思考，而不是重复劳动。",
+    "dialog_prompt": "calm wisdom, steady reassurance"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "说得对，那以后也许我们都能有自己独一无二的AI小伙伴！",
+    "dialog_prompt": "cheerful outlook"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，想象一下，每个人都有一个随叫随到的Jarvis，生活瞬间科幻电影感爆棚～",
+    "dialog_prompt": "playful imagination"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "但愿它不要半夜突然叫醒我，不然我会直接关机。",
+    "dialog_prompt": "humorous complaint"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "别担心，你可以设置限制，不然真就变成‘夜半惊魂’。",
+    "dialog_prompt": "teasing tech humor"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "今天聊得很开心啊，从AI聊到网站，还顺便插播广告，真像一场朋友聚会。",
+    "dialog_prompt": "warm wrap-up reflection"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "是啊，今天的《壹韶的杂货店》就到这里，谢谢大家的陪伴，下次我们再分享更多有趣的科技新鲜事～",
     "dialog_prompt": "thoughtful, grateful ending note"
   }
 ]
