@@ -415,7 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please generate TTS first.');
             return;
         }
-        await wait(10000);
+        wait(5000);
         playDialogItem(0);
     }
     
