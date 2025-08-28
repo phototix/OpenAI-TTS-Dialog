@@ -417,9 +417,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        console.log("Waiting 5 seconds...");
-        await wait(5000); // works now
-        console.log("Paused for 5 seconds");
+        console.log("Waiting 3 seconds...");
+        await wait(3000); // works now
+        console.log("Paused for 3 seconds");
 
         playDialogItem(0);
     }
