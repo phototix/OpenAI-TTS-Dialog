@@ -216,20 +216,30 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderSpeakerAvatars() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
-        speakersRow.className = currentLayoutMode === 'meeting' ? 'speakers-row meeting-layout' : 'speakers-row circle-layout';
         
         Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
             speakerItem.className = 'speaker-item';
+            speakerItem.setAttribute('data-voice', voiceName);
+            
             speakerItem.innerHTML = `
-                <img src="${avatarUrl}" 
-                    alt="${voiceName}" 
-                    class="speaker-avatar"
-                    data-voice="${voiceName}"
-                    title="${voiceName}">
-                <div class="speaker-name">${voiceName}</div>
+                <div class="speaker-avatar-container">
+                    <img src="${avatarUrl}" 
+                        alt="${voiceName}" 
+                        class="speaker-avatar"
+                        title="${voiceName}">
+                    <div class="mic-status"></div>
+                    <div class="speaker-name-overlay">${voiceName}</div>
+                </div>
             `;
             speakersRow.appendChild(speakerItem);
+            
+            // Add click event for testing
+            speakerItem.addEventListener('click', function() {
+                const allItems = document.querySelectorAll('.speaker-item');
+                allItems.forEach(item => item.classList.remove('active', 'playing'));
+                this.classList.add('active', 'playing');
+            });
         });
     }
 
