@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const fullscreenDialogBtn = document.getElementById('fullscreenDialogBtn');
     const speakersCard = document.querySelector('.card:has(#speakersRow)');
     const dialogCard = document.querySelector('.card:has(#dialogContainer)');
+
+    const miniPlayBtn = document.getElementById('miniPlayBtn');
     
     // Dialog data storage
     let dialogData = [];
@@ -422,6 +424,16 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Paused for 3 seconds");
 
         playDialogItem(0);
+    }
+
+    if (miniPlayBtn) {
+        miniPlayBtn.addEventListener('click', async () => {
+            // Hide the button safely
+            miniPlayBtn.style.display = 'none';
+
+            // Call your existing function
+            await playAllDialog();
+        });
     }
     
     function hideWebUI() {
