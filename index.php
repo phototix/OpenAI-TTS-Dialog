@@ -25,20 +25,17 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <input type="password" class="form-control" id="apiKey" 
                             placeholder="Enter your OpenAI API key">
                     </div>
-                    <div class="col-md-4">
-                        <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <input type="password" class="form-control" id="apiEleKey" 
                             placeholder="Enter your ElevenLabs API key">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
                     </div>
                 </div>
