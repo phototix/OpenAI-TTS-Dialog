@@ -415,6 +415,10 @@ document.addEventListener('DOMContentLoaded', function() {
         clearDialogBtn.style.display = 'none';
         openaiAPIConfig.style.display = 'none';
         openaiTTSHeader.style.display = 'none';
+
+        fullscreenSpeakersBtn.style.display = '';
+        fullscreenDialogBtn.style.display = '';
+
         showBtn.style.display = '';
         playAllDialog();
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
@@ -431,6 +435,10 @@ document.addEventListener('DOMContentLoaded', function() {
         clearDialogBtn.style.display = '';
         openaiAPIConfig.style.display = '';
         openaiTTSHeader.style.display = '';
+
+        fullscreenSpeakersBtn.style.display = 'none';
+        fullscreenDialogBtn.style.display = 'none';
+
         showBtn.style.display = 'none';
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', '', '');
