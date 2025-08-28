@@ -57,6 +57,16 @@ body {
     flex-direction: row !important; /* Ensure horizontal layout */
 }
 
+.speakers-grid {
+    grid-area: speakers;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important; /* Ensure horizontal layout */
+    gap: 15px !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
 /* Avatar Styles */
 .speaker-avatar {
     width: 60px;
