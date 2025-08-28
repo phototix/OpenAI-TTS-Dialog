@@ -131,7 +131,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="card-body" style="max-height: 160px; overflow-y: auto;">
+                    <div class="card-body" style="max-height: 240px; overflow-y: auto;">
                         <div class="dialog-container" id="dialogContainer">
                             <p class="text-center text-muted mt-4">Your dialog will appear here</p>
                         </div>
