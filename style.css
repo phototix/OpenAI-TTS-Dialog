@@ -212,3 +212,52 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* Online Meeting Layout Styles */
+.meeting-layout .speakers-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.meeting-layout .speaker-item {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.meeting-layout .speaker-item:hover {
+    transform: translateY(-2px);
+}
+
+.meeting-layout .speaker-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+
+.meeting-layout .speaker-name {
+    font-weight: 600;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Active states for meeting layout */
+.meeting-layout .speaker-item.active {
+    border: 2px solid #6c5ce7;
+    background-color: rgba(108, 92, 231, 0.05);
+}
+
+.meeting-layout .speaker-item.playing {
+    animation: meeting-pulse 1.5s infinite;
+}
+
+@keyframes meeting-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.4); }
+    70% { box-shadow: 0 0 0 8px rgba(108, 92, 231, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(108, 92, 231, 0); }
+}

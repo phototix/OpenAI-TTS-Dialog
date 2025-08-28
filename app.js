@@ -30,10 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let dialogData = [];
     let currentPlayingIndex = -1;
     let audioElements = [];
+
+    // Add this variable at the top with other declarations
+    let currentLayoutMode = 'circle'; // 'circle' or 'meeting'
     
     // Load sample dialog
     loadSampleDialog();
     initializeSpeakerAvatars();
+
+    // Add event listener in DOMContentLoaded
+    document.getElementById('layoutToggleBtn').addEventListener('click', toggleLayoutMode);
     
     // Event Listeners
     clearDialogBtn.addEventListener('click', clearDialog);
@@ -95,6 +101,28 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error loading sample dialog:', error);
             dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample file</p>';
         }
+    }
+
+    function toggleLayoutMode() {
+        const speakersRow = document.getElementById('speakersRow');
+        const toggleBtn = document.getElementById('layoutToggleBtn');
+        
+        if (currentLayoutMode === 'circle') {
+            // Switch to meeting layout
+            speakersRow.classList.add('meeting-layout');
+            speakersRow.classList.remove('circle-layout');
+            toggleBtn.innerHTML = '<i class="fas fa-circle me-1"></i>Switch to Circle View';
+            currentLayoutMode = 'meeting';
+        } else {
+            // Switch to circle layout
+            speakersRow.classList.remove('meeting-layout');
+            speakersRow.classList.add('circle-layout');
+            toggleBtn.innerHTML = '<i class="fas fa-th-large me-1"></i>Switch to Meeting View';
+            currentLayoutMode = 'circle';
+        }
+        
+        // Re-render avatars with current layout
+        renderSpeakerAvatars();
     }
 
     // Add these functions to handle local storage
@@ -184,10 +212,11 @@ document.addEventListener('DOMContentLoaded', function() {
         renderSpeakerAvatars();
     }
 
-    // Function to render all speaker avatars
+    // Modify renderSpeakerAvatars function
     function renderSpeakerAvatars() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
+        speakersRow.className = currentLayoutMode === 'meeting' ? 'speakers-row meeting-layout' : 'speakers-row circle-layout';
         
         Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
