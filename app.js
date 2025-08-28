@@ -425,7 +425,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create and show control buttons
         showControlButtons();
         
-        playAllDialog();
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
         });
