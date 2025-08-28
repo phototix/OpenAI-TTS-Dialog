@@ -216,14 +216,20 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderSpeakerAvatars() {
         const speakersRow = document.getElementById('speakersRow');
         speakersRow.innerHTML = '';
+        let intIndex = 0;
+        let speakerStyleName = 'speaker-tile';
         
         Object.entries(speakerAvatars).forEach(([voiceName, avatarUrl]) => {
             const speakerItem = document.createElement('div');
             speakerItem.className = 'speaker-item';
             speakerItem.setAttribute('data-voice', voiceName);
-            
+
+            intIndex++;
+
+            if(intIndex==0){ speakerStyleName = 'host-tile'; }
+
             speakerItem.innerHTML = `
-                <div class="speaker-avatar-container">
+                <div class="speaker-avatar-container ${speakerStyleName}">
                     <img src="${avatarUrl}" 
                         alt="${voiceName}" 
                         class="speaker-avatar"
