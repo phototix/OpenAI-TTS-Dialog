@@ -224,9 +224,9 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerItem.className = 'speaker-item';
             speakerItem.setAttribute('data-voice', voiceName);
 
-            intIndex++;
+            if(intIndex === 0){ speakerStyleName = 'host-tile'; }else{ speakerStyleName = ''; }
 
-            if(intIndex==0){ speakerStyleName = 'host-tile'; }else{ speakerStyleName = ''; }
+            intIndex++;
 
             speakerItem.innerHTML = `
                 <div class="speaker-avatar-container ${speakerStyleName}">
