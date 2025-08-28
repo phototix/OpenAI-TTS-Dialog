@@ -1,0 +1,160 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎大家收听《壹韶的杂货店》，我是主持人壹韶，今天我们要聊一聊——日常工作、技术和一些生活趣事。",
+    "dialog_prompt": "cheerful, opening introduction for the podcast"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "壹韶，你开播好像都挺兴奋的啊，今天是不是准备了一些新料子？",
+    "dialog_prompt": "gentle, teasing tone, like a close friend making a comment"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "哈哈，有点儿吧。最近我在寺院的工作上，发现了不少有趣的地方。毕竟IT项目执行官可不只是帮忙做事那么简单。",
+    "dialog_prompt": "curious, thoughtful sharing tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "是的，Project Executive其实要推动项目，不只是写代码。听起来你也挺忙的吧？",
+    "dialog_prompt": "knowledgeable, supportive colleague tone"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "等等，所以你们不是一直在等任务吗？我还以为那是很固定的角色呢。",
+    "dialog_prompt": "skeptical yet curious tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "不不，等任务太被动了。如果只是等，反而会被当做助理，不是项目负责人。",
+    "dialog_prompt": "explaining earnestly, slight humor"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "听起来压力也挺大啊。我刚接触AI工具，有时候就怕自己忙乱，错过了主责。",
+    "dialog_prompt": "hesitant, honest newbie tone"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "Coral，其实不用一开始就什么都管。重点是先把核心工作做好，然后在空余时慢慢学习。",
+    "dialog_prompt": "steady, warm reassurance"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "说到学习，你们用过Jira或者Confluence吗？项目跟踪能节省好多时间。",
+    "dialog_prompt": "suggestive, practical tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "有的，我最近还在趁空挡研究这些工具，比等人派任务好多了。",
+    "dialog_prompt": "enthusiastic, conversational tone"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "休息一下，插播一个小福利时间——我们今天的节目合作伙伴是 WebbyPage！",
+    "dialog_prompt": "energetic, introducing sponsor break"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "哦？他们是做什么的呀？听名字好像很有互联网味。",
+    "dialog_prompt": "gentle curiosity"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "WebbyPage是一家专业的网站开发团队，专门帮个人和企业打造定制网站。从电商平台到个人作品集，他们都能搞定。",
+    "dialog_prompt": "professional, advertorial tone but still friendly"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "我认识！他们还提供前端开发加上后台功能整合，就是那种一站式解决方案。",
+    "dialog_prompt": "enthusiastic endorsement"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "听起来对创业者挺方便的。那价格上会不会很高啊？",
+    "dialog_prompt": "curious, practical concern"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "其实还好，而且他们的咨询是免费的。你可以先聊聊想要的网站风格，他们会量身设计。",
+    "dialog_prompt": "explaining with enthusiasm"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "这广告听着还不错，至少不像“买一送一”那种硬推销。嘿，下次我博客搞不好真可以找他们。",
+    "dialog_prompt": "skeptical but half-convinced, humorous"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "没错，有兴趣的听众可以上他们官网——WebbyPage，创造属于你的专属网站！好，广告时间结束，我们继续聊话题。",
+    "dialog_prompt": "closing sponsor break, cheerful transition"
+  },
+
+  {
+    "voice_name": "echo",
+    "input_text": "可我总觉得你们这样‘没事找事’是不是太累了？",
+    "dialog_prompt": "playful skepticism, post-ad transition"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我也有点这种感受。不过如果优化流程能帮团队省时，其实是超值的吧？",
+    "dialog_prompt": "curious, trying to persuade self"
+  },
+
+  {
+    "voice_name": "alloy",
+    "input_text": "没错，这叫‘主动但有界限’，不是抢别人工作，而是帮团队更高效。",
+    "dialog_prompt": "calm, balanced guidance"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "比如帮业务部门整理需求，这不是在做他们的活儿，但结果对大家都有利。",
+    "dialog_prompt": "clarifying example"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "对，我就遇到过一次。帮忙把会议纪要整理清楚，结果开发和供应商都说顺畅了好多。",
+    "dialog_prompt": "sharing real case"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "哈哈，那你算是项目的润滑剂了。",
+    "dialog_prompt": "playful, joking"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那如果是第一年入职，应该专注在哪些事情呢？",
+    "dialog_prompt": "genuinely asking advice"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "第一年最重要的是做稳执行者，让大家对你有信任感。",
+    "dialog_prompt": "serious yet encouraging"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "对，信任是靠细节积累的，比如文档清晰、进度透明。",
+    "dialog_prompt": "supportive, wise tone"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "等到第二年，可以考虑提效率，找一些自动化和优化的点子。",
+    "dialog_prompt": "strategic, thoughtful tone"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "第三年，目标就是往项目经理方向迈进，掌握更多话语权。",
+    "dialog_prompt": "visionary, aspirational tone"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "听到这里，我突然觉得IT项目管理有点像下象棋，得提前几步预测。",
+    "dialog_prompt": "playful analogy"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "好的，今天我们的《壹韶的杂货店》就到这里，谢谢Amanda、Fable、Echo和Coral的陪伴，也感谢我们的赞助商 WebbyPage，让节目更精彩。我们下期见！",
+    "dialog_prompt": "cheerful, friendly ending for the podcast"
+  }
+]
