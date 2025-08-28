@@ -42,7 +42,11 @@
                             placeholder="Enter your ElevenLabs API key">
                     </div>
                     <div class="col-md-12">
-                        <small class="text-muted">Your API key is stored locally and not sent to our servers</small>
+                        <input type="text" class="form-control" id="apiEleVoiceID" 
+                            placeholder="Enter your ElevenLabs Voice ID">
+                    </div>
+                    <div class="col-md-12">
+                        <small class="text-muted">Your API & Voice ID key is stored locally and not sent to our servers</small>
                     </div>
                 </div>
             </div>

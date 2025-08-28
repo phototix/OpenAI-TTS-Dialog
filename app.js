@@ -143,6 +143,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return localStorage.getItem('elevenlabs_api_key');
     }
 
+    // Add these functions to handle local storage
+    function saveEleApiVoiceIDToLocalStorage(apiKey) {
+        localStorage.setItem('elevenlabs_api_voice_id', apiKey);
+    }
+
+    function loadEleApiVoiceIDFromLocalStorage() {
+        return localStorage.getItem('elevenlabs_api_voice_id');
+    }
+
     function addDialogEntry() {
         const voice = voiceSelect.value;
         const prompt = dialogPrompt.value;
@@ -380,6 +389,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add event listener to save API key when changed
     document.getElementById('apiEleKey').addEventListener('input', function() {
         saveEleApiKeyToLocalStorage(this.value);
+    });
+
+    // Load API key from local storage on page load
+    const savedEleApiVoiceID = loadEleApiVoiceIDFromLocalStorage();
+    if (savedEleApiVoiceID) {
+        document.getElementById('apiEleVoiceID').value = savedEleApiVoiceID;
+    }
+    
+    // Add event listener to save API key when changed
+    document.getElementById('apiEleVoiceID').addEventListener('input', function() {
+        saveEleApiVoiceIDToLocalStorage(this.value);
     });
 
     // Add this to your JavaScript
