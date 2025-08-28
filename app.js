@@ -201,12 +201,12 @@ document.addEventListener('DOMContentLoaded', function() {
         speakerAvatars = {
             'onyx': '/assets/avatars/onyx.png',
             'alloy': '/assets/avatars/female-default.png',
-            'coral': '/assets/avatars/coral.jpg',
+            'coral': '/assets/avatars/female-default.png',
             'echo': '/assets/avatars/male-default.png',
-            'fable': '/assets/avatars/fable.jpg',
+            'fable': '/assets/avatars/male-default.png',
             'nova': '/assets/avatars/female-default.png',
-            'sage': '/assets/avatars/sage.jpg',
-            'shimmer': '/assets/avatars/shimmer.jpg'
+            'sage': '/assets/avatars/female-default.png',
+            'shimmer': '/assets/avatars/female-default.png'
         };
         
         renderSpeakerAvatars();
