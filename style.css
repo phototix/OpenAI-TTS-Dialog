@@ -47,6 +47,15 @@ body {
     font-weight: 500;
     color: #6c757d;
 }
+
+#speakersRow {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    padding: 15px !important;
+}
+
 /* Avatar Styles */
 .speaker-avatar {
     width: 60px;
@@ -69,14 +78,17 @@ body {
 }
 
 .speaker-item {
-    text-align: center;
-    margin: 10px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    min-width: 80px !important;
 }
 
 .speaker-name {
     font-size: 12px;
     margin-top: 5px;
     color: #6c757d;
+    text-align: center;
 }
 
 @keyframes pulse {
@@ -214,6 +226,13 @@ body {
 }
 
 /* Online Meeting Layout Styles */
+.meeting-layout #speakersRow {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+}
+
 .meeting-layout .speakers-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -228,6 +247,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.2s ease;
+    min-width: 120px;
 }
 
 .meeting-layout .speaker-item:hover {
