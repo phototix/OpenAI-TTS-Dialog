@@ -235,12 +235,12 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerItem.innerHTML = `
                 <div class="speaker-avatar-container">
                     <img src="${avatarUrl}" 
-                        alt="${voiceName}" 
+                        alt="${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}" 
                         class="speaker-avatar"
                         data-voice="${voiceName}"
-                        title="${voiceName}">
+                        title="${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}">
                     <div class="mic-status"></div>
-                    <div class="speaker-name-overlay">${voiceName}</div>
+                    <div class="speaker-name-overlay">${voiceName.charAt(0).toUpperCase() + voiceName.slice(1)}</div>
                 </div>
             `;
             speakersRow.appendChild(speakerItem);
