@@ -487,6 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateOpenAITTS(entry, apiKey) {
+        console.log("Generate with OpenAI: " + entry);
         const response = await fetch('https://api.openai.com/v1/audio/speech', {
             method: 'POST',
             headers: {
@@ -509,6 +510,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function generateElevenLabsTTS(entry, eleApiKey, eleVoiceID) {
+        console.log("Generate with EleveLabs: " + entry);
         const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${eleVoiceID}`, {
             method: 'POST',
             headers: {
