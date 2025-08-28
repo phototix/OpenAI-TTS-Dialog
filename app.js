@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             const speakerItems = document.querySelectorAll('.speaker-item');
             speakerItems.forEach(item => {
-                const nameElement = item.querySelector('.speaker-name-overlay');
+                const nameElement = item.querySelector('.speaker-avatar');
                 console.log(nameElement.dataset.voice);
                 if (nameElement && nameElement.dataset.voice == voiceName.toLowerCase()) {
                     currentAvatar = item.querySelector('.speaker-avatar');
