@@ -164,6 +164,8 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogElement.className = `dialog-bubble ${index % 2 === 0 ? 'user' : 'user'}`;
         dialogElement.dataset.index = index;
         
+        if(entry.voice_name == 'onyx'){ entry.voice_name = '壹韶 by Onyx'; }
+
         dialogElement.innerHTML = `
             <div class="d-flex justify-content-between align-items-start">
                 <div>
