@@ -119,7 +119,7 @@
 
             <!-- Right Column: Dialog Preview -->
             <div class="col-lg-6" id="rightColumn">
-                <div class="card h-100">
+                <div class="card">
                     <div class="card-header bg-white d-flex justify-content-between align-items-center">
                         <h5 class="card-title mb-0"><i class="fas fa-comments me-2"></i>Dialog Preview</h5>
                         <div>
