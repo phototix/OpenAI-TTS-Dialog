@@ -12,7 +12,7 @@
 
     <div class="header text-center" id="openaiTTSHeader">
         <div class="container">
-            <p class="lead">Convert dialog to Text-to-Speech with OpenAI voices</p>
+            <p class="lead">Convert dialog to Text-to-Speech with OpenAI & ElevenLabs voices</p>
         </div>
     </div>
 
