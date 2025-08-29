@@ -199,9 +199,48 @@
         </div>
     </div>
 
+    <!-- Edit Dialog Modal -->
+    <div class="modal fade" id="editDialogModal" tabindex="-1" aria-labelledby="editDialogModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editDialogModalLabel">Edit Dialog Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label voice-label">Select Voice</label>
+                        <select class="form-select voice-select" id="voiceEditModal">
+                            <option value="alloy">Alloy (Female)</option>
+                            <option value="coral">Coral (Female)</option>
+                            <option value="echo" selected>Echo (Male)</option>
+                            <option value="fable">Fable (Male)</option>
+                            <option value="nova">Nova (Female)</option>
+                            <option value="onyx">Onyx (Male)</option>
+                            <option value="sage">Sage (Female)</option>
+                            <option value="shimmer">Shimmer (Female)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                    <label for="editDialogPrompt" class="form-label">Dialog Prompt</label>
+                    <input type="text" class="form-control" id="editDialogPrompt">
+                    </div>
+                    <div class="mb-3">
+                    <label for="editInputText" class="form-label">Dialog Text</label>
+                    <textarea class="form-control" id="editInputText" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="saveEditDialogBtn">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
     <div class="footer text-center mt-5" id="footer">
         <div class="container">
-            <p>AI Speech Builder &copy; 2025 | Developed by WebbyPage</p>
+            <p>AI Speech Builder &copy; 2025 | Developed by <a href="https://webbypage.com" target="_blank" rel="noopener noreferrer">WebbyPage</a></p>
         </div>
     </div>
 

@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let dialogData = [];
     let currentPlayingIndex = -1;
     let audioElements = [];
+    let editingDialogIndex = null;
 
     // Add this variable at the top with other declarations
     let currentLayoutMode = 'circle'; // 'circle' or 'meeting'
@@ -194,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="d-flex align-items-center gap-2 btnWebUIItems">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
+                    <i class="fas fa-pencil-alt fa-lg edit-btn text-warning" data-index="${index}"></i>
                     <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
                 </div>
             </div>
@@ -208,6 +210,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add event listeners
         dialogElement.querySelector('.play-btn').addEventListener('click', function() {
             playDialogItem(index);
+        });
+        
+        // Edit event listeners
+        dialogElement.querySelector('.edit-btn').addEventListener('click', function() {
+            editDialogItem(index);
         });
         
         // Add delete button event listener
@@ -714,6 +721,54 @@ document.addEventListener('DOMContentLoaded', function() {
         // In a real implementation, this would update the playback rate of audio elements
         console.log(`Playback speed set to: ${speed}x`);
     }
+
+    function editDialogItem(index) {
+        const entry = dialogData[index];
+        if (!entry) return;
+
+        // Set modal fields
+        document.getElementById('editDialogPrompt').value = entry.dialog_prompt;
+        document.getElementById('editInputText').value = entry.input_text;
+        document.getElementById('voiceEditModal').value = entry.voice_name;
+        editingDialogIndex = index;
+
+        // Show modal
+        const modal = new bootstrap.Modal(document.getElementById('editDialogModal'));
+        modal.show();
+    }
+
+    // Save changes from modal
+    document.getElementById('saveEditDialogBtn').addEventListener('click', function() {
+        if (editingDialogIndex === null) return;
+
+        const newPrompt = document.getElementById('editDialogPrompt').value;
+        const newText = document.getElementById('editInputText').value;
+        const voiceName = document.getElementById('voiceEditModal').value;
+
+        // Update the entry
+        dialogData[editingDialogIndex] = {
+            ...dialogData[editingDialogIndex],
+            dialog_prompt: newPrompt,
+            input_text: newText,
+            voice_name: voiceName
+        };
+
+        // Rebuild the dialog UI
+        rebuildDialogContainer();
+
+        // Reset audio since dialog changed
+        if (audioElements.length > 0) {
+            audioElements = [];
+            playAllBtn.disabled = true;
+        }
+
+        // Hide modal
+        const modalEl = document.getElementById('editDialogModal');
+        const modal = bootstrap.Modal.getInstance(modalEl);
+        modal.hide();
+
+        editingDialogIndex = null;
+    });
 
     // Add this function to handle dialog deletion
     function deleteDialogItem(index) {
