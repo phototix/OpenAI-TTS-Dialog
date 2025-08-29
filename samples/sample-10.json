@@ -1,0 +1,137 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎光临《壹韶的杂货店》，这里装着关于生活、身份，还有点外星味儿的思考。一起打开今天的脑洞！",
+    "dialog_prompt": "Podcast opening introduction"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "你们还记得我加入LGAT培训被分到‘外星人’组的那次经历吗？",
+    "dialog_prompt": "Reminiscing about LGAT training"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "‘外星人’? 这听起来像什么科幻电影设定啊，你当时怎么没立刻跑路？",
+    "dialog_prompt": "Echo being skeptical about the alien label"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "我差点就走了，但后来居然觉得这种‘异类感’挺酷的。",
+    "dialog_prompt": "Explaining why the alien label became cool"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "其实很多伟大的发明还真是那些被当成‘外星人’的人搞出来的，比如爱因斯坦。",
+    "dialog_prompt": "Connecting alien label to innovation"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "是啊，有时候‘异类’只是人们对未知的误解。",
+    "dialog_prompt": "Alloy gives a gentle comment on labels"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我最近进入AI领域快成‘程序外星人’了，谁懂GPT的prompt到底怎么写啊？",
+    "dialog_prompt": "Coral jokes about being a tech alien"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "Coral，写prompt就像跟宇宙通讯，要精确还要想象力～",
+    "dialog_prompt": "Giving prompt writing advice humorously"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "但说真的，外星人的孤独感你们懂吗？我有时候在人群中都觉得自己像隐形的。",
+    "dialog_prompt": "Echo opens up about feelings of isolation"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "我懂，后来我试着开始参与志愿活动，还有和朋友分享想法，一点点找回‘地球感’。",
+    "dialog_prompt": "Talking about reconnecting with people"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "跟人的连接，比我们想象的重要多。不用改变自己，只需要打个招呼开始。",
+    "dialog_prompt": "Encouraging small social steps"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我前天就勇敢地点了个咖啡和店员多聊两句，虽然小事但心情好一整天。",
+    "dialog_prompt": "Coral shares small social progress"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "所以我们这期，是‘外星人也想喝奶茶’特辑吗？",
+    "dialog_prompt": "Techy joke about podcast theme"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "话说回来，你真的把写着‘外星人’的纸烧了吗？感觉有点像什么仪式感。",
+    "dialog_prompt": "Echo questions the paper-burning ritual"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "对！就像给那个旧标签一个ending。有时候，我们得亲手终结束缚。",
+    "dialog_prompt": "Talking about symbolic release"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "名字只是外衣，而你是谁，是你自己说了算。",
+    "dialog_prompt": "Reflections on identity beyond labels"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那我现在可以自封为‘debug仙子’吗？",
+    "dialog_prompt": "Coral joking about redefining her label"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "可以，但仙子可能也要懂 Git 命令。",
+    "dialog_prompt": "Geeky response to Coral's joke"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "你们有没有想过，如果‘外星人’要做网站，找谁开发最靠谱？",
+    "dialog_prompt": "Segway into ad break"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "嗯...难道你要说：‘找WebbyPage，连冥王星都能访问？’",
+    "dialog_prompt": "Echo guesses the ad punchline"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "正解！本期节目由 WebbyPage 支持播出。无论你是创业者、内容创作者，还是某个想要打造自己宇宙官网的‘外星人’——WebbyPage 帮你用最快的速度上线高质量网页。输入内容，三分钟变成专业页面！",
+    "dialog_prompt": "WebbyPage ad read by onyx"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "他们还有自动SEO优化哦，我朋友开店的网站点击率翻倍了。",
+    "dialog_prompt": "Fable recommends feature of WebbyPage"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "那我是不是可以用他们做个‘debug仙子的AI之旅’门户页？",
+    "dialog_prompt": "Coral jokes about creating a site with WebbyPage"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "可以的！上 webby.page 试试就知道～还有试用模板，完全免费！",
+    "dialog_prompt": "Call to action for WebbyPage"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "我们说了这么多，其实就想告诉每位‘外星人’，你并不孤单，甚至…你可能是个引领者。",
+    "dialog_prompt": "Summing up the main message"
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "好吧，我承认你这集讲得还挺有共鸣的，可能我也是半个火星公民。",
+    "dialog_prompt": "Echo softens and agrees"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "感谢你听到最后。《壹韶的杂货店》下次继续开张，记得回地球，也记得飞向你内心的宇宙，拜拜！",
+    "dialog_prompt": "Podcast closing summary and farewell"
+  }
+]
