@@ -1,12 +1,12 @@
 [
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "欢迎来到《壹韶的杂货店》，今天我们来聊聊一个改变我生活的神操作——用AI自己建Web App，代替每个月付软体订阅费，你准备好了吗？",
         "dialog_prompt": "Podcast opening introducing the AI DIY tools topic."
     },
     {
         "voice_name": "fable",
-        "input_text": "Onxy，你知道我光是剪辑工具、云端存储、协作平台一个月就花了快$100，后来我一气之下全用AI重写了。",
+        "input_text": "壹韶，你知道我光是剪辑工具、云端存储、协作平台一个月就花了快$100，后来我一气之下全用AI重写了。",
         "dialog_prompt": "Fable complains about high SaaS subscription fees and explains how AI helps."
     },
     {
@@ -22,7 +22,7 @@
     {
         "voice_name": "onyx",
         "input_text": "所以你是怎么开始的？是直接跟ChatGPT说我要一个two-factor app？",
-        "dialog_prompt": "Onxy gets curious about how to prompt AI to build an app."
+        "dialog_prompt": "onyx gets curious about how to prompt AI to build an app."
     },
     {
         "voice_name": "fable",
@@ -42,7 +42,7 @@
     {
         "voice_name": "onyx",
         "input_text": "说到建站，其实我最近也注意到一个团队，叫 WebbyPage，他们帮忙用AI+UX设计快速建立网站，而且看起来比我自己搭还专业。",
-        "dialog_prompt": "Onxy casually introduces WebbyPage ad into conversation."
+        "dialog_prompt": "onyx casually introduces WebbyPage ad into conversation."
     },
     {
         "voice_name": "fable",
@@ -57,7 +57,7 @@
     {
         "voice_name": "onyx",
         "input_text": "你可以去他们网站看，他们有一个Starter Pack方案，价格合理，重点是不用自己烦设计，对新创超友善！",
-        "dialog_prompt": "Onxy provides WebbyPage ad details and suggests checking website."
+        "dialog_prompt": "onyx provides WebbyPage ad details and suggests checking website."
     },
     {
         "voice_name": "coral",
@@ -65,9 +65,9 @@
         "dialog_prompt": "Coral responds to ad chorus, relating to her own web dev challenges."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "如果大家有兴趣，可以点我们节目简介栏的连结，看看WebbyPage有什么能帮到你！",
-        "dialog_prompt": "Onxy links WebbyPage ad and drives call to action."
+        "dialog_prompt": "onyx links WebbyPage ad and drives call to action."
     },
     {
         "voice_name": "alloy",
@@ -85,9 +85,9 @@
         "dialog_prompt": "Fable acknowledges testing while defending AI efficiency."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "你还做了什么app？我好奇！",
-        "dialog_prompt": "Onxy asks about variety of AI-built apps."
+        "dialog_prompt": "onyx asks about variety of AI-built apps."
     },
     {
         "voice_name": "fable",
@@ -125,9 +125,9 @@
         "dialog_prompt": "Fable endorses cost-saving by using open-source tools."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "那没有AWS经验的人怎么办？自己架网站很难吧？",
-        "dialog_prompt": "Onxy asks how non-experts handle deployment."
+        "dialog_prompt": "onyx asks how non-experts handle deployment."
     },
     {
         "voice_name": "fable",
@@ -150,9 +150,9 @@
         "dialog_prompt": "Fable clarifies scope of suitable self-build use cases."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "这样听下来，感觉不只是省钱，还学到超多东西。",
-        "dialog_prompt": "Onxy reflects on the learning benefits of AI development."
+        "dialog_prompt": "onyx reflects on the learning benefits of AI development."
     },
     {
         "voice_name": "alloy",
@@ -170,12 +170,12 @@
         "dialog_prompt": "Fable offers to help and invites to join the AI dev community."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "哇，今天这一集收获满满！如果听众朋友有兴趣，我考虑开个workshop，来体验一下AI建站有多神奇！",
-        "dialog_prompt": "Onxy wraps up with a call to action and workshop offer."
+        "dialog_prompt": "onyx wraps up with a call to action and workshop offer."
     },
     {
-        "voice_name": "onxy",
+        "voice_name": "onyx",
         "input_text": "谢谢大家收听《壹韶的杂货店》，下次我们再继续解锁更多有趣又省钱的科技生活技巧！",
         "dialog_prompt": "Podcast ending and preview of future topics."
     }
