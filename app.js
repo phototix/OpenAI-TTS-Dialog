@@ -608,7 +608,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create and show control buttons
         showControlButtons();
-        
+
+        document.querySelector('#dialogContainer').style.setProperty('overflow', 'hidden', 'important');
+        document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
+
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', 'none', 'important');
         });
@@ -678,6 +681,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Remove mini control buttons
         document.getElementById('miniControlButtons')?.remove();
+
+        document.querySelector('#dialogContainer').style.setProperty('overflow', 'auto', 'important');
+        document.querySelector('#dialogContainer').style.setProperty('max-height', '285px', 'important');
         
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', '', '');
