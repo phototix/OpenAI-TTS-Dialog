@@ -1,0 +1,182 @@
+[
+    {
+        "voice_name": "onxy",
+        "input_text": "欢迎来到《壹韶的杂货店》，今天我们来聊聊一个改变我生活的神操作——用AI自己建Web App，代替每个月付软体订阅费，你准备好了吗？",
+        "dialog_prompt": "Podcast opening introducing the AI DIY tools topic."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "Onxy，你知道我光是剪辑工具、云端存储、协作平台一个月就花了快$100，后来我一气之下全用AI重写了。",
+        "dialog_prompt": "Fable complains about high SaaS subscription fees and explains how AI helps."
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "$100？你到底付多少个服务啊？AI写code听起来很fancy啦，但真的靠谱吗？",
+        "dialog_prompt": "Echo expresses skepticism about AI-generated code."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "靠谱啊！比如我做的 TOTP on Cloud，用PHP + Bootstrap写的，AI帮我生成8成代码。",
+        "dialog_prompt": "Fable defends AI's reliability with personal example."
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "所以你是怎么开始的？是直接跟ChatGPT说我要一个two-factor app？",
+        "dialog_prompt": "Onxy gets curious about how to prompt AI to build an app."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "没错，plus我还请它帮我画User Flow，那工作流程清清楚楚。",
+        "dialog_prompt": "Fable explains how to use AI for requirement analysis and design."
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我都还在天天Google StackOverflow，你竟然已经自动化debug了？",
+        "dialog_prompt": "Coral expresses amazement at AI debugging features."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "AI真的快很多，Paste错误进去，它直接指出是哪一行。比自己慢慢trace快太多了。",
+        "dialog_prompt": "Fable shares AI as a faster debugging alternative."
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "说到建站，其实我最近也注意到一个团队，叫 WebbyPage，他们帮忙用AI+UX设计快速建立网站，而且看起来比我自己搭还专业。",
+        "dialog_prompt": "Onxy casually introduces WebbyPage ad into conversation."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "我有听过！WebbyPage 是专做中小型企业网站开发的，很快上线又注重美观，适合没有时间的人。",
+        "dialog_prompt": "Fable adds endorsement for WebbyPage in ad segment."
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "听起来不错耶，有没有试用版？还是要一次签约？",
+        "dialog_prompt": "Echo asks about WebbyPage services and pricing out of curiosity."
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "你可以去他们网站看，他们有一个Starter Pack方案，价格合理，重点是不用自己烦设计，对新创超友善！",
+        "dialog_prompt": "Onxy provides WebbyPage ad details and suggests checking website."
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我这种刚起步的个人开发者真的超级怕前端UI丑，WebbyPage 搞不好可以救我哈哈！",
+        "dialog_prompt": "Coral responds to ad chorus, relating to her own web dev challenges."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "如果大家有兴趣，可以点我们节目简介栏的连结，看看WebbyPage有什么能帮到你！",
+        "dialog_prompt": "Onxy links WebbyPage ad and drives call to action."
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "讲回自建App，感觉好处真的太多了，不只省钱，还能完全客制化。",
+        "dialog_prompt": "Alloy brings focus back to DIY web app topic."
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "那你们的code都不测试吗？AI也会犯错耶。",
+        "dialog_prompt": "Alloy gently reminds importance of testing AI-generated code."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "当然啦，Testing还是关键。但至少我节省了60%以上的时间。",
+        "dialog_prompt": "Fable acknowledges testing while defending AI efficiency."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "你还做了什么app？我好奇！",
+        "dialog_prompt": "Onxy asks about variety of AI-built apps."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "我做了合并WhatsApp + Task Manager的，还有个人电影直播平台。FFmpeg帮忙stream影视超棒！",
+        "dialog_prompt": "Fable lists multiple AI-driven personal web projects."
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "你真的有播自己做电台？你也太会玩了吧…",
+        "dialog_prompt": "Echo reacts in disbelief to Fable's DIY radio station."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "我用ZenoFM架的，连schedule播音乐都AI帮我生logics。",
+        "dialog_prompt": "Fable shares implementation of AI-scheduled radio system."
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "有没有Chrome Extension也能自己写的？我要一个能阅读PDF分析的。",
+        "dialog_prompt": "Coral asks about making custom Chrome extensions with AI."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "可以啊，我就做了OpenAI ReadAloud，还有Screen Reader，拿来做quiz超方便。",
+        "dialog_prompt": "Fable recommends Chrome extensions he built with AI."
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "听起来你已经半只脚进入自由软件世界了，完全open source取向喔。",
+        "dialog_prompt": "Alloy reflects on open-source and self-hosting benefits."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "没错，我服务器上跑着NextCloud和Joplin，省下云储存费用超赞！",
+        "dialog_prompt": "Fable endorses cost-saving by using open-source tools."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "那没有AWS经验的人怎么办？自己架网站很难吧？",
+        "dialog_prompt": "Onxy asks how non-experts handle deployment."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "ChatGPT现在连AWS用什么command都可以生成耶，照做就好，超适合初学者。",
+        "dialog_prompt": "Fable reassures that AI can help with even AWS deployment."
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我真的应该早点认识这些方法，感觉每天都被订阅榨干了。",
+        "dialog_prompt": "Coral regrets not using AI earlier to avoid subscription fees."
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "但总不能什么工具都自己build吧，要是出大问题还是要靠专业？",
+        "dialog_prompt": "Echo still questions the scalability of self-built tools."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "没错，自建适合自己需求用的；大项目当然还是团队协作，但AI绝对能加速流程！",
+        "dialog_prompt": "Fable clarifies scope of suitable self-build use cases."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "这样听下来，感觉不只是省钱，还学到超多东西。",
+        "dialog_prompt": "Onxy reflects on the learning benefits of AI development."
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "对啊，最重要是数据自主，不被平台限制。这点真的很重要。",
+        "dialog_prompt": "Alloy emphasizes data ownership from using personal tools."
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我要开始动手试试看了。Fable，你得帮我当mentor啦！",
+        "dialog_prompt": "Coral decides to start building with AI and asks for help."
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "随时来找我，我还可以拉你进Discord社群交流心得～",
+        "dialog_prompt": "Fable offers to help and invites to join the AI dev community."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "哇，今天这一集收获满满！如果听众朋友有兴趣，我考虑开个workshop，来体验一下AI建站有多神奇！",
+        "dialog_prompt": "Onxy wraps up with a call to action and workshop offer."
+    },
+    {
+        "voice_name": "onxy",
+        "input_text": "谢谢大家收听《壹韶的杂货店》，下次我们再继续解锁更多有趣又省钱的科技生活技巧！",
+        "dialog_prompt": "Podcast ending and preview of future topics."
+    }
+]
