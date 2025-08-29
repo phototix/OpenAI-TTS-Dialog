@@ -11,7 +11,7 @@ Requirements
 - A modern browser with JavaScript enabled and internet access to load CDN assets and avatar images [4][5].
 
 Project structure
-- index.html: Main UI layout with controls, dialog preview, and modal to add dialog [5].
+- index.php: Main UI layout with controls, dialog preview, and modal to add dialog [5].
 - app.js: App logic: loading samples, TTS generation, playback sequence, UI interactions, avatars [4].
 - style.css: Styling for layout, dialog bubbles, avatars, animations, buttons [3].
 - listSample.php: Returns a JSON list of .json files in the samples/ folder [6].
@@ -19,8 +19,8 @@ Project structure
 
 Setup steps
 1) Get the source files into a PHP-capable web root, preserving the structure above [5][6].
-2) Create a folder named samples at the same level as index.html and place one or more JSON files in it (see JSON format below) [6].
-3) Fix the CDN links in index.html (they are currently written in a markdown-like format). Use these URLs:
+2) Create a folder named samples at the same level as index.php and place one or more JSON files in it (see JSON format below) [6].
+3) Fix the CDN links in index.php (they are currently written in a markdown-like format). Use these URLs:
    - Bootstrap CSS: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
    - Font Awesome CSS: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
    - Bootstrap JS: https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
@@ -68,9 +68,9 @@ Avatars
 - You can replace avatar URLs in app.js (initializeSpeakerAvatars) with your own hosted images [4].
 
 Troubleshooting and known issues
-- CDN links not loading: Correct the malformed CDN URLs in index.html as shown above [5].
+- CDN links not loading: Correct the malformed CDN URLs in index.php as shown above [5].
 - Sample voice “onxy”: Change to “onyx” in your samples for TTS to work with the listed voices [2][1].
-- No samples listed: Ensure a samples/ folder exists next to index.html and contains one or more .json files. listSample.php will return only files with .json extension [6].
+- No samples listed: Ensure a samples/ folder exists next to index.php and contains one or more .json files. listSample.php will return only files with .json extension [6].
 - Playback speed: Changing the slider while audio is playing won’t affect the current item; it applies to the next item played. This is due to how the code sets playbackRate when starting each audio [4].
 - Fullscreen styling: The app toggles a fullscreen-mode class, but no CSS for that class is provided in style.css. If you want true fullscreen visuals, add CSS rules for .fullscreen-mode (e.g., position: fixed; inset: 0; z-index; background) [3][4].
 - CORS or broken avatars: External avatar URLs might fail to load due to network or CORS policies. Host your own copies and change the URLs in app.js if needed [4].
@@ -85,7 +85,7 @@ Extending
 - Add features: You can implement live playback speed changes by keeping a reference to the current Audio instance and updating its playbackRate in updatePlaybackSpeed [4].
 
 Attribution
-- UI structure and controls are defined in index.html [5].
+- UI structure and controls are defined in index.php [5].
 - App logic and OpenAI integration are in app.js [4].
 - Visual styling is defined in style.css [3].
 - Sample listing endpoint is listSample.php [6].
