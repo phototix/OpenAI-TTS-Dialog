@@ -683,7 +683,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('miniControlButtons')?.remove();
 
         document.querySelector('#dialogContainer').style.setProperty('overflow', 'auto', 'important');
-        document.querySelector('#dialogContainer').style.setProperty('max-height', '285px', 'important');
+        document.querySelector('#dialogContainer').style.setProperty('max-height', '350px', 'important');
         
         document.querySelectorAll('.btnWebUIItems').forEach(el => {
             el.style.setProperty('display', '', '');
