@@ -1,0 +1,233 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎大家收听《壹韶的杂货店》，今天我们要聊聊最近看到的一些社会、科技和生活小事儿。",
+    "dialog_prompt": "Podcast 开场介绍"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "我最近看到个有趣的消息，说抹茶从寺院小饮变成了全球热潮，甚至有点供不应求了。",
+    "dialog_prompt": "开启关于抹茶流行的讨论"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "是啊，我记得以前抹茶只是禅修时的饮品，现在在商场咖啡馆到处都是。",
+    "dialog_prompt": "回应抹茶的流行趋势"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "可是一到流行，就经常面临供不应求，价格还升得特别快。",
+    "dialog_prompt": "质疑流行导致的市场问题"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "其实很多抹茶的技艺源自中国，不过现在最有名的还是日本品牌。",
+    "dialog_prompt": "解释抹茶文化传承"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我还没有喝过正宗的抹茶呢，有没有推荐的入门喝法？",
+    "dialog_prompt": "新手对抹茶的疑问"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "对了，在继续聊新闻之前，插播一下今天的节目伙伴——‘WebbyPage’ 网站开发广告时间！",
+    "dialog_prompt": "广告过渡提示"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "哈哈，突然很正式呀。那WebbyPage是做什么的呢？",
+    "dialog_prompt": "模仿观众好奇提问"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "WebbyPage 专注定制网站开发，不管是企业官网、电商平台还是智能工具，他们都能提供专业解决方案。",
+    "dialog_prompt": "广告介绍WebbyPage"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "听着挺专业的，他们会不会只是套模版？",
+    "dialog_prompt": "怀疑式广告互动"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "不是的哦，我去看过他们的案例，有互动式页面和动态功能，看起来很有创意。",
+    "dialog_prompt": "观众口碑式回应广告"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "好啦，本期节目有WebbyPage的支持，如果你有网站建设需求，可以上网搜一下‘WebbyPage’！",
+    "dialog_prompt": "广告结束语，过渡回节目"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "换个话题，我看到马来西亚最近在处理AI生成的假消息，光是删掉的就有四万多条。",
+    "dialog_prompt": "引入关于AI虚假信息的话题"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "对，这类AI生成内容已经泛滥成灾，尤其是在政治和健康相关的信息里。",
+    "dialog_prompt": "技术角度分析AI虚假信息"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "说实话，我有时候都分不清，看到的新闻到底是真的还是假的。",
+    "dialog_prompt": "用户对假新闻的困惑"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "还好，有些国家开始立法，比如马来西亚正在推动生产者责任制，解决塑料污染也涉及资讯监管。",
+    "dialog_prompt": "关联环境和政策行动"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "这种法律感觉挺前卫的，不过能不能真的落实就不知道了。",
+    "dialog_prompt": "新手对法规执行的疑问"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "对了，听说新加坡在研究海岸保护，要对付海平面上升的威胁。",
+    "dialog_prompt": "引入新加坡气候变迁话题"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "嗯，听起来很宏大，但真的能挡得住大自然吗？这种屏障好像只是拖延时间。",
+    "dialog_prompt": "质疑气候工程可行性"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "至少是个积极尝试吧，总比袖手旁观好。",
+    "dialog_prompt": "鼓励积极应对海平面上升"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "我在看科技圈新闻，Meta因为青少年聊天机器人出事，已经缩减功能了。",
+    "dialog_prompt": "引出AI聊天机器人的争议"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "哈哈，我就觉得AI机器人哪天会出乱子，果然有'暧昧对话'这种尴尬的事。",
+    "dialog_prompt": "对AI风险表现怀疑"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "真的吗？那我用AI工具的时候是不是也要小心隐私？",
+    "dialog_prompt": "新手对AI使用风险的疑问"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "是的，尤其是聊天类工具，上传的资料其实很可能被储存、训练。",
+    "dialog_prompt": "解释AI隐私风险"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "听起来就像使用AI是一把双刃剑，既好用又充满风险。",
+    "dialog_prompt": "总结AI利弊"
+  },
+
+  {
+    "voice_name": "alloy",
+    "input_text": "说到科技，欧洲设定了2030年要控制五分之一半导体市场的目标，可不少人说是乌托邦。",
+    "dialog_prompt": "分享半导体行业雄心"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "哈哈，光喊口号容易，产业链和技术积累不是说有就有的。",
+    "dialog_prompt": "怀疑欧洲半导体计划"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我听同事说，Windows最近也在发布更新修补Bug，你们有用吗？",
+    "dialog_prompt": "新手提问操作系统更新情况"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "哦，Windows 11的24H2更新刚推送了，还挺多修复的。",
+    "dialog_prompt": "解释新系统更新"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "那说说健康方面吧，有研究说戒烟可以更容易克服其他成瘾问题。",
+    "dialog_prompt": "引入健康科学话题"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "挺合理的，烟草本身就容易成习惯，一旦戒掉，意志力也跟着变强。",
+    "dialog_prompt": "分析戒烟益处"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "嗯，但很多人就是戒不掉，这才是真正的难点。",
+    "dialog_prompt": "怀疑戒烟难度"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我也看到有文章说加工食品会损害新陈代谢，这是不是意味着要彻底少吃快餐？",
+    "dialog_prompt": "关于饮食健康的提问"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "确实，加工食品常含高糖和化学添加剂，对健康不利。",
+    "dialog_prompt": "解释饮食健康影响"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "再说点体育吧，印度羽毛球队这次在世锦赛上有奖牌保证了。",
+    "dialog_prompt": "介绍体育新闻"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "他们最近状态很好，不输世界强队了。",
+    "dialog_prompt": "评价印度队表现"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "运动确实能激励人，尤其是新兴国家在世界舞台上夺奖。",
+    "dialog_prompt": "运动精神与国家象征"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我平时运动太少了，听你们聊都感觉自己得去健身了。",
+    "dialog_prompt": "自我反思运动不足"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "其实，科技也能帮你，比如智能手表会催促你多走路。",
+    "dialog_prompt": "科技辅助运动的建议"
+  },
+
+  {
+    "voice_name": "onyx",
+    "input_text": "今天我们话题真不少，从抹茶到AI，从运动到环境，像在逛杂货铺一样。",
+    "dialog_prompt": "总结节目风格"
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "这正是《壹韶的杂货店》的魅力，碎片式信息拼出一幅生活图景。",
+    "dialog_prompt": "呼应节目特色"
+  },
+  {
+    "voice_name": "eho",
+    "input_text": "我依然觉得里面不少东西值得怀疑，不过正因为如此才聊得起来。",
+    "dialog_prompt": "保持怀疑态度的总结"
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我今天收获太多，下回能不能专门多聊聊AI编程的坑和好处？",
+    "dialog_prompt": "期待未来议题"
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "当然可以，我准备了一些关于代码生成和测试自动化的小案例，下次可以分享。",
+    "dialog_prompt": "承诺未来内容"
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "那今天的节目就到这里，谢谢大家收听《壹韶的杂货店》，我们下期再见！",
+    "dialog_prompt": "Podcast结束语"
+  }
+]
