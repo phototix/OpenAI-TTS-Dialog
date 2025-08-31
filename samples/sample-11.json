@@ -15,7 +15,7 @@
     "dialog_prompt": "回应抹茶的流行趋势"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "可是一到流行，就经常面临供不应求，价格还升得特别快。",
     "dialog_prompt": "质疑流行导致的市场问题"
   },
@@ -46,7 +46,7 @@
     "dialog_prompt": "广告介绍WebbyPage"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "听着挺专业的，他们会不会只是套模版？",
     "dialog_prompt": "怀疑式广告互动"
   },
@@ -72,7 +72,7 @@
     "dialog_prompt": "技术角度分析AI虚假信息"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "说实话，我有时候都分不清，看到的新闻到底是真的还是假的。",
     "dialog_prompt": "用户对假新闻的困惑"
   },
@@ -93,7 +93,7 @@
     "dialog_prompt": "引入新加坡气候变迁话题"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "嗯，听起来很宏大，但真的能挡得住大自然吗？这种屏障好像只是拖延时间。",
     "dialog_prompt": "质疑气候工程可行性"
   },
@@ -108,7 +108,7 @@
     "dialog_prompt": "引出AI聊天机器人的争议"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "哈哈，我就觉得AI机器人哪天会出乱子，果然有'暧昧对话'这种尴尬的事。",
     "dialog_prompt": "对AI风险表现怀疑"
   },
@@ -134,7 +134,7 @@
     "dialog_prompt": "分享半导体行业雄心"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "哈哈，光喊口号容易，产业链和技术积累不是说有就有的。",
     "dialog_prompt": "怀疑欧洲半导体计划"
   },
@@ -159,7 +159,7 @@
     "dialog_prompt": "分析戒烟益处"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "嗯，但很多人就是戒不掉，这才是真正的难点。",
     "dialog_prompt": "怀疑戒烟难度"
   },
@@ -180,7 +180,7 @@
     "dialog_prompt": "介绍体育新闻"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "他们最近状态很好，不输世界强队了。",
     "dialog_prompt": "评价印度队表现"
   },
@@ -211,7 +211,7 @@
     "dialog_prompt": "呼应节目特色"
   },
   {
-    "voice_name": "eho",
+    "voice_name": "echo",
     "input_text": "我依然觉得里面不少东西值得怀疑，不过正因为如此才聊得起来。",
     "dialog_prompt": "保持怀疑态度的总结"
   },
