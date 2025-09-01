@@ -33,7 +33,8 @@
   {
     "voice_name": "onyx",
     "input_text": "对了，在继续聊新闻之前，插播一下今天的节目伙伴——‘WebbyPage’ 网站开发广告时间！",
-    "dialog_prompt": "广告过渡提示"
+    "dialog_prompt": "广告过渡提示",
+    "action": "ads_start"
   },
   {
     "voice_name": "alloy",
@@ -58,7 +59,8 @@
   {
     "voice_name": "onyx",
     "input_text": "好啦，本期节目有WebbyPage的支持，如果你有网站建设需求，可以上网搜一下‘WebbyPage’！",
-    "dialog_prompt": "广告结束语，过渡回节目"
+    "dialog_prompt": "广告结束语，过渡回节目",
+    "action": "ads_end"
   },
 
   {

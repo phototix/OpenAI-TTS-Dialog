@@ -123,7 +123,8 @@
   {
     "voice_name": "fable",
     "input_text": "人家可是正经广告！我们本期的赞助商是——WebbyPage！",
-    "dialog_prompt": "Excited, engaging ad start."
+    "dialog_prompt": "Excited, engaging ad start.",
+    "action": "ads_start"
   },
   {
     "voice_name": "coral",
@@ -163,7 +164,8 @@
   {
     "voice_name": "echo",
     "input_text": "好吧，我承认，这广告还挺贴心的，不是乱七八糟的。",
-    "dialog_prompt": "Amused, skeptical approval."
+    "dialog_prompt": "Amused, skeptical approval.",
+    "action": "ads_end"
   },
 
   {

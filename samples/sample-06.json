@@ -152,7 +152,8 @@
   {
     "voice_name": "onyx",
     "input_text": "说到这里，先插播一个广告时间——今天的节目由 WebbyPage 网站开发赞助播出！",
-    "dialog_prompt": "energetic podcast-style ad intro"
+    "dialog_prompt": "energetic podcast-style ad intro",
+    "action": "ads_start"
   },
   {
     "voice_name": "alloy",
@@ -182,7 +183,8 @@
   {
     "voice_name": "onyx",
     "input_text": "好啦，广告时间结束，回到我们的AI话题——说到作品集，我觉得AI也能帮忙生成素材呢！",
-    "dialog_prompt": "smooth transition back to main topic"
+    "dialog_prompt": "smooth transition back to main topic",
+    "action": "ads_end"
   },
   {
     "voice_name": "fable",

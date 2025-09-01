@@ -92,7 +92,8 @@
   {
     "voice_name": "onyx",
     "input_text": "你们有没有想过，如果‘外星人’要做网站，找谁开发最靠谱？",
-    "dialog_prompt": "Segway into ad break"
+    "dialog_prompt": "Segway into ad break",
+    "action": "ads_start"
   },
   {
     "voice_name": "echo",
@@ -122,7 +123,8 @@
   {
     "voice_name": "onyx",
     "input_text": "我们说了这么多，其实就想告诉每位‘外星人’，你并不孤单，甚至…你可能是个引领者。",
-    "dialog_prompt": "Summing up the main message"
+    "dialog_prompt": "Summing up the main message",
+    "action": "ads_end"
   },
   {
     "voice_name": "echo",

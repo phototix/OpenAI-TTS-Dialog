@@ -42,7 +42,8 @@
     {
         "voice_name": "onyx",
         "input_text": "说到建站，其实我最近也注意到一个团队，叫 WebbyPage，他们帮忙用AI+UX设计快速建立网站，而且看起来比我自己搭还专业。",
-        "dialog_prompt": "onyx casually introduces WebbyPage ad into conversation."
+        "dialog_prompt": "onyx casually introduces WebbyPage ad into conversation.",
+        "action": "ads_start"
     },
     {
         "voice_name": "fable",
@@ -72,7 +73,8 @@
     {
         "voice_name": "alloy",
         "input_text": "讲回自建App，感觉好处真的太多了，不只省钱，还能完全客制化。",
-        "dialog_prompt": "Alloy brings focus back to DIY web app topic."
+        "dialog_prompt": "Alloy brings focus back to DIY web app topic.",
+        "action": "ads_end"
     },
     {
         "voice_name": "alloy",

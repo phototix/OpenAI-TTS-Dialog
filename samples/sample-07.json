@@ -53,7 +53,8 @@
   {
     "voice_name": "onyx",
     "input_text": "休息一下，插播一个小福利时间——我们今天的节目合作伙伴是 WebbyPage！",
-    "dialog_prompt": "energetic, introducing sponsor break"
+    "dialog_prompt": "energetic, introducing sponsor break",
+    "action": "ads_start"
   },
   {
     "voice_name": "alloy",
@@ -88,7 +89,8 @@
   {
     "voice_name": "onyx",
     "input_text": "没错，有兴趣的听众可以上他们官网——WebbyPage，创造属于你的专属网站！好，广告时间结束，我们继续聊话题。",
-    "dialog_prompt": "closing sponsor break, cheerful transition"
+    "dialog_prompt": "closing sponsor break, cheerful transition",
+    "action": "ads_end"
   },
 
   {
