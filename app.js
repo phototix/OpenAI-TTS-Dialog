@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let audioElements = [];
     let editingDialogIndex = null;
 
+    // Ads declarations
+    let adsVideoElement = null;
+    let isAdsPlaying = false;
+
     // Add this variable at the top with other declarations
     let currentLayoutMode = 'circle'; // 'circle' or 'meeting'
     
@@ -105,6 +109,21 @@ document.addEventListener('DOMContentLoaded', function() {
             dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample file</p>';
         }
     }
+
+    // Add this function to initialize the ads video
+    function initializeAdsVideo() {
+        const adsContainer = document.getElementById('leftColumnAds');
+        if (adsContainer) {
+            adsVideoElement = adsContainer.querySelector('video');
+            if (adsVideoElement) {
+                adsVideoElement.volume = 0.5; // Set appropriate volume
+                adsVideoElement.loop = true;
+            }
+        }
+    }
+
+    // Call this in DOMContentLoaded
+    initializeAdsVideo();
 
     function importJsonDialog() {
         const jsonText = document.getElementById('jsonImportTextarea').value.trim();
@@ -679,8 +698,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return;
         }
-    
         const currentEntry = dialogData[index];
+        
+        // Check for ads actions and handle them
+        if (currentEntry.action) {
+            handleAdsAction(currentEntry.action);
+        }
         
         // Update active speaker avatar
         updateActiveSpeaker(currentEntry.voice_name);
@@ -698,13 +721,52 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.onended = () => {
             if (currentPlayingIndex === index) {
                 playDialogItem(index + 1);
-            }else{
+            } else {
                 stopPlayback();
             }
         };
         
         audio.playbackRate = parseFloat(playbackSpeed.value);
         await audio.play();
+    }
+
+    // Add this function to handle ads actions
+    function handleAdsAction(action) {
+        const adsContainer = document.getElementById('leftColumnAds');
+        
+        if (!adsContainer || !adsVideoElement) return;
+        
+        switch(action) {
+            case 'ads_start':
+                // Show ads container and start playback
+                adsContainer.style.display = 'block';
+                document.getElementById('leftColumn').style.display = 'none';
+                try {
+                    adsVideoElement.play().catch(e => console.log('Ads video play error:', e));
+                    isAdsPlaying = true;
+                } catch (error) {
+                    console.error('Error playing ads video:', error);
+                }
+                break;
+                
+            case 'ads_end':
+                // Hide ads container and stop playback
+                adsContainer.style.display = 'none';
+                document.getElementById('leftColumn').style.display = '';
+                try {
+                    adsVideoElement.pause();
+                    adsVideoElement.currentTime = 0;
+                    isAdsPlaying = false;
+                } catch (error) {
+                    console.error('Error stopping ads video:', error);
+                }
+                break;
+                
+            default:
+                // Handle unknown actions or do nothing
+                console.log('Unknown action:', action);
+                break;
+        }
     }
 
     // Helper function to pause
@@ -739,6 +801,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create and show control buttons
         showControlButtons();
+
+        // Make sure ads are hidden when hiding UI
+        const adsContainer = document.getElementById('leftColumnAds');
+        if (adsContainer) {
+            adsContainer.style.display = 'none';
+        }
 
         document.querySelector('#dialogContainer').style.setProperty('overflow', 'hidden', 'important');
         document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
@@ -813,6 +881,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Remove mini control buttons
         document.getElementById('miniControlButtons')?.remove();
 
+        // Reset ads state
+        const adsContainer = document.getElementById('leftColumnAds');
+        if (adsContainer) {
+            adsContainer.style.display = 'none';
+        }
+        if (adsVideoElement) {
+            adsVideoElement.pause();
+            adsVideoElement.currentTime = 0;
+        }
+        isAdsPlaying = false;
+
         document.querySelector('#dialogContainer').style.setProperty('overflow', 'auto', 'important');
         document.querySelector('#dialogContainer').style.setProperty('max-height', '350px', 'important');
         
@@ -829,15 +908,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const items = dialogContainer.querySelectorAll('.dialog-bubble');
         items.forEach(item => item.classList.remove('highlight'));
         
-        // Remove active classes from avatars AND speaker items (for meeting layout)
+        // Remove active classes from avatars AND speaker items
         document.querySelectorAll('.speaker-avatar').forEach(avatar => {
             avatar.classList.remove('active', 'playing', 'wave-animation');
         });
         
-        // Additional: Remove active classes from speaker items in meeting layout
         document.querySelectorAll('.speaker-item').forEach(item => {
             item.classList.remove('active', 'playing');
         });
+        
+        // Stop ads if playing
+        const adsContainer = document.getElementById('leftColumnAds');
+        if (adsContainer && isAdsPlaying) {
+            adsContainer.style.display = 'none';
+            document.getElementById('leftColumn').style.display = '';
+            if (adsVideoElement) {
+                adsVideoElement.pause();
+                adsVideoElement.currentTime = 0;
+            }
+            isAdsPlaying = false;
+        }
     }
     
     function updatePlaybackSpeed() {
