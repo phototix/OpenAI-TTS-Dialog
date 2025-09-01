@@ -139,6 +139,18 @@
                 </div>
             </div>
 
+            <!-- Left Column: Ads Playback -->
+            <div class="col-lg-6" id="leftColumnAds" style="display:none;">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title mb-0"><i class="fas fa-sliders-h me-2"></i>Ads</h5>
+                    </div>
+                    <div class="card-body">
+                        <video src="/ads/ads_loop.mp4" loop autoplay muted></video>
+                    </div>
+                </div>
+            </div>
+
             <!-- Right Column: Dialog Preview -->
             <div class="col-lg-6" id="rightColumn">
                 <div class="card">
