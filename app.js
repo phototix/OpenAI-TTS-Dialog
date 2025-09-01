@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="d-flex align-items-center gap-2 btnWebUIItems">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
-                    <i class="fas fa-recycle fa-lg recycle-btn text-warning" data-index="${index}"></i>
+                    <i class="fas fa-sync-alt fa-lg recycle-btn text-warning" data-index="${index}"></i>
                     <i class="fas fa-pencil-alt fa-lg edit-btn text-warning" data-index="${index}"></i>
                     <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
                 </div>
@@ -459,15 +459,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         try {
-            audioElements = [];
+            // Initialize audioElements array if needed
+            if (audioElements.length !== dialogData.length) {
+                audioElements = new Array(dialogData.length).fill(null);
+            }
             
+            // Generate only missing items
             for (let i = 0; i < dialogData.length; i++) {
-                const entry = dialogData[i];
-                const audioBlob = await generateSingleTTS(entry, apiKey);
-                audioElements.push({
-                    blob: audioBlob,
-                    url: URL.createObjectURL(audioBlob)
-                });
+                if (!audioElements[i]) {
+                    await generateSingleDialogItem(i);
+                }
             }
 
             playAllBtn.disabled = false;
@@ -475,6 +476,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error('TTS Generation Error:', error);
             alert('Error generating TTS: ' + error.message);
+        } finally {
+            generateBtn.disabled = false;
         }
     }
 
@@ -500,48 +503,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Add this function to handle single dialog generation
-    async function generateSingleDialogTTS(index) {
+    async function generateSingleDialogItem(index, forceRegenerate = false) {
         const apiKey = document.getElementById('apiKey').value;
         
         if (!apiKey) {
             alert('Please enter your OpenAI API key.');
-            return;
+            return false;
         }
 
-        const entry = dialogData[index];
-        
+        // Skip if already generated and not forcing regenerate
+        if (audioElements[index] && !forceRegenerate) {
+            return true;
+        }
+
         try {
-            // Show loading state
-            const playBtn = document.querySelector(`.play-btn[data-index="${index}"]`);
-            playBtn.classList.replace('fa-play-circle', 'fa-spinner', 'fa-spin');
-            
+            const entry = dialogData[index];
             const audioBlob = await generateSingleTTS(entry, apiKey);
             
-            // Update audioElements array with the new audio
-            if (audioElements[index]) {
-                URL.revokeObjectURL(audioElements[index].url); // Clean up old URL
-            }
-            
+            // Only replace this specific item
             audioElements[index] = {
                 blob: audioBlob,
                 url: URL.createObjectURL(audioBlob)
             };
             
-            // Restore play button
-            playBtn.classList.replace('fa-spinner', 'fa-play-circle');
-            playBtn.classList.remove('fa-spin');
-            
-            // Play the newly generated audio
-            playDialogItem(index);
-            
+            return true;
         } catch (error) {
             console.error('Single TTS Generation Error:', error);
-            alert('Error generating TTS: ' + error.message);
-            
-            // Restore play button on error
-            const playBtn = document.querySelector(`.play-btn[data-index="${index}"]`);
-            playBtn.classList.replace('fa-spinner', 'fa-play-circle');
-            playBtn.classList.remove('fa-spin');
+            alert('Error generating TTS for this item: ' + error.message);
+            return false;
         }
     }
 
