@@ -1,6 +1,6 @@
 [
     {
-        "voice_name": "intro",
+        "voice_name": "onyx",
         "input_text": "Welcome to 壹韶的杂货店, where we delve into the fascinating bits and pieces of life and technology!",
         "dialog_prompt": "Introduction to the podcast."
     },
@@ -45,7 +45,7 @@
         "dialog_prompt": "Discussing the benefits of digital transformation in a religious setting."
     },
     {
-        "voice_name": "ending",
+        "voice_name": "onyx",
         "input_text": "Thanks for joining us at 壹韶的杂货店. Until next time, keep exploring the converging paths of tradition and technology!",
         "dialog_prompt": "Concluding the podcast with a sign-off."
     }
