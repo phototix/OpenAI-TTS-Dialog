@@ -89,14 +89,14 @@
   {
     "voice_name": "onyx",
     "input_text": "没错，有兴趣的听众可以上他们官网——WebbyPage，创造属于你的专属网站！好，广告时间结束，我们继续聊话题。",
-    "dialog_prompt": "closing sponsor break, cheerful transition",
-    "action": "ads_end"
+    "dialog_prompt": "closing sponsor break, cheerful transition"
   },
 
   {
     "voice_name": "echo",
     "input_text": "可我总觉得你们这样‘没事找事’是不是太累了？",
-    "dialog_prompt": "playful skepticism, post-ad transition"
+    "dialog_prompt": "playful skepticism, post-ad transition",
+    "action": "ads_end"
   },
   {
     "voice_name": "coral",
