@@ -424,7 +424,7 @@
         "input_text": "好啦，今天就到这。记住：和用户一起设计，而不是替他们设计",
         "dialog_prompt": "收束要点。",
         "keywords": ["Co-design", "With Users", "Mindset"]
-    }
+    },
     {
         "voice_name": "onyx",
         "input_text": "本期《壹韶的杂货店》就到这里。把同理放在前面，把反馈放进循环，让创意与现实并肩前行。我们下期见！",
