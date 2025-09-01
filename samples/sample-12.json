@@ -19,13 +19,13 @@
     },
     {
         "voice_name": "echo",
-        "input_text": "听起来很美，但会不会只是换个说法的“头脑风暴”而已？",
+        "input_text": "听起来很美，但会不会只是换个说法的“Brainstorming”而已？",
         "dialog_prompt": "提出质疑，制造张力。",
         "keywords": ["Skepticism", "Brainstorming", "Methodology"]
     },
     {
         "voice_name": "fable",
-        "input_text": "不一样喔。它是一个有阶段、有反馈循环的流程：同理、定义、发想、原型、测试，还是非线性的。",
+        "input_text": "不一样喔。它是一个有阶段、有反馈循环的流程：同理、定义、发想、原型、测试，还是non-linear的。",
         "dialog_prompt": "概述五阶段与非线性特性。",
         "keywords": ["Stages", "Iterative", "Non-linear", "Empathize", "Prototype"]
     },
