@@ -741,7 +741,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Show ads container and start playback
                 adsContainer.style.display = 'block';
                 document.getElementById('leftColumn').style.display = 'none';
-                document.querySelector('#rightColumn').style.setProperty('width', '50%', 'important');
+                document.querySelector('#leftColumnAds').style.setProperty('width', '45%', 'important');
+                document.querySelector('#rightColumn').style.setProperty('width', '55%', 'important');
                 document.querySelector('#dialogContainer').style.setProperty('max-height', '145px', 'important');
                 try {
                     adsVideoElement.play().catch(e => console.log('Ads video play error:', e));

@@ -146,7 +146,7 @@
                         <h5 class="card-title mb-0"><i class="fas fa-video me-2"></i>Ads</h5>
                     </div>
                     <div class="card-body text-center">
-                        <video src="/ads/ads_loop.mp4" style="width:70%;" loop autoplay muted></video>
+                        <video src="/ads/ads_loop.mp4" style="width:58%;" loop autoplay muted></video>
                     </div>
                 </div>
             </div>
