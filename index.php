@@ -143,10 +143,10 @@
             <div class="col-lg-6" id="leftColumnAds" style="display:none;">
                 <div class="card">
                     <div class="card-header bg-white">
-                        <h5 class="card-title mb-0"><i class="fas fa-sliders-h me-2"></i>Ads</h5>
+                        <h5 class="card-title mb-0"><i class="fas fa-video me-2"></i>Ads</h5>
                     </div>
-                    <div class="card-body">
-                        <video src="/ads/ads_loop.mp4" loop autoplay muted></video>
+                    <div class="card-body text-center">
+                        <video src="/ads/ads_loop.mp4" style="width:70%;" loop autoplay muted></video>
                     </div>
                 </div>
             </div>

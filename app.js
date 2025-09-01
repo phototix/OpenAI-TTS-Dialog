@@ -741,6 +741,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Show ads container and start playback
                 adsContainer.style.display = 'block';
                 document.getElementById('leftColumn').style.display = 'none';
+                document.querySelector('#rightColumn').style.setProperty('width', '50%', 'important');
+                document.querySelector('#dialogContainer').style.setProperty('max-height', '145px', 'important');
                 try {
                     adsVideoElement.play().catch(e => console.log('Ads video play error:', e));
                     isAdsPlaying = true;
@@ -753,6 +755,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Hide ads container and stop playback
                 adsContainer.style.display = 'none';
                 document.getElementById('leftColumn').style.display = '';
+                document.querySelector('#rightColumn').style.setProperty('width', '100%', 'important');
+                document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
                 try {
                     adsVideoElement.pause();
                     adsVideoElement.currentTime = 0;
@@ -916,18 +920,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.speaker-item').forEach(item => {
             item.classList.remove('active', 'playing');
         });
-        
-        // Stop ads if playing
-        const adsContainer = document.getElementById('leftColumnAds');
-        if (adsContainer && isAdsPlaying) {
-            adsContainer.style.display = 'none';
-            document.getElementById('leftColumn').style.display = '';
-            if (adsVideoElement) {
-                adsVideoElement.pause();
-                adsVideoElement.currentTime = 0;
-            }
-            isAdsPlaying = false;
-        }
     }
     
     function updatePlaybackSpeed() {
