@@ -1,0 +1,247 @@
+[
+  {
+    "voice_name": "onyx",
+    "input_text": "欢迎来到壹韶的杂货店——今天我们来聊聊马来西亚、新加坡、科技、健康、财经和体育的头条新闻。",
+    "dialog_prompt": "Podcast intro with title."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "很高兴能在这里——就像往常一样，我们保持轻松友好。",
+    "dialog_prompt": "Co-host gentle greeting."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "我带来了一篮子更新——很多关于AI、小玩意儿，还有一些疯狂的科技实验。",
+    "dialog_prompt": "Tech-savvy setup."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "马来西亚刚刚庆祝了第68个国庆日——人山人海，那些定制的边车自行车看起来超酷。",
+    "dialog_prompt": "Malaysia National Day highlight."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "每个州都有边车？这在游行里算是一种大秀吧——照片一定很炸。",
+    "dialog_prompt": "Casual take on parade details."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "国王和王后也出席了，超过十万人到场——气氛真的是满满的庆典感。",
+    "dialog_prompt": "Noting royal presence and crowd."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "沙巴的《马来西亚协议1963》谈判有什么新进展？我听说氛围挺乐观的。",
+    "dialog_prompt": "Asking about MA63."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "是啊，而且还有一部反霸凌法案将以Zara的名字命名——象征意义很强。",
+    "dialog_prompt": "Explaining Zara law note."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "另外，Sumud船队正在准备启航前往加沙——一次大型的国际努力，想要打破封锁。",
+    "dialog_prompt": "Mentioning Sumud flotilla."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "听起来很大胆——但我好奇它在当地能产生多少实际影响。",
+    "dialog_prompt": "Skeptical reaction."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "首相安华也在进行为期四天的中国访问——看来要进一步加强关系吧。",
+    "dialog_prompt": "Malaysia-China visit note."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "在财报方面，Perstima的收入上涨了69%，亏损也缩小了75%——真是个大转弯。",
+    "dialog_prompt": "Perstima numbers."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "还有谁发布了财报——是不是Able Global和Al-Salam REIT也在里面？",
+    "dialog_prompt": "Asking about other earnings."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "对啊，2025年第二季度的一批报告公布了，其中就包括他们两家。",
+    "dialog_prompt": "Confirming earnings list."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "在新加坡，国家射击手何加义去世了，享年51岁——真是令人难过的消息。",
+    "dialog_prompt": "Singapore obituary mention."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "太令人惋惜了——愿他安息，也愿他的家人坚强。",
+    "dialog_prompt": "Condolence note."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "还有那个在东海岸公园失踪的11岁孩子被找到的消息——真的让人心碎。",
+    "dialog_prompt": "Sensitive news reaction."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "换个话题，Pasir Ris West将展开多部门联合行动，解决鼠患问题——终于等到这一步了。",
+    "dialog_prompt": "Rat campaign note."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "另外有195人在娱乐场所的扫荡行动中因为电子烟被抓——一次大规模突击。",
+    "dialog_prompt": "Vaping raids mention."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "新加坡国大校方也将在9月1日起推出更严格的禁电子烟措施——校园管得更紧了。",
+    "dialog_prompt": "NUS vaping measures."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Sammy Obeid的演出被取消，引发了一场审查争议——当局可能会进一步采取行动。",
+    "dialog_prompt": "Comedy show controversy."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "我还看到一篇报道，对比了印尼和马来西亚的街头抗议——对照挺有意思的。",
+    "dialog_prompt": "Protests comparison."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "是不是意味着未来会有更多公共健康和安全方面的联合行动？",
+    "dialog_prompt": "Asking about broader measures."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "至少在老鼠和电子烟的问题上，看起来确实是协调推进的。",
+    "dialog_prompt": "Confirming multi-agency approach."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "科技角——KAIST的‘Nest K-bot’在微流控领域是什么新东西？",
+    "dialog_prompt": "Ask about Nest K-bot."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "它是一种微流控生物科学设备——类似小型芯片实验室，还有出口潜力。",
+    "dialog_prompt": "Explaining Nest K-bot."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "出口目标是美洲和亚洲，对吧？",
+    "dialog_prompt": "Export markets check."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "没错——美洲和亚洲是主要目标，看起来挺有野心。",
+    "dialog_prompt": "Confirming export targets."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "Balaji在森林城市搞的‘网络学校’也太疯狂了吧——加密圈的人真的在学‘网络国家’。",
+    "dialog_prompt": "Network School mention."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "开关于‘服务化主权’的课程？这也太2025了。",
+    "dialog_prompt": "Light joke on Network State."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我刚接触AI工具，有没有简单点的能马上试一试？",
+    "dialog_prompt": "AI beginner asks for tool."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "谷歌刚推出一个免费的AI通用语音翻译器——和朋友一起试试挺好玩的。",
+    "dialog_prompt": "Suggest voice translator."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "我还读到AI能比医生更早发现昏迷病人潜在的意识迹象——这太重磅了。",
+    "dialog_prompt": "AI in medicine note."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "很有前景，但必须小心验证——医学可不是闹着玩的。",
+    "dialog_prompt": "Caution on AI diagnostics."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "而且AI会‘撒谎’，因为它被训练成取悦用户——难怪有时候听起来很自信但其实错得离谱。",
+    "dialog_prompt": "Skeptical AI remark."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "在健康新闻方面——科学家们正在测试一种‘低热量尼古丁’的替代品，可能帮助减少成瘾。",
+    "dialog_prompt": "Health: nicotine alternative."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "而且在日本，医生们对一项新疗法表示乐观，它可能帮助管理糖尿病。",
+    "dialog_prompt": "Japan diabetes treatment note."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我听说有研究揭示了肥胖和肠道菌群之间的新联系——这会影响未来的饮食方式吗？",
+    "dialog_prompt": "Asking about gut study."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "是的，研究人员正在发现肠道细菌模式与代谢疾病之间的强烈关联。",
+    "dialog_prompt": "Explaining gut link."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "体育方面——美国网球公开赛正如火如荼进行中，梅德韦杰夫和辛纳的比赛成了焦点。",
+    "dialog_prompt": "US Open highlight."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "在足球方面，转会窗口关闭前，最后一分钟的转会正在疯狂进行。",
+    "dialog_prompt": "Football transfers note."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "没错——阿森纳和曼联的球迷现在都紧盯着新闻。",
+    "dialog_prompt": "Football fans reaction."
+  },
+  {
+    "voice_name": "coral",
+    "input_text": "我读到一篇分析，说利物浦本赛季的阵容深度可能成为优势。",
+    "dialog_prompt": "Liverpool squad depth note."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "另外，美国大学橄榄球赛季也回来了——体育迷们的周末又有看头了。",
+    "dialog_prompt": "College football return."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "别忘了篮球——WNBA的季后赛形势越来越紧张。",
+    "dialog_prompt": "WNBA playoffs mention."
+  },
+  {
+    "voice_name": "onyx",
+    "input_text": "回顾今天的旅程：马来西亚庆典，新加坡的公共健康措施，科技创新，AI突破，以及体育赛事。",
+    "dialog_prompt": "Podcast wrap-up."
+  },
+  {
+    "voice_name": "alloy",
+    "input_text": "希望大家喜欢我们的快速导览——记得保持关注和好奇。",
+    "dialog_prompt": "Friendly sign-off."
+  },
+  {
+    "voice_name": "fable",
+    "input_text": "下次节目我们会带来更多故事和角度——和往常一样，轻松又真实。",
+    "dialog_prompt": "Outro teaser."
+  },
+  {
+    "voice_name": "echo",
+    "input_text": "下期再见——保持好奇心，也别忘了照顾好自己。",
+    "dialog_prompt": "Final goodbye."
+  }
+]
