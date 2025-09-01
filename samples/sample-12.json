@@ -1,0 +1,434 @@
+[
+    {
+        "voice_name": "onyx",
+        "input_text": "欢迎来到《壹韶的杂货店》，我是壹韶。今天我们来聊聊如何用 Design Thinking 解题，用最人本、最接地气的方式，把天马行空和务实落地揉在一起。",
+        "dialog_prompt": "开题抛问，引入主题。",
+        "keywords": ["Design Thinking", "Human-centered", "Problem-solving"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "开场先来个直球：你们觉得 Design Thinking 最打动你们的一点是什么",
+        "dialog_prompt": "开题抛问，引入主题。",
+        "keywords": ["Design Thinking", "Human-centered", "Problem-solving"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "对我来说是“同理心”。先理解人，再谈方案，这让讨论更踏实。",
+        "dialog_prompt": "强调同理心的重要性。",
+        "keywords": ["Empathy", "User Needs", "Human-centered"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "听起来很美，但会不会只是换个说法的“头脑风暴”而已？",
+        "dialog_prompt": "提出质疑，制造张力。",
+        "keywords": ["Skepticism", "Brainstorming", "Methodology"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "不一样喔。它是一个有阶段、有反馈循环的流程：同理、定义、发想、原型、测试，还是非线性的。",
+        "dialog_prompt": "概述五阶段与非线性特性。",
+        "keywords": ["Stages", "Iterative", "Non-linear", "Empathize", "Prototype"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "非线性？所以可以先做原型，再回去改问题定义？",
+        "dialog_prompt": "确认非线性概念。",
+        "keywords": ["Non-linear", "Iteration", "Define"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "对！用户反馈一来，你就可能重写问题陈述，这很正常。",
+        "dialog_prompt": "强调迭代回环。",
+        "keywords": ["Feedback", "Iteration", "User Testing"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "说到同理心，你们最爱用哪种方法？访谈？观察？还是同理地图？",
+        "dialog_prompt": "追问方法论。",
+        "keywords": ["Interviews", "Observation", "Empathy Map"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "我爱观察。看用户怎么用现有工具，常常比听他们说更真实。",
+        "dialog_prompt": "分享偏好的同理方法。",
+        "keywords": ["Observation", "Behavior", "Insights"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "访谈会不会很容易问出“你喜欢这个吗”这种引导性问题？",
+        "dialog_prompt": "质疑访谈技巧。",
+        "keywords": ["Interviews", "Bias", "Questions"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "避免是关键。问“你觉得它在做什么？”比“你喜欢吗？”更有用。",
+        "dialog_prompt": "提供开放式提问技巧。",
+        "keywords": ["Open-ended Questions", "Testing", "Bias Reduction"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我最近做了 Personas，感觉像写小说人物小传，好玩！",
+        "dialog_prompt": "分享初学者体验。",
+        "keywords": ["Personas", "User Segments", "Empathy"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "配合用户旅程地图更棒。你会看到痛点在哪一站冒头。",
+        "dialog_prompt": "建议结合工具。",
+        "keywords": ["Journey Map", "Pain Points", "Visualization"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "讲到痛点，我想起早高峰买咖啡排队……这就是“定义问题”的好素材。",
+        "dialog_prompt": "把生活场景带入定义阶段。",
+        "keywords": ["Define", "Problem Statement", "Coffee Shop"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "问题定义有模板吗？别又变成空话。",
+        "dialog_prompt": "要求可操作性。",
+        "keywords": ["Problem Statement", "Clarity", "Actionable"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "可以用“用户需要一种……以便……”的句式。像：通勤族需要更快点单方式，以便高峰也能准时。",
+        "dialog_prompt": "给出可用句式。",
+        "keywords": ["Problem Framing", "Template", "Clarity"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "到“发想”环节我就卡。怕点子太烂。",
+        "dialog_prompt": "表达创意焦虑。",
+        "keywords": ["Ideation", "Creativity", "Fear"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "先量后质。把评判先关机，疯狂产出再收敛。",
+        "dialog_prompt": "强调先发散后收敛。",
+        "keywords": ["Divergent Thinking", "Convergent Thinking", "Defer Judgment"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "试试 SCAMPER：替换、组合、适配、修改、另用、删除、反转。",
+        "dialog_prompt": "推荐具体技巧。",
+        "keywords": ["SCAMPER", "Ideation Technique", "Creativity"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "还有 Crazy 8s！8分钟画8个方案，心流直接来。",
+        "dialog_prompt": "补充另一个方法。",
+        "keywords": ["Crazy 8s", "Rapid Sketching", "Creativity Sprint"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "听起来像速食创意。但真的有用？",
+        "dialog_prompt": "保持怀疑。",
+        "keywords": ["Skepticism", "Effectiveness", "Ideation"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我试过，前两张还在热身，后面突然灵感爆发。意外多。",
+        "dialog_prompt": "真实反馈。",
+        "keywords": ["Creativity", "Breakthrough", "Practice"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "发想后别急着写文档，先做个低保真原型，纸和笔就够。",
+        "dialog_prompt": "建议低成本原型。",
+        "keywords": ["Low-Fidelity", "Prototype", "Paper Sketch"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "中保真可以上 Figma，或做可点的线框；高保真再考虑真正功能。",
+        "dialog_prompt": "区分保真度层级。",
+        "keywords": ["Medium-Fidelity", "High-Fidelity", "Figma", "Wireframe"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "测试找谁？同事常常客气，不够狠。",
+        "dialog_prompt": "询问测试对象。",
+        "keywords": ["User Testing", "Recruitment", "Bias"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "尽量找真实用户。问“你觉得它是做什么的？”比“好不好用？”更有信息。",
+        "dialog_prompt": "强调真实用户与问题设计。",
+        "keywords": ["Open-ended Questions", "Real Users", "Usability"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "工具方面，Miro 或 MURAL 的白板很好用，远程也能一起贴便签。",
+        "dialog_prompt": "推荐协作工具。",
+        "keywords": ["Miro", "MURAL", "Collaboration", "Remote"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "Jamboard 也行，关键是轻量快速，不要卡在工具里。",
+        "dialog_prompt": "强调工具从属地位。",
+        "keywords": ["Jamboard", "Lightweight", "Speed"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "别忘了先小范围试点，组织里推新方法，先赢一小步。",
+        "dialog_prompt": "建议从小规模开始。",
+        "keywords": ["Pilot", "Small Wins", "Change Management"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "讲个传说中的“以小见大”：Airbnb 当年只是把照片拍好，结果订单飞起。",
+        "dialog_prompt": "分享Airbnb案例。",
+        "keywords": ["Airbnb", "Insight", "Impact"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "所以关键在洞察，而不一定是写代码？",
+        "dialog_prompt": "提炼结论。",
+        "keywords": ["Insight", "Impact", "Strategy"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "没错。小洞察能引爆大价值，前提是你真理解用户。",
+        "dialog_prompt": "强调以用户为中心。",
+        "keywords": ["User-Centered", "Value", "Empathy"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我做程序久了，总想先写功能。被你们一说，应该先画纸稿。",
+        "dialog_prompt": "自我反思。",
+        "keywords": ["Prototype", "Paper", "Developer Mindset"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "是啊，越早验证越省钱，错得越早越便宜。",
+        "dialog_prompt": "强调早测早省。",
+        "keywords": ["Early Testing", "Risk Reduction", "Cost"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "顺带八卦一下，你们谁会在访谈前偷偷练表情？我会，怕看起来太严肃。",
+        "dialog_prompt": "生活化小趣味。",
+        "keywords": ["Interview Prep", "Rapport", "Soft Skills"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "我会练沉默。沉默三秒，受访者就会说更多。",
+        "dialog_prompt": "分享小技巧。",
+        "keywords": ["Silence", "Interview Technique", "Listening"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "别忘了在同理地图里写“想、说、做、感受”，四象限要填满。",
+        "dialog_prompt": "回到工具细节。",
+        "keywords": ["Empathy Map", "Say Think Feel Do", "Synthesis"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "发想环节用点子投票会不会压制少数意见？",
+        "dialog_prompt": "提出群体动力问题。",
+        "keywords": ["Dot Voting", "Groupthink", "Ideation"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "先匿名收集，再投票；或设“保留一个异见”名额，给少数派舞台。",
+        "dialog_prompt": "提供包容流程。",
+        "keywords": ["Facilitation", "Inclusivity", "Decision-making"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "我们做个小练习：把“通勤”当题，来一轮 Crazy 8s，计时！",
+        "dialog_prompt": "发起微活动。",
+        "keywords": ["Crazy 8s", "Exercise", "Commute"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "我画了个“车厢静音角”，用灯提醒音量。",
+        "dialog_prompt": "分享点子。",
+        "keywords": ["Idea", "Commute", "Behavioral Design"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我的是“站外预点咖啡+同步车次”，下车即取。",
+        "dialog_prompt": "分享点子。",
+        "keywords": ["Pre-order", "Context-aware", "Speed"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "我想做“拥挤热力图”，用历史数据预测拥挤度。",
+        "dialog_prompt": "分享点子。",
+        "keywords": ["Heatmap", "Prediction", "Data"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "好，现在收敛，选一个做纸原型。",
+        "dialog_prompt": "推进到原型阶段。",
+        "keywords": ["Convergent", "Selection", "Prototype"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "测试时记得别解释，让原型自己“说话”。你只问问题。",
+        "dialog_prompt": "测试原则提醒。",
+        "keywords": ["Usability Test", "Neutrality", "Open Questions"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "如果用户误解了，这算失败吗？",
+        "dialog_prompt": "询问失败定义。",
+        "keywords": ["Failure", "Learning", "Testing"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "不，误解就是礼物。它告诉你下一步该改哪里。",
+        "dialog_prompt": "重塑失败观。",
+        "keywords": ["Feedback", "Iteration", "Mindset"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "把反馈分三类：可用性、价值、可行性。别混在一起评。",
+        "dialog_prompt": "结构化反馈。",
+        "keywords": ["Usability", "Value", "Feasibility"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "你们会什么时候上中保真？我怕上太快回不去了。",
+        "dialog_prompt": "把握节奏。",
+        "keywords": ["Fidelity", "Timing", "Trade-offs"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "当核心流程验证过、风险点清楚，再上中保真；否则就继续纸上走。",
+        "dialog_prompt": "给出门槛。",
+        "keywords": ["Core Flow", "Risk", "Threshold"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "顺便科普：这些阶段不是直线，常常回跳。",
+        "dialog_prompt": "再次强调非线性。",
+        "keywords": ["Non-linear", "Stages", "Back-and-forth"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "那时间线怎么估？老板要甘特图啊。",
+        "dialog_prompt": "现实约束。",
+        "keywords": ["Timeline", "Planning", "Expectations"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "用时间盒。比如一周同理、一周原型、一周测试，循环滚动。",
+        "dialog_prompt": "建议时间管理。",
+        "keywords": ["Timeboxing", "Sprint", "Cadence"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "组织里推行时，大家怕失败。怎么办？",
+        "dialog_prompt": "文化阻力。",
+        "keywords": ["Culture", "Psychological Safety", "Change"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "倡导“快速失败、快速学习”的文化，先做低风险试点。",
+        "dialog_prompt": "文化建设建议。",
+        "keywords": ["Fail-fast", "Learn-fast", "Pilot"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "工具别太复杂，Miro 一张板就能跑完整流程。",
+        "dialog_prompt": "强调简洁工具链。",
+        "keywords": ["Miro", "Simplicity", "Workflow"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "说真的，我最不信“头脑风暴”。常常被大嗓门带节奏。",
+        "dialog_prompt": "继续质疑群体效应。",
+        "keywords": ["Brainstorming", "Group Dynamics", "Bias"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "那就先“静默写”、再“轮流说”。流程能修正人性的小毛病。",
+        "dialog_prompt": "提供流程设计。",
+        "keywords": ["Silent Brainstorm", "Round-robin", "Facilitation"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "原型材料你们最爱啥？我爱便签+马克笔，爽！",
+        "dialog_prompt": "分享偏好。",
+        "keywords": ["Materials", "Sticky Notes", "Marker"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "我爱纸板+胶带。可拆可拼，像乐高。",
+        "dialog_prompt": "分享偏好。",
+        "keywords": ["Cardboard", "Tape", "Modular"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "回到案例：Airbnb 的洞察其实来自“陪用户一起走流程”。同理，别猜。",
+        "dialog_prompt": "再提案例的本质。",
+        "keywords": ["Airbnb", "Shadowing", "Empathy"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "我服了。下次我先看，再问，再改。",
+        "dialog_prompt": "态度转变。",
+        "keywords": ["Observe", "Interview", "Iterate"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "最后小招：测试时记笔记分三列——行为、语句、推测。别混。",
+        "dialog_prompt": "落地技巧。",
+        "keywords": ["Note-taking", "Behavior", "Quotes", "Inference"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "今天信息量爆表。我打算明天把我们入职流程来一轮五阶段试试。",
+        "dialog_prompt": "计划实践。",
+        "keywords": ["Onboarding", "Five Stages", "Application"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "记得拍照留痕，方便分享和复盘。",
+        "dialog_prompt": "建议记录与复盘。",
+        "keywords": ["Documentation", "Retrospective", "Sharing"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "我们下期可以做“听众来信”，把你们的原型拿来现场测！",
+        "dialog_prompt": "预告互动环节。",
+        "keywords": ["Community", "Live Testing", "Engagement"]
+    },
+    {
+        "voice_name": "echo",
+        "input_text": "能不能也八卦一下谁的贴纸最多？投票总有人暗暗多贴两点。",
+        "dialog_prompt": "插科打诨。",
+        "keywords": ["Dot Voting", "Humor", "Team"]
+    },
+    {
+        "voice_name": "fable",
+        "input_text": "设定“每人两票”，剩下的用讨论来赢，不靠贴。",
+        "dialog_prompt": "恢复秩序。",
+        "keywords": ["Constraints", "Decision", "Fairness"]
+    },
+    {
+        "voice_name": "coral",
+        "input_text": "我去准备同理访谈提纲了，先列“上次……什么时候……为什么……”",
+        "dialog_prompt": "落实访谈提纲。",
+        "keywords": ["Interview Guide", "When", "Why", "Last Time"]
+    },
+    {
+        "voice_name": "alloy",
+        "input_text": "别忘了结尾问：有没有我没问到但你想说的？",
+        "dialog_prompt": "补全开放问题。",
+        "keywords": ["Wrap-up Question", "Open-ended", "Discovery"]
+    },
+    {
+        "voice_name": "onyx",
+        "input_text": "好啦，今天就到这。记住：和用户一起设计，而不是替他们设计",
+        "dialog_prompt": "收束要点。",
+        "keywords": ["Co-design", "With Users", "Mindset"]
+    }
+    {
+        "voice_name": "onyx",
+        "input_text": "本期《壹韶的杂货店》就到这里。把同理放在前面，把反馈放进循环，让创意与现实并肩前行。我们下期见！",
+        "dialog_prompt": "收束要点。",
+        "keywords": ["Co-design", "With Users", "Mindset"]
+    }
+]
