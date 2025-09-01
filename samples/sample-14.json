@@ -1,0 +1,232 @@
+[
+	{
+	"voice_name": "onyx",
+	"input_text": "欢迎来到壹韶的杂货店，我是Onyx。今天我们把电影《头号玩家》当作技术标本，从网络与系统工程角度逐层拆解OASIS背后的现实可行性。",
+	"dialog_prompt": "Deep-dive introduction"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "OASIS像一张全球级“操作系统”，核心挑战是三件事：低延迟沉浸、海量并发一致性、与现实经济法规打通。",
+	"dialog_prompt": "Framing the challenge"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "要稳定<20ms的motion-to-photon延迟、<50ms的端到端交互延迟，意味着边缘计算+本地预测渲染+网络拥塞自适应缺一不可。",
+	"dialog_prompt": "Latency budgets"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "现实里很多人戴VR会晕，画面抖、帧率掉、延迟高是主因。电影里的全身感应在今天会更难把延迟控制住吧？",
+	"dialog_prompt": "VR sickness concern"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "120Hz+刷新、眼动追踪驱动的注视点渲染、时间扭曲补偿、场景稳定化、以及逐步增加视场角，训练前庭适应。",
+	"dialog_prompt": "Mitigations for VR sickness"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "终端↔边缘用QUIC/WebTransport，媒体走WebRTC SRTP；城域内边缘到核心用专线SRv6；远距用LEO卫星做备用路由。",
+	"dialog_prompt": "Network stack choices"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "听起来像烧钱黑洞。能耗和成本怎么打？数据中心会不会被OASIS压垮？",
+	"dialog_prompt": "Cost and energy question"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "边缘小站GPU池+液冷，核心DC走高密度机柜、PUE<1.2；峰值用云租+spot混合；非高优先级任务排到可再生能源产能高时段。",
+	"dialog_prompt": "Sustainability tactics"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "渲染模式怎么选？端侧、云侧、还是混合？电影里像是“你动我算”的极致形态。",
+	"dialog_prompt": "Render architecture prompt"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "混合是现实：几何与物理在云端算，端侧做注视点重建与轻量光照；拥塞时切降分辨率、纹理LOD、阴影级别与特效开关，保证帧率优先。",
+	"dialog_prompt": "Hybrid rendering"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "电影里的触觉衣、跑步机呢？延迟再叠一层，体感不同步会更难受。",
+	"dialog_prompt": "Haptics latency skepticism"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "短反馈在端侧用预判模板，云端只下发低频矫正；带宽走差分编码，只传变化；高风险动作加双重确认避免误触。",
+	"dialog_prompt": "Haptics design"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "数亿人同服同场景，怎么让状态不打架？",
+	"dialog_prompt": "Consistency segue"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "分区分片+区域服，热门副本临时侧链；弱一致CRDT同步玩家非关键状态，强一致锁服处理交易、战斗结算、稀有掉落。",
+	"dialog_prompt": "Sharding and consistency"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "事件总线走Kafka类流，状态快照进列存储；时序高频数据分桶压缩；回放用增量日志+快照拼接，支持仲裁与审计。",
+	"dialog_prompt": "Event and snapshotting"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "极端流量怎么防？DDoS、热区涌入、突发热点任务会不会把边缘打爆？",
+	"dialog_prompt": "Scaling risks"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "多活边缘，任何区都能热迁移实例；前置Anycast+流量擦洗；队列压力阈值触发实例预热与副本扩散。",
+	"dialog_prompt": "Elasticity and DDoS"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "经济系统呢？OASIS里的道具、地产、身份是如何可信、可交易、又不被滥用的？",
+	"dialog_prompt": "Economy question"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "链下高速账本+链上结算，重要道具NFT化，批量小额走支付通道；法币入口合规KYC/AML；跨区清算用原子交换或可信托管。",
+	"dialog_prompt": "Digital assets design"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "DID+可验证凭证，登录走FIDO2/Passkeys；隐私场景用零知识证明证明“够资格但不暴露细节”。",
+	"dialog_prompt": "Identity and privacy"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "内容安全怎么做？像IOI那样的滥用、欺诈、外挂、骚扰在现实更复杂。",
+	"dialog_prompt": "Safety concerns"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "信任与安全流水线：实时语音/文本/视频多模态检测+行为画像；高风险房间强制录制与水印；可上诉的透明仲裁与可执行社区规则。",
+	"dialog_prompt": "Trust & Safety pipeline"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "服务器权威结算、输入可信执行环境TEE签名、反作弊模型检测异常输入分布，疑似号进入“影子匹配池”。",
+	"dialog_prompt": "Anti-cheat"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "NPC这么聪明会不会吓人？它们要懂上下文、记得我、还能自然互动。",
+	"dialog_prompt": "NPC intelligence"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "NPC=LLM+代理框架+长期记忆：近记忆端侧嵌入，远记忆云向量库；意图→行为树→动画；私域对话走端侧微调，公域走服务端对齐。",
+	"dialog_prompt": "LLM agents for NPCs"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "开发者生态呢？OASIS离不开UGC与模组，怎么防止碎片化又不扼杀创造力？",
+	"dialog_prompt": "Developer ecosystem segue"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "标准：OpenXR/ WebXR、USD/glTF资产、材质用MDL；脚本沙箱化，能力基于权限清单；商店分级抽成、开源与商业共存。",
+	"dialog_prompt": "Standards and UGC"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "版权怎么结算？玩家的作品、AI辅助生成、联名IP的归属常常扯皮。",
+	"dialog_prompt": "IP and licensing"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "内容可溯源签名+可验证水印；授权模板合约按素材份额分账；AI生成需申明来源与数据合规，商业化阈值自动触发许可费用。",
+	"dialog_prompt": "Provenance and licensing"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "治理别忘了。电影里赢家“把OASIS关一天”其实是平台治理的象征。现实如何设计制衡？",
+	"dialog_prompt": "Governance question"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "多层治理：运营公司+社区委员会+外部审计；关键协议参数用带冷却期的链上投票；应急制动受限于预设条款与司法兜底。",
+	"dialog_prompt": "Governance layers"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "低端设备、低带宽人群、残障用户，否则“现实的鸿沟”会被放大。",
+	"dialog_prompt": "Inclusion concern"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "自适应码率到200kbps仍可用；文本转语音和字幕内建；色盲模式、舒适移动、传送式位移；无手柄手势与眼控冗余输入。",
+	"dialog_prompt": "Accessibility features"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "连续使用限制、姿势与用眼提醒、未成年人分级、家长控制与消费上限。",
+	"dialog_prompt": "Health and minors"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "断网降级为“局部离线”，CRDT合并冲突；边缘宕机自动故障转移；客户端状态定期做可验证快照防回滚。",
+	"dialog_prompt": "Resilience and offline"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "测量与可观测性：这么复杂的系统怎么排障？",
+	"dialog_prompt": "Observability prompt"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "细粒度指标：抖动、丢包、输入滞后、GPU饱和度；A/B验证策略在灰度环境跑影子流量。",
+	"dialog_prompt": "Observability design"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "订阅、赛季卡、广告会毁沉浸吗？",
+	"dialog_prompt": "Monetization concern"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "装扮直售不卖数值；广告仅在虚拟城市户外位点、频控与个保合规；企业用例走B2B空间租赁和开发者分润。",
+	"dialog_prompt": "Monetization strategy"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "现在、两年内、三到五年内能落地什么？",
+	"dialog_prompt": "Roadmap prompt"
+	},
+	{
+	"voice_name": "fable",
+	"input_text": "混合渲染+边缘加速、OpenXR互通、轻量触觉。12-24个月：注视点渲染普及、端侧小型模型NPC伴随。3-5年：大规模同场活动、可信身份与跨平台资产互操作。",
+	"dialog_prompt": "Phased roadmap"
+	},
+	{
+	"voice_name": "echo",
+	"input_text": "全身跑步机民用化、端侧功耗与散热、全球监管协同，这是最大变数。",
+	"dialog_prompt": "Unknowns and risks"
+	},
+	{
+	"voice_name": "coral",
+	"input_text": "如果只能做一个MVP，你们会选哪三件事？",
+	"dialog_prompt": "MVP question"
+	},
+	{
+	"voice_name": "alloy",
+	"input_text": "一：端侧高帧注视点渲染；二：边缘低时延房间服务；三：DID登录+可验证水印，先把“爽”和“可信”打底。",
+	"dialog_prompt": "MVP answer"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "今天我们把OASIS拆成可执行的工程问题：延迟、架构、一致性、经济、治理、可持续与包容。感谢各位的硬核分享。",
+	"dialog_prompt": "Wrap-up"
+	},
+	{
+	"voice_name": "onyx",
+	"input_text": "这就是本期的壹韶的杂货店。愿每次上线，都让现实更有意义。下次再见！",
+	"dialog_prompt": "Podcast ending"
+	}
+]
