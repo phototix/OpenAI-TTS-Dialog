@@ -1,15 +1,5 @@
 [
     {
-        "voice_name": "onyx",
-        "input_text": "Welcome to 壹韶的杂货店, where we delve into the fascinating bits and pieces of life and technology!",
-        "dialog_prompt": "Introduction to the podcast."
-    },
-    {
-        "voice_name": "onyx",
-        "input_text": "Hey Alloy, did you hear about Brandon's new job at KMSPKS? He's an IT Project Executive now!",
-        "dialog_prompt": "Sharing news about Brandon's new job."
-    },
-    {
         "voice_name": "alloy",
         "input_text": "Yeah, I heard. It's impressive. Starting in a place like KMSPKS must be quite an experience!",
         "dialog_prompt": "Reacting to Brandon's new job at the monastery."
@@ -40,15 +30,5 @@
         "voice_name": "fable",
         "input_text": "AWS in a monastery setting? Now that's an interesting mix!",
         "dialog_prompt": "Reacting to the use of AWS in a unique context."
-    },
-    {
-        "voice_name": "echo",
-        "input_text": "Honestly, it's a smart move. Digitizing and modernizing can help reach wider communities.",
-        "dialog_prompt": "Discussing the benefits of digital transformation in a religious setting."
-    },
-    {
-        "voice_name": "onyx",
-        "input_text": "Thanks for joining us at 壹韶的杂货店. Until next time, keep exploring the converging paths of tradition and technology!",
-        "dialog_prompt": "Concluding the podcast with a sign-off."
     }
 ]
