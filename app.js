@@ -39,8 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSampleDialog();
     initializeSpeakerAvatars();
 
-    // Add event listener in DOMContentLoaded
+    // Event listener in DOMContentLoaded
     document.getElementById('layoutToggleBtn').addEventListener('click', toggleLayoutMode);
+
+    document.getElementById('confirmImportBtn').addEventListener('click', importJsonDialog);
     
     // Event Listeners
     clearDialogBtn.addEventListener('click', clearDialog);
@@ -103,6 +105,78 @@ document.addEventListener('DOMContentLoaded', function() {
             dialogContainer.innerHTML = '<p class="text-center text-danger">Error loading sample file</p>';
         }
     }
+
+    function importJsonDialog() {
+        const jsonText = document.getElementById('jsonImportTextarea').value.trim();
+        const warningDiv = document.getElementById('importWarning');
+        const warningMessage = document.getElementById('warningMessage');
+        
+        if (!jsonText) {
+            warningMessage.textContent = 'Please paste JSON dialog data.';
+            warningDiv.style.display = 'block';
+            return;
+        }
+        
+        try {
+            const parsedData = JSON.parse(jsonText);
+            
+            // Validate JSON structure
+            if (!Array.isArray(parsedData)) {
+                throw new Error('JSON must be an array of dialog entries');
+            }
+            
+            parsedData.forEach((entry, index) => {
+                if (!entry.voice_name || !entry.input_text) {
+                    throw new Error(`Entry ${index + 1} is missing required fields (voice_name or input_text)`);
+                }
+                
+                // Fix common voice name typos
+                if (entry.voice_name === 'onxy') {
+                    entry.voice_name = 'onyx';
+                }
+                
+                if (!speakerAvatars[entry.voice_name]) {
+                    throw new Error(`Invalid voice name: ${entry.voice_name} at entry ${index + 1}`);
+                }
+            });
+            
+            // Check if there's existing TTS and confirm replacement
+            if (audioElements.length > 0 && audioElements.some(audio => audio !== null)) {
+                if (!confirm('Existing TTS audio will be cleared. Are you sure you want to proceed?')) {
+                    return;
+                }
+            }
+            
+            // Replace existing dialog data
+            dialogData = parsedData;
+            
+            // Clear audio elements
+            audioElements = [];
+            playAllBtn.disabled = true;
+            
+            // Rebuild dialog container
+            rebuildDialogContainer();
+            
+            // Close modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('importJsonModal'));
+            modal.hide();
+            
+            // Clear textarea
+            document.getElementById('jsonImportTextarea').value = '';
+            warningDiv.style.display = 'none';
+            
+            // Show success message
+            alert(`Successfully imported ${dialogData.length} dialog entries!`);
+            
+        } catch (error) {
+            warningMessage.textContent = `Invalid JSON format: ${error.message}`;
+            warningDiv.style.display = 'block';
+            console.error('JSON Import Error:', error);
+        }
+    }
+
+    // Add validation for voice names in the existing speakerAvatars object
+    const validVoices = ['alloy', 'coral', 'echo', 'fable', 'nova', 'onyx', 'sage', 'shimmer'];
 
     function toggleLayoutMode() {
         const speakersRow = document.getElementById('speakersRow');
@@ -234,13 +308,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Map voice names to avatar images (you can replace with actual images)
         speakerAvatars = {
             'onyx': '/assets/avatars/onyx.png',
-            'alloy': '/assets/avatars/female-default.png',
+            'sage': '/assets/avatars/female-default.png',
             'coral': '/assets/avatars/female-default.png',
             'echo': '/assets/avatars/male-default.png',
-            'fable': '/assets/avatars/male-default.png',
             'nova': '/assets/avatars/female-default.png',
-            'sage': '/assets/avatars/female-default.png',
-            'shimmer': '/assets/avatars/female-default.png'
+            'alloy': '/assets/avatars/female-default.png',
+            'shimmer': '/assets/avatars/female-default.png',
+            'fable': '/assets/avatars/male-default.png'
         };
         
         renderSpeakerAvatars();
@@ -839,8 +913,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add this function to rebuild the dialog container
     function rebuildDialogContainer() {
-        generateBtn.disabled = true;
+        generateBtn.disabled = false;
         dialogContainer.innerHTML = '';
+        
         if (dialogData.length === 0) {
             dialogContainer.innerHTML = '<p class="text-center text-muted mt-4">Your dialog will appear here</p>';
             return;
@@ -849,7 +924,6 @@ document.addEventListener('DOMContentLoaded', function() {
         dialogData.forEach((entry, index) => {
             addDialogToContainer(entry, index);
         });
-        generateBtn.disabled = false;
     }
 
     addDialogModalBtn.addEventListener('click', function() {

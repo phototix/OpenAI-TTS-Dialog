@@ -99,6 +99,9 @@
                                     <option value="">Loading samples...</option>
                                 </select>
                             </div>
+                            <button class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#importJsonModal">
+                                <i class="fas fa-file-import me-2"></i>Import JSON Dialog
+                            </button>
                             <button class="btn btn-success" id="generateBtn">
                                 <i class="fas fa-bolt me-2"></i>Generate TTS
                             </button>
@@ -237,6 +240,38 @@
             </div>
         </div>
     </div>    
+
+    <!-- Import JSON Modal -->
+    <div class="modal fade" id="importJsonModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Import JSON Dialog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Paste JSON Dialog (same format as sample files)</label>
+                        <textarea class="form-control" id="jsonImportTextarea" rows="12" placeholder='[
+      {
+        "voice_name": "onyx",
+        "input_text": "Your dialog text here",
+        "dialog_prompt": "Prompt description"
+      }
+    ]'></textarea>
+                    </div>
+                    <div class="alert alert-warning" id="importWarning" style="display: none;">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <span id="warningMessage"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="confirmImportBtn">Import Dialog</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer text-center mt-5" id="footer">
         <div class="container">
