@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add delete button event listener
         dialogElement.querySelector('.recycle-btn').addEventListener('click', function() {
-            generateSingleDialogTTS(index);
+            generateSingleDialogItem(index, true);
         });
     }
 
