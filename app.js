@@ -195,6 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="d-flex align-items-center gap-2 btnWebUIItems">
                     <i class="fas fa-play-circle fa-lg play-btn" data-index="${index}"></i>
+                    <i class="fas fa-recycle fa-lg recycle-btn text-warning" data-index="${index}"></i>
                     <i class="fas fa-pencil-alt fa-lg edit-btn text-warning" data-index="${index}"></i>
                     <i class="fas fa-trash-alt fa-lg delete-btn text-danger" data-index="${index}"></i>
                 </div>
@@ -220,6 +221,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add delete button event listener
         dialogElement.querySelector('.delete-btn').addEventListener('click', function() {
             deleteDialogItem(index);
+        });
+        
+        // Add delete button event listener
+        dialogElement.querySelector('.recycle-btn').addEventListener('click', function() {
+            generateSingleDialogTTS(index);
         });
     }
 
@@ -492,6 +498,61 @@ document.addEventListener('DOMContentLoaded', function() {
         // Use OpenAI for all other voices or if ElevenLabs is not configured
         return await generateOpenAITTS(entry, apiKey);
     }
+
+    // Add this function to handle single dialog generation
+    async function generateSingleDialogTTS(index) {
+        const apiKey = document.getElementById('apiKey').value;
+        
+        if (!apiKey) {
+            alert('Please enter your OpenAI API key.');
+            return;
+        }
+
+        const entry = dialogData[index];
+        
+        try {
+            // Show loading state
+            const playBtn = document.querySelector(`.play-btn[data-index="${index}"]`);
+            playBtn.classList.replace('fa-play-circle', 'fa-spinner', 'fa-spin');
+            
+            const audioBlob = await generateSingleTTS(entry, apiKey);
+            
+            // Update audioElements array with the new audio
+            if (audioElements[index]) {
+                URL.revokeObjectURL(audioElements[index].url); // Clean up old URL
+            }
+            
+            audioElements[index] = {
+                blob: audioBlob,
+                url: URL.createObjectURL(audioBlob)
+            };
+            
+            // Restore play button
+            playBtn.classList.replace('fa-spinner', 'fa-play-circle');
+            playBtn.classList.remove('fa-spin');
+            
+            // Play the newly generated audio
+            playDialogItem(index);
+            
+        } catch (error) {
+            console.error('Single TTS Generation Error:', error);
+            alert('Error generating TTS: ' + error.message);
+            
+            // Restore play button on error
+            const playBtn = document.querySelector(`.play-btn[data-index="${index}"]`);
+            playBtn.classList.replace('fa-spinner', 'fa-play-circle');
+            playBtn.classList.remove('fa-spin');
+        }
+    }
+
+    // // Modify the play button event listener to generate if not exists
+    // dialogElement.querySelector('.play-btn').addEventListener('click', function() {
+    //     if (!audioElements[index] || !audioElements[index].url) {
+    //         generateSingleDialogTTS(index);
+    //     } else {
+    //         playDialogItem(index);
+    //     }
+    // });
 
     async function generateOpenAITTS(entry, apiKey) {
         console.log("Generate with OpenAI: " + entry.input_text);
