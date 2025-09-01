@@ -754,7 +754,6 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'ads_end':
                 // Hide ads container and stop playback
                 adsContainer.style.display = 'none';
-                document.getElementById('leftColumn').style.display = '';
                 document.querySelector('#rightColumn').style.setProperty('width', '100%', 'important');
                 document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
                 try {
