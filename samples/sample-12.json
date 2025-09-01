@@ -31,13 +31,13 @@
     },
     {
         "voice_name": "coral",
-        "input_text": "非线性？所以可以先做原型，再回去改问题定义？",
+        "input_text": "Non-linear？所以可以先做原型，再回去改问题定义？",
         "dialog_prompt": "确认非线性概念。",
         "keywords": ["Non-linear", "Iteration", "Define"]
     },
     {
         "voice_name": "fable",
-        "input_text": "对！用户反馈一来，你就可能重写问题陈述，这很正常。",
+        "input_text": "对！用户Feedback一来，你就可能重写问题陈述，这很正常。",
         "dialog_prompt": "强调迭代回环。",
         "keywords": ["Feedback", "Iteration", "User Testing"]
     },
@@ -73,13 +73,13 @@
     },
     {
         "voice_name": "alloy",
-        "input_text": "配合用户旅程地图更棒。你会看到痛点在哪一站冒头。",
+        "input_text": "配合用户的Journey Map更棒。你会看到痛点在哪一站冒头。",
         "dialog_prompt": "建议结合工具。",
         "keywords": ["Journey Map", "Pain Points", "Visualization"]
     },
     {
         "voice_name": "onyx",
-        "input_text": "讲到痛点，我想起早高峰买咖啡排队……这就是“定义问题”的好素材。",
+        "input_text": "讲到痛点，我想起早高峰时候买咖啡排队……这就是“Problem Statement”的好素材。",
         "dialog_prompt": "把生活场景带入定义阶段。",
         "keywords": ["Define", "Problem Statement", "Coffee Shop"]
     },
@@ -91,7 +91,7 @@
     },
     {
         "voice_name": "fable",
-        "input_text": "可以用“用户需要一种……以便……”的句式。像：通勤族需要更快点单方式，以便高峰也能准时。",
+        "input_text": "可以用“用户需要一种……以便……”的句式。像：通勤族需要更快点单方式，以便Peak Hour也能准时。",
         "dialog_prompt": "给出可用句式。",
         "keywords": ["Problem Framing", "Template", "Clarity"]
     },
@@ -115,7 +115,7 @@
     },
     {
         "voice_name": "onyx",
-        "input_text": "还有 Crazy 8s！8分钟画8个方案，心流直接来。",
+        "input_text": "还有 Crazy 8seconds！8分钟画8个方案，心流直接来。",
         "dialog_prompt": "补充另一个方法。",
         "keywords": ["Crazy 8s", "Rapid Sketching", "Creativity Sprint"]
     },
@@ -235,7 +235,7 @@
     },
     {
         "voice_name": "onyx",
-        "input_text": "我们做个小练习：把“通勤”当题，来一轮 Crazy 8s，计时！",
+        "input_text": "我们做个小练习：把“通勤”当题，来一轮 Crazy 8S，计时！",
         "dialog_prompt": "发起微活动。",
         "keywords": ["Crazy 8s", "Exercise", "Commute"]
     },
@@ -307,7 +307,7 @@
     },
     {
         "voice_name": "echo",
-        "input_text": "那时间线怎么估？老板要甘特图啊。",
+        "input_text": "那时间线怎么估？老板要Gantt Chart啊。",
         "dialog_prompt": "现实约束。",
         "keywords": ["Timeline", "Planning", "Expectations"]
     },
@@ -337,7 +337,7 @@
     },
     {
         "voice_name": "echo",
-        "input_text": "说真的，我最不信“头脑风暴”。常常被大嗓门带节奏。",
+        "input_text": "说真的，我最不信“Brainstorming”。常常被大嗓门带节奏。",
         "dialog_prompt": "继续质疑群体效应。",
         "keywords": ["Brainstorming", "Group Dynamics", "Bias"]
     },
