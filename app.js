@@ -730,6 +730,22 @@ document.addEventListener('DOMContentLoaded', function() {
         await audio.play();
     }
 
+    function haveAdsVideo() {
+        // Show ads container and start playback
+        document.getElementById('leftColumnAds').style.display = 'block';
+        document.getElementById('leftColumn').style.display = 'none';
+        document.querySelector('#leftColumnAds').style.setProperty('width', '45%', 'important');
+        document.querySelector('#rightColumn').style.setProperty('width', '55%', 'important');
+        document.querySelector('#dialogContainer').style.setProperty('max-height', '145px', 'important');
+    }
+
+    function noAdsVideo() {
+        // Hide ads container and stop playback
+        document.getElementById('leftColumnAds').style.display = 'none';
+        document.querySelector('#rightColumn').style.setProperty('width', '100%', 'important');
+        document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
+    }
+
     // Add this function to handle ads actions
     function handleAdsAction(action) {
         const adsContainer = document.getElementById('leftColumnAds');
@@ -738,12 +754,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         switch(action) {
             case 'ads_start':
-                // Show ads container and start playback
-                adsContainer.style.display = 'block';
-                document.getElementById('leftColumn').style.display = 'none';
-                document.querySelector('#leftColumnAds').style.setProperty('width', '45%', 'important');
-                document.querySelector('#rightColumn').style.setProperty('width', '55%', 'important');
-                document.querySelector('#dialogContainer').style.setProperty('max-height', '145px', 'important');
+                haveAdsVideo();
                 try {
                     adsVideoElement.play().catch(e => console.log('Ads video play error:', e));
                     isAdsPlaying = true;
@@ -753,10 +764,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 break;
                 
             case 'ads_end':
-                // Hide ads container and stop playback
-                adsContainer.style.display = 'none';
-                document.querySelector('#rightColumn').style.setProperty('width', '100%', 'important');
-                document.querySelector('#dialogContainer').style.setProperty('max-height', '125px', 'important');
+                noAdsVideo();
                 try {
                     adsVideoElement.pause();
                     adsVideoElement.currentTime = 0;
