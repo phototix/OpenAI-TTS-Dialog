@@ -2,7 +2,8 @@
     {
         "voice_name": "alloy",
         "input_text": "Yeah, I heard. It's impressive. Starting in a place like KMSPKS must be quite an experience!",
-        "dialog_prompt": "Reacting to Brandon's new job at the monastery."
+        "dialog_prompt": "Reacting to Brandon's new job at the monastery.",
+        "audio_url": "https://cloud.i-dc.institute/index.php/s/acn3QFSTFWDqkx5/download"
     },
     {
         "voice_name": "fable",
