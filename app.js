@@ -550,28 +550,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please add at least one dialog entry.');
             return;
         }
-
-        for (let i = 0; i < dialogData.length; i++) {
-            const entry = dialogData[i];
-            
-            // Skip generation for entries with audio_url
-            if (entry.audio_url) {
-                if (!validateExternalAudio(entry.audio_url)) {
-                    console.warn(`Invalid audio URL format for entry ${i}: ${entry.audio_url}`);
-                    continue;
-                }
-                audioElements[i] = {
-                    url: entry.audio_url,
-                    isExternal: true
-                };
-                continue;
-            }
-            
-            // Existing TTS generation for entries without audio_url
-            if (!audioElements[i]) {
-                await generateSingleDialogItem(i);
-            }
-        }
         
         try {
             // Initialize audioElements array if needed
@@ -620,15 +598,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add this function to handle single dialog generation
     async function generateSingleDialogItem(index, forceRegenerate = false) {
         const apiKey = document.getElementById('apiKey').value;
-    
-        // Check if audio_url exists - skip TTS generation
-        if (entry.audio_url && !forceRegenerate) {
-            audioElements[index] = {
-                url: entry.audio_url,
-                isExternal: true // Flag to indicate external audio
-            };
-            return true;
-        }
         
         if (!apiKey) {
             alert('Please enter your OpenAI API key.');
@@ -719,64 +688,46 @@ document.addEventListener('DOMContentLoaded', function() {
     async function playDialogItem(index) {
         
         const miniPlayBtn = document.getElementById('miniPlayBtn');
-        const audioData = audioElements[index];
-        
-        if (audioData.isExternal) {
-            // Handle external audio URL
-            const audio = new Audio(audioData.url);
-            audio.onended = () => {
-                if (currentPlayingIndex === index) {
-                    playDialogItem(index + 1);
-                }
-            };
-            await audio.play();
-        } else {
-            stopPlayback();
-            
-            if (index >= audioElements.length) {
-                stopPlayback();
-                if (miniPlayBtn) {
-                    miniPlayBtn.style.display = '';
-                }
-                return;
-            }
-            const currentEntry = dialogData[index];
-            
-            // Check for ads actions and handle them
-            if (currentEntry.action) {
-                handleAdsAction(currentEntry.action);
-            }
-            
-            // Update active speaker avatar
-            updateActiveSpeaker(currentEntry.voice_name);
-            
-            // Highlight the playing item
-            const items = dialogContainer.querySelectorAll('.dialog-bubble');
-            items.forEach(item => item.classList.remove('highlight'));
-            items[index].classList.add('highlight');
-            items[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // Create and play audio
-            const audio = new Audio(audioElements[index].url);
-            currentPlayingIndex = index;
-            
-            audio.onended = () => {
-                if (currentPlayingIndex === index) {
-                    playDialogItem(index + 1);
-                } else {
-                    stopPlayback();
-                }
-            };
-            
-            audio.playbackRate = parseFloat(playbackSpeed.value);
-            await audio.play();
-        }
-    }
 
-    function validateExternalAudio(url) {
-        // Simple validation - you might want to add more robust checks
-        const audioFormats = ['.mp3', '.wav', '.ogg', '.m4a'];
-        return audioFormats.some(format => url.toLowerCase().includes(format));
+        stopPlayback();
+        
+        if (index >= audioElements.length) {
+            stopPlayback();
+            if (miniPlayBtn) {
+                miniPlayBtn.style.display = '';
+            }
+            return;
+        }
+        const currentEntry = dialogData[index];
+        
+        // Check for ads actions and handle them
+        if (currentEntry.action) {
+            handleAdsAction(currentEntry.action);
+        }
+        
+        // Update active speaker avatar
+        updateActiveSpeaker(currentEntry.voice_name);
+        
+        // Highlight the playing item
+        const items = dialogContainer.querySelectorAll('.dialog-bubble');
+        items.forEach(item => item.classList.remove('highlight'));
+        items[index].classList.add('highlight');
+        items[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Create and play audio
+        const audio = new Audio(audioElements[index].url);
+        currentPlayingIndex = index;
+        
+        audio.onended = () => {
+            if (currentPlayingIndex === index) {
+                playDialogItem(index + 1);
+            } else {
+                stopPlayback();
+            }
+        };
+        
+        audio.playbackRate = parseFloat(playbackSpeed.value);
+        await audio.play();
     }
 
     function haveAdsVideo() {
